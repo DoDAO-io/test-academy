@@ -19,6 +19,21 @@ events:
       modestly reallocating some of the v2 USDT COMP rewards to borrowers in the
       new market.
     moreLink: https://compound.finance/governance/proposals/151
+  - name: Increase cbETH Supply Cap in cWE
+    uuid: fb7ebaed-52fe-411e-95e3-b00bfc149722
+    date: '2023-02-20T05:00:00.000Z'
+    excerpt: ''
+    content: >-
+      Supply cap for cbETH on Comet was updated via Configurator to 30000.00 The
+      motivation behind the parameter updates was to maintain the overall risk
+      tolerance of the protocol while making risk trade-offs between specific
+      assets. Gauntlet used an optimization function that balanced insolvencies,
+      liquidations, and borrow usage to make parameter recommendations. Their
+      simulations took into account a wide array of varied input data that
+      changed on a daily basis, and the individual collateral pages on their
+      dashboard covered other key statistics and outputs from their
+      simulations. 
+    moreLink: https://compound.finance/governance/proposals/149
 admins: []
 tags: []
 priority: 50
