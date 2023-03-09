@@ -18,7 +18,7 @@ events:
       implementing risk parameters based on recommendations from Gauntlet, and
       modestly reallocating some of the v2 USDT COMP rewards to borrowers in the
       new market.
-    moreLink: ''
+    moreLink: https://compound.finance/governance/proposals/151
 admins: []
 tags: []
 priority: 50
