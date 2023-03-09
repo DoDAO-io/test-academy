@@ -1,1 +1,1 @@
-# dodao-academy
+# Compound Finance Academy

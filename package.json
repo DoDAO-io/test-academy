@@ -1,5 +1,5 @@
 {
-  "name": "academy-template",
+  "name": "compound-finance-academy",
   "version": "1.0.0",
   "description": "Guides explaining balancer Protocol",
   "scripts": {
@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DoDAO-io/academy-template.git"
+    "url": "git+https://github.com/DoDAO-io/compound-finance-academy.git"
   },
   "author": "robin",
   "bugs": {
-    "url": "https://github.com/DoDAO-io/academy-template/issues"
+    "url": "https://github.com/DoDAO-io/compound-finance-academy/issues"
   },
-  "homepage": "https://github.com/DoDAO-io/academy-template#readme",
+  "homepage": "https://github.com/DoDAO-io/compound-finance-academy#readme",
   "dependencies": {
     "dodao-academy-processor": "0.0.8"
   }
