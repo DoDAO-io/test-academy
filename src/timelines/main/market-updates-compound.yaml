@@ -19,7 +19,7 @@ events:
       modestly reallocating some of the v2 USDT COMP rewards to borrowers in the
       new market.
     moreLink: https://compound.finance/governance/proposals/151
-  - name: Increase cbETH Supply Cap in cWE
+  - name: Increase cbETH Supply Cap
     uuid: fb7ebaed-52fe-411e-95e3-b00bfc149722
     date: '2023-02-20T05:00:00.000Z'
     excerpt: ''
