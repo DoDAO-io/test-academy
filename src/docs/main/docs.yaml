@@ -1,0 +1,7 @@
+versions:
+  - name: V2
+    folder: v2
+    key: v2
+  - name: V3 (Current)
+    folder: v3
+    key: v3
