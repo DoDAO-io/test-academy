@@ -1,0 +1,118 @@
+{
+  "content": "Calculation of supply & borrow interest rates in Compound III",
+  "id": "supply-borrow-interest-calcu-compound",
+  "name": "Supply & Borrow Interest Calcu.",
+  "steps": [
+    {
+      "content": "\nThe supply and borrow interest rates are determined by the utilization rate of the base asset. Each model has a utilization rate \"kink\" above which the interest rate increases more rapidly. Interest is calculated every second using the block timestamp. Collateral assets, however, do not earn or pay interest.\n        ",
+      "name": "Introduction",
+      "stepItems": [],
+      "uuid": "799c555b-d698-48bc-b8ec-d3e4f9c63f9b"
+    },
+    {
+      "content": "When utilization is less than or equal to the supplyKink:\n\n`supply rate = interestRateBase + interestRateSlopeLow * utilization`",
+      "name": "Introduction Evaluation",
+      "stepItems": [],
+      "uuid": "dc6c4ea1-6bcd-45be-93c0-8628a0973bcf"
+    },
+    {
+      "content": "When utilization is greater than the supplyKink:\n\n`supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`",
+      "name": "Step 3",
+      "stepItems": [],
+      "uuid": "65a4f89e-8bf2-4ab7-8f81-edbdc5dd2296"
+    },
+    {
+      "content": "",
+      "name": "Step 7",
+      "stepItems": [
+        {
+          "type": "SingleChoice",
+          "uuid": "7dce3a50-b1c2-4346-9279-c27993d417eb",
+          "answerKeys": [
+            "0a3ced5a"
+          ],
+          "choices": [
+            {
+              "content": "supply rate = interestRateBase + interestRateSlopeLow * utilization",
+              "key": "63be33a4",
+              "order": 0
+            },
+            {
+              "content": "supply rate = interestRateBase + interestRateSlopeLow * kink",
+              "key": "488a3dc4",
+              "order": 1
+            },
+            {
+              "content": "supply rate = interestRateBase + interestRateSlopeHigh * (utilization - kink)",
+              "key": "0a3ced5a",
+              "order": 2
+            },
+            {
+              "content": " None of the above",
+              "key": "2531a881",
+              "order": 3
+            }
+          ],
+          "content": "What is the formula for calculating supply rate when utilization is greater than the supplyKink?",
+          "explanation": "supply rate = interestRateBase + interestRateSlopeHigh * (utilization - kink)"
+        }
+      ],
+      "uuid": "5765aea8-91d5-4aef-b272-daaa58705c95"
+    },
+    {
+      "content": "When utilization is less than or equal to the borrowKink:\n\n`borrow rate = interestRateBase + interestRateSlopeLow * utilization`",
+      "name": "Step 4",
+      "stepItems": [],
+      "uuid": "83b5407d-706c-45be-b530-51c5e71952d3"
+    },
+    {
+      "content": "When utilization is greater than the borrowKink:\n\n`borrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`",
+      "name": "Step 5",
+      "stepItems": [],
+      "uuid": "9bcb3a9f-76eb-4d94-b773-a6fd4c79e39b"
+    },
+    {
+      "content": "",
+      "name": "Step 6",
+      "stepItems": [
+        {
+          "type": "SingleChoice",
+          "uuid": "abda2b99-0dff-4845-b602-faed1d5765a8",
+          "answerKeys": [
+            "06a50e17"
+          ],
+          "choices": [
+            {
+              "content": "borrow rate = interestRateBase + interestRateSlopeLow * utilization",
+              "key": "06a50e17",
+              "order": 0
+            },
+            {
+              "content": " borrow rate = interestRateBase + interestRateSlopeLow * kink",
+              "key": "472ca229",
+              "order": 1
+            },
+            {
+              "content": "borrow rate = interestRateBase + interestRateSlopeHigh * (utilization - kink)",
+              "key": "0c92c69b",
+              "order": 2
+            },
+            {
+              "content": "None of the above",
+              "key": "c90318d0",
+              "order": 3
+            }
+          ],
+          "content": "What is the formula for calculating borrow rate when utilization is less than or equal to the borrowKink?",
+          "explanation": "borrow rate = interestRateBase + interestRateSlopeLow * utilization"
+        }
+      ],
+      "uuid": "961aee26-b308-4b05-b95d-e9d9ec988f8d"
+    }
+  ],
+  "publishStatus": "Live",
+  "admins": [],
+  "tags": [],
+  "priority": 0,
+  "created": "2023-03-09T22:14:27.975Z"
+}
