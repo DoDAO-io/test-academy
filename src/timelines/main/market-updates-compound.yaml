@@ -3,7 +3,22 @@ name: Market Updates
 excerpt: This times shares details of all the new markets, assets, and configurations
 content: This times shares details of all the new markets, assets, and configurations
 publishStatus: ''
-events: []
+events:
+  - name: 'Compound III USDC Market on   '
+    uuid: d172c62b-73fa-4778-a130-afa2cbc8c3f3
+    date: '2023-03-07T05:00:00.000Z'
+    excerpt: ''
+    content: >-
+      To ensure users can avoid liquidation easily, Compound III market is being
+      deployed on Polygon with USDC as the borrowable asset, and the market is
+      being seeded with 500k USDC. At launch, users can use WETH, WBTC, MATIC,
+      DAI, USDT, and USDC as collateral. Seeding the market with USDC will
+      provide a cushion for users and create a sustainable market. Additionally,
+      the proposal includes setting the pause guardian to a Gnosis multisig,
+      implementing risk parameters based on recommendations from Gauntlet, and
+      modestly reallocating some of the v2 USDT COMP rewards to borrowers in the
+      new market.
+    moreLink: ''
 admins: []
 tags: []
 priority: 50
