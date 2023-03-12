@@ -7,6 +7,12 @@
       "content": "\n## ✅ You will learn how to select a chain and market\n## ✅ How to provide an asset in the selected market",
       "name": "Introduction",
       "uuid": "360bbe63-545b-4ce9-bc6c-269550119f04"
+    },
+    {
+      "content": "Demo",
+      "name": "Step 2",
+      "uuid": "5d0ca3b1-f7aa-478c-86e4-f01879f384db",
+      "iframeUrl": "https://capture.navattic.com/clf5h2fgr000908mhdjba08mo"
     }
   ],
   "publishStatus": "Live",
