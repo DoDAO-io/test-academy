@@ -1,1 +1,2 @@
-simulations: []
+simulations:
+  - supply-asset-compound.yaml

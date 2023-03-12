@@ -1,0 +1,17 @@
+{
+  "content": "How to supply an asset in Compound III",
+  "id": "supply-asset-compound",
+  "name": "Supply Asset",
+  "steps": [
+    {
+      "content": "\n## ✅ You will learn how to select a chain and market\n## ✅ How to provide an asset in the selected market",
+      "name": "Introduction",
+      "uuid": "360bbe63-545b-4ce9-bc6c-269550119f04"
+    }
+  ],
+  "publishStatus": "Live",
+  "admins": [],
+  "tags": [],
+  "priority": 0,
+  "created": "2023-03-12T14:04:11.639Z"
+}
