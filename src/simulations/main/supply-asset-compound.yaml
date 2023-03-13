@@ -4,8 +4,9 @@ name: Supply Asset
 steps:
   - content: |-
 
-      ## ✅ You will learn how to select a chain and market
-      ## ✅ How to provide an asset in the selected market
+      ## ✅ You will learn how to select a chain and a market
+      ## ✅ How to supply the base asset
+      ## ✅ See you balance and rate of interest
     name: Introduction
     uuid: 360bbe63-545b-4ce9-bc6c-269550119f04
   - content: Demo
