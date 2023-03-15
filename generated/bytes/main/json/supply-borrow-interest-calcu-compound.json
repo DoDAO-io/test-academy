@@ -43,7 +43,7 @@
               "order": 1
             },
             {
-              "content": "supply rate = interestRateBase + interestRateSlopeHigh * (utilization - kink)",
+              "content": "supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)",
               "key": "0a3ced5a",
               "order": 2
             },
@@ -54,7 +54,7 @@
             }
           ],
           "content": "What is the formula for calculating supply rate when utilization is greater than the supplyKink?",
-          "explanation": "supply rate = interestRateBase + interestRateSlopeHigh * (utilization - kink)"
+          "explanation": "supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)"
         }
       ],
       "uuid": "5765aea8-91d5-4aef-b272-daaa58705c95"
