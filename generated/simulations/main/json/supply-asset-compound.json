@@ -1,12 +1,13 @@
 {
-  "content": "How to supply an asset in Compound IIII",
+  "content": "How to supply an asset in Compound III",
   "id": "supply-asset-compound",
   "name": "Supply Asset",
   "steps": [
     {
-      "content": "\n## ✅ You will learn how to select a chain and a marketI\n## ✅ How to supply the base asset\n## ✅ See you balance and rate of interest",
+      "content": "\n## ✅ You will learn how to select a chain and a market\n## ✅ How to supply the base asset\n## ✅ See you balance and rate of interest",
       "name": "Introduction",
-      "uuid": "360bbe63-545b-4ce9-bc6c-269550119f04"
+      "uuid": "360bbe63-545b-4ce9-bc6c-269550119f04",
+      "iframeUrl": "https://capture.navattic.com/clf5h2fgr000908mhdjba08mo"
     },
     {
       "content": "Demo",
