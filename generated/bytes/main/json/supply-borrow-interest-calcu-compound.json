@@ -26,30 +26,30 @@
       "name": "Step 7",
       "stepItems": [
         {
-          "type": "SingleChoice",
-          "uuid": "7dce3a50-b1c2-4346-9279-c27993d417eb",
+          "type": "MultipleChoice",
+          "uuid": "9a350906-3b93-42c7-b389-7efc35374710",
           "answerKeys": [
-            "0a3ced5a"
+            "2e4800fa"
           ],
           "choices": [
             {
               "content": "supply rate = interestRateBase + interestRateSlopeLow * utilization",
-              "key": "63be33a4",
+              "key": "5f97f76f",
               "order": 0
             },
             {
               "content": "supply rate = interestRateBase + interestRateSlopeLow * kink",
-              "key": "488a3dc4",
+              "key": "502bde22",
               "order": 1
             },
             {
               "content": "supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)",
-              "key": "0a3ced5a",
+              "key": "2e4800fa",
               "order": 2
             },
             {
               "content": " None of the above",
-              "key": "2531a881",
+              "key": "c76c7686",
               "order": 3
             }
           ],
