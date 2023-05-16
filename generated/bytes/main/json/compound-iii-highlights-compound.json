@@ -46,23 +46,19 @@
           "choices": [
             {
               "content": "Reduced risk, and potentially improved capital efficiency",
-              "key": "6a748ed4",
-              "order": 0
+              "key": "6a748ed4"
             },
             {
               "content": "Allows for unlimited borrowing",
-              "key": "3932060f",
-              "order": 1
+              "key": "3932060f"
             },
             {
               "content": "Eliminates the need for collateral",
-              "key": "3ff8bf0a",
-              "order": 2
+              "key": "3ff8bf0a"
             },
             {
               "content": "Minimal risk of liquidation",
-              "key": "1dacee4e",
-              "order": 3
+              "key": "1dacee4e"
             }
           ],
           "content": "What is the major benefit of each Compound III deployment featuring a single interest-earning base asset?",
