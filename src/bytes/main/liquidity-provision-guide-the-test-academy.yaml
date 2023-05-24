@@ -30,7 +30,7 @@ steps:
     name: Conclusion
     stepItems: []
     uuid: a27ba11f-3427-49e3-a968-cdcceb1b94fa
-publishStatus: Draft
+publishStatus: Live
 admins: []
 tags: []
 priority: 50
