@@ -1,0 +1,199 @@
+{
+  "categories": [],
+  "content": "How to build a new comet extension ",
+  "created": "2023-03-09T01:41:28.021Z",
+  "guideIntegrations": {
+    "discordRoleIds": []
+  },
+  "guideType": "course",
+  "key": "build-comet-extension-compound",
+  "name": "Build Comet Extension",
+  "publishStatus": "Live",
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "content": "## Extensions\nCompound III, has launched a new feature called \"Extensions\". This feature is designed to allow community developers to create optional add-ons that can be used to enhance the Compound experience for users.\n\nWhen a user enables an extension, it can leverage Compound III's advanced account management functionality to add new features to their account. These can include automation, position management, and composability with other DeFi protocols. Alternatively, an extension can run without requiring any permissions and simply provide useful information like liquidation alerts.\n\n## Extension Types\nThere are two types of extensions: \n1. Web Extensions - Web extensions are like mini-websites that are embedded into the Compound III interface, allowing users to interact with the platform in new and different ways \n2. Operators - Operators, on the other hand, are smart contracts that allow users to do things like move positions from other DeFi platforms to Compound III. \n\nSome extensions have both a web extension and an operator, while others have only one or the other.",
+      "name": "Introduction",
+      "stepItems": [],
+      "uuid": "33b6802d-f3ed-4dd3-a548-5c6b8b480431"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "14ddd1c9"
+          ],
+          "choices": [
+            {
+              "content": "To provide additional information to users",
+              "key": "d32dd818"
+            },
+            {
+              "content": "To allow community developers to create add-ons to enhance user experience",
+              "key": "14ddd1c9"
+            },
+            {
+              "content": "To restrict users from accessing certain features",
+              "key": "9b4d1bdc"
+            },
+            {
+              "content": "To allow Compound III to manage user accounts more efficiently",
+              "key": "35fae8cd"
+            }
+          ],
+          "content": "What is the purpose of Compound III's \"Extensions\" feature?",
+          "type": "SingleChoice",
+          "uuid": "ec18f133-203d-4d94-b581-dcdd8575114b"
+        },
+        {
+          "answerKeys": [
+            "3f4d4077"
+          ],
+          "choices": [
+            {
+              "content": "Web extensions and browser extensions",
+              "key": "4f7d10b2"
+            },
+            {
+              "content": "Web extensions and mobile extensions",
+              "key": "0f9ec52c"
+            },
+            {
+              "content": "Mobile extensions and desktop extensions",
+              "key": "31a262cf"
+            },
+            {
+              "content": "Web extensions and operators",
+              "key": "3f4d4077"
+            }
+          ],
+          "content": "What are the two types of extensions offered by Compound III?",
+          "type": "SingleChoice",
+          "uuid": "483fdd8a-015d-430b-b92d-03d692d3ab17"
+        }
+      ],
+      "uuid": "f6dc56fb-3d83-4580-8b67-9cdfbd1dd139"
+    },
+    {
+      "content": "Web Extensions are used to expand the functionality of the Frontend by allowing users to perform actions or retrieve information related to their accounts. \n\nThese extensions are incorporated into the main Compound III app as iframes, but the inner window of the iframe lacks access to the web3 context required for signing messages or transactions when interacting with smart contracts. To overcome this limitation, the Web Extension sends a message to the parent window, which then uses the context and forwards the message. `@compound-finance/comet-extension` provides all the glue code needed to interact with the parent window.\n\n```javascript\nlet rpc: RPC = buildRPC();\n\n// Send transaction request\nlet chainId = await sendWeb3(rpc, 'eth_chainId', []);\n\n// Handle incoming messages\nrpc.on({setTheme: ({theme}) => {\n  console.log('theme', theme);\n});\n```\n```javascript\nlet rpc: RPC = buildRPC();\nlet provider = new RPCWeb3Provider(rpc);\n\nprovider.sendTransaction(...);\n```\n\nCompound offers an extension template that includes all the necessary setup code and up-to-date frameworks for creating a frontend application.\n\nhttps://github.com/compound-finance/comet-extension-template\n\nTo create a Comet Web Extension, developers should start by cloning the template repository's boilerplate to their local machine. With Foundry and Vite, they can then develop the Extension's frontend and smart contracts while utilizing a localhost development environment to verify that the code works correctly.",
+      "name": "Web Extensions",
+      "stepItems": [],
+      "uuid": "7d7413e7-3855-499c-b961-d7d4920a4b0e"
+    },
+    {
+      "content": "",
+      "name": "Evaluate",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "a9e43d0e"
+          ],
+          "choices": [
+            {
+              "content": "Web Extensions have direct access to the web3 context required for signing messages or transactions",
+              "key": "3c114398"
+            },
+            {
+              "content": " Web Extensions use window messaging system to send messages to parent window",
+              "key": "a9e43d0e"
+            },
+            {
+              "content": "Web Extensions are not able to interact with parent window",
+              "key": "a2cdc8ed"
+            },
+            {
+              "content": "Web Extensions must be authorized by Compound III and user both before interacting with  parent window",
+              "key": "97962d7d"
+            }
+          ],
+          "content": "How do Web Extensions interact with Compound III parent window UI?",
+          "type": "SingleChoice",
+          "uuid": "0003af4a-456c-411f-bce7-7b3c625c6047"
+        },
+        {
+          "answerKeys": [
+            "5c933c45"
+          ],
+          "choices": [
+            {
+              "content": "To provide a template for creating Web Extensions in Compound III",
+              "key": "e64630dd"
+            },
+            {
+              "content": " To provide a set of up-to-date frameworks for creating Web Extensions",
+              "key": "8134a80c"
+            },
+            {
+              "content": "To provide a development environment for testing Web Extensions",
+              "key": "04e17b1e"
+            },
+            {
+              "content": "To provide a messaging system for Web Extensions to interact with parent window",
+              "key": "5c933c45"
+            }
+          ],
+          "content": " What is the purpose of the @compound-finance/comet-extension package?",
+          "type": "SingleChoice",
+          "uuid": "8d3a30df-d5dd-4a72-8a56-69a248c0fc5a"
+        }
+      ],
+      "uuid": "bea8d6a6-26fb-4a8c-932f-8bb9fa382824"
+    },
+    {
+      "content": "Operators are smart contracts that have access to act on behalf of a user's Compound III position. For instance, the [Comet Migrator](https://github.com/compound-finance/comet-migrator) is a smart contract which moves a position from Compound II or other DeFi platforms, using a flash loan to move the position atomically.\n\nOperator extensions are normal smart contracts and they are call extensions because they mostly extend comet's functionality. Here is a simplest smart contract structure that is included in the comet-extension-template\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity 0.8.16;\n\nimport \"./interfaces/CometInterface.sol\";\n\n/**\n * @title My Extension\n * @notice A Compound III operator to ...\n * @author Compound\n */\ncontract MyCometExtension {\n  /// @notice The Comet contract\n  Comet public immutable comet;\n\n  /**\n   * @notice Construct a new MyExtension operator.\n   * @param comet_ The Comet contract.\n   **/\n  constructor(Comet comet_) payable {\n    comet = comet_;\n  }\n}\n``` \n[https://github.com/compound-finance/comet-extension-template](https://github.com/compound-finance/comet-extension-template) contains all the boilerplate code that is needed to compile and deploy the smart contracts. The operator code is built on [Foundry](https://book.getfoundry.sh/)\n\nYou can also choose you choice of frameworks for creating and deploying the operator smart contracts.\n\n",
+      "name": "Operator",
+      "stepItems": [],
+      "uuid": "de22dff2-73fd-46c9-b3ea-91f455ff4fc5"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "d62bf03f"
+          ],
+          "choices": [
+            {
+              "content": "To deploy smart contracts on Compound III",
+              "key": "ba58e02e"
+            },
+            {
+              "content": "To extend the borrow position of Comet",
+              "key": "6afe9515"
+            },
+            {
+              "content": " To move a position from Compound II or other DeFi platforms",
+              "key": "d62bf03f"
+            },
+            {
+              "content": "To compile and deploy the smart contracts needed for Comet extensions.",
+              "key": "9d063b02"
+            }
+          ],
+          "content": "What is the purpose of the Comet Migrator Extension?",
+          "type": "SingleChoice",
+          "uuid": "d31c9679-cbc7-48ec-b34e-f9a522f21ac2"
+        }
+      ],
+      "uuid": "500d0d4d-3a54-4371-80a1-290773970395"
+    },
+    {
+      "content": "",
+      "name": "Your Info",
+      "stepItems": [
+        {
+          "label": "Nickname",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "caabf5cd-31ca-4f14-a955-a44043bd63cb"
+        }
+      ],
+      "uuid": "5c13563b-bf63-4431-aa8a-a10e07dfc874"
+    }
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/build_comet_extension.png",
+  "uuid": "build-comet-extension-compound"
+}

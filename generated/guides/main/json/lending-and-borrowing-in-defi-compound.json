@@ -1,0 +1,264 @@
+{
+  "categories": [],
+  "content": "Basics of how lending and borrowing works in DeFi",
+  "created": "2023-03-01T00:10:46.105Z",
+  "guideIntegrations": {
+    "discordRoleIds": []
+  },
+  "guideType": "onboarding",
+  "key": "lending-and-borrowing-in-defi-compound",
+  "name": "Lend & Borrow in DeFi ",
+  "publishStatus": "Live",
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "content": "\n## Lending\nLending involves permitting an individual or organization to utilize the resources of the lender. The lender receives compensation for their contribution in the form of interest. Lending helps to prevent the depreciation of asset values, particularly money, over time. While the returns on lending to banks are stable and fixed, they are typically very small.\n\n## Borrowing\nBorrowing involves receiving an item from another party with an agreement that the borrowed asset or an equivalent value will be returned at a specified time. The equivalent value put up against the loan is referred to as collateral. The objective of borrowing is to utilize an asset that is not currently available by providing something you already possess as security for repayment of the borrowed item. Obtaining a favorable loan offer from banks necessitates a strong credit score.\n\n## Advantages of Lending and borrowing\n1. Lending and borrowing facilitate the flow of resources from the people with surplus resources who do not have a use for them and people without a particular resource in necessary amounts. This trading of time value of assets benefits both the parties.\n2. Lending prevents the devaluation of money held by a person by generating value via interests.\n3. Lending ensures the circulation of resources held in surplus which otherwise would be locked up with one person/ entity and unusable.\n4. Lending and borrowing play a crucial role in the ecosystem of small businesses. Providing them with resources they otherwise would not have to sustain their business initially.\n",
+      "name": "Introduction",
+      "stepItems": [],
+      "uuid": "b6e7714a-4b6e-4073-afb2-5172d98b803f"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "add33f88"
+          ],
+          "choices": [
+            {
+              "content": "Permitting an individual or organization to utilize the resources of the lender in exchange for compensation",
+              "key": "add33f88"
+            },
+            {
+              "content": "Receiving an item from another party with an agreement to return it at a specified time",
+              "key": "d270a87b"
+            },
+            {
+              "content": "Providing something as security for repayment of a borrowed item",
+              "key": "32308d7b"
+            },
+            {
+              "content": "None of the above",
+              "key": "5a53077c"
+            }
+          ],
+          "content": "What is lending?",
+          "type": "SingleChoice",
+          "uuid": "9914baa1-f590-4558-b650-57a7a757533d"
+        },
+        {
+          "answerKeys": [
+            "9d906732"
+          ],
+          "choices": [
+            {
+              "content": "A surplus resource held by an individual or organization",
+              "key": "ec4aebf2"
+            },
+            {
+              "content": "Compensation received by the lender for their contribution",
+              "key": "9d906732"
+            },
+            {
+              "content": "An item provided as security for repayment of a borrowed item",
+              "key": "1200d2a6"
+            },
+            {
+              "content": "None of the above",
+              "key": "2ed1878a"
+            }
+          ],
+          "content": "What is collateral?",
+          "type": "SingleChoice",
+          "uuid": "852009b5-a713-441b-9878-d2d8072d5322"
+        }
+      ],
+      "uuid": "e802f3d8-eaf5-450f-a2fd-b218a5b01b8b"
+    },
+    {
+      "content": "The principle behind lending involves depositing money in banks, which are then used to provide loans to borrowers with interest rates. Lenders are compensated for their contribution through interest, and the difference in APR between lenders and borrowers is the bank's revenue.\n\nLending operates on a trust-based system, calculated by FICO scores, and involves multiple agreements and paperwork. Loans must be repaid with interest within a certain period, typically ranging from one to seven years. Various fees may apply, including application fees, processing fees, origination fees, annual fees, late fees, and prepayment fees.\n\nLending is heavily regulated, with regulatory bodies in place to protect consumers and stakeholders. Accountability is ensured, with assets unlikely to be locked without return. Banks also have well-developed supply chains, providing accessibility.\n\nHowever, there are also several disadvantages to lending. Banks spend significant amounts on fancy buildings and offices, and the workforce can be prone to inefficiency and burnout. The loan process can also be time-consuming, with a lot of paperwork involved.\n\nTransparency and returns are also issues. Banks do not disclose their profits and margins to the public, and the returns offered to lenders can be lower than other investment opportunities, potentially problematic given the higher profit margins for banks. Banks also run on marginal reserves, and if the banks go bankrupt, the governments often interfere and use tax payers money to try to handle the situation.Furthermore, the banking sector has lacked innovation, operating on the same principles for the last decade or so.\n",
+      "name": "TradFi - Lending and Borrowing",
+      "stepItems": [],
+      "uuid": "349cdb70-a1d9-47f7-9b22-7a4ede0a3d49"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "bac4f0c3"
+          ],
+          "choices": [
+            {
+              "content": "Through profits earned from investing in other businesses",
+              "key": "c360832b"
+            },
+            {
+              "content": "Through fees charged to borrowers",
+              "key": "40139fe2"
+            },
+            {
+              "content": "Through interest paid by borrowers on their loans",
+              "key": "bac4f0c3"
+            },
+            {
+              "content": "None of the above",
+              "key": "38562aa4"
+            }
+          ],
+          "content": "How do lenders earn compensation in lending?",
+          "type": "SingleChoice",
+          "uuid": "c5449c09-8c78-4c1c-954a-492f47784870"
+        },
+        {
+          "answerKeys": [
+            "a106dfcf"
+          ],
+          "choices": [
+            {
+              "content": "Lack of innovation and operating on the same principles for a long time",
+              "key": "5db34a1a"
+            },
+            {
+              "content": "Not disclosing profits and margins to the public",
+              "key": "842bfc7d"
+            },
+            {
+              "content": "Governments sometime using tax payer's money to handle bankruptcies",
+              "key": "8be56d79"
+            },
+            {
+              "content": "All of the above",
+              "key": "a106dfcf"
+            }
+          ],
+          "content": "What is/are the potential problem/s with the banking sector?\n",
+          "type": "SingleChoice",
+          "uuid": "51b73796-2887-4e7a-bf27-2bf00f1f97e9"
+        }
+      ],
+      "uuid": "454af48f-1b9b-4b91-bdde-0e4c6572c1ea"
+    },
+    {
+      "content": "## Smart Contracts\nSimilar to individuals, a smart contract in blockchain has a unique wallet address that serves as an account number. Lenders can send funds to the smart contract address, and borrowers can obtain loans from this address, provided they meet the conditions encoded in the smart contract. DeFi eliminates the need for a bank intermediary, as the lending and borrowing transactions are executed through the application code. The conditions for loan approval are strictly based on the rules set by the smart contract, independent of the borrower's identity. All lenders and borrowers are recorded on the blockchain, as are all transactions and associated fees.\n\nTrust is unnecessary in DeFi since all smart contract rules are publicly accessible, and anyone can verify positions, transactions, and fees. Additionally, any profits or losses generated by DeFi lending and borrowing applications are available in real-time on the blockchain.\n\n\n## Working\nA \"liquidity pool(s)\" is maintained by the protocol, where the assets (liquidity) of all lenders are combined. These pools may either be singular for the entire platform or divided based on asset types or other strategies. \n\nBorrowers request loans by providing collateral, with loans in DeFi usually being over collateralized. The platform ensures that the borrower's position remains healthy at all times. If the value of the collateral provided by the borrower falls below a certain threshold, the loan is liquidated, and the liquidated funds are sold to independent liquidators at a discounted price to guarantee immediate settlement. \n\nTransaction fees and liquidation fees may be added by the platform if the loan is liquidated. After any platform fees or interest deductions, the interest gained from borrowers is paid to the lenders. Platform fees are often quite low due to competition and transparency. In order to promote a particular side or the overall growth of the platform, the platform may choose to incentivize lenders, borrowers, or both.\n",
+      "name": "DeFi Lending and Borrowing",
+      "stepItems": [],
+      "uuid": "353ebf9a-ec76-4072-9530-299a64c4c816"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "059c2724"
+          ],
+          "choices": [
+            {
+              "content": "They are typically quite high, resulting in greater profits for the platform",
+              "key": "db807be6"
+            },
+            {
+              "content": "They are often quite low due to competition and transparency",
+              "key": "059c2724"
+            },
+            {
+              "content": "They are only added if the loan is liquidated",
+              "key": "383a11a0"
+            },
+            {
+              "content": "They are used to incentivize borrowers to take out risky loans",
+              "key": "b9071354"
+            }
+          ],
+          "content": "What is the benefit related fees in DeFi lending & borrowing as compared to TradFi?\n",
+          "type": "SingleChoice",
+          "uuid": "4734999a-2bb1-410f-b6fa-2ca4e10f9b72"
+        },
+        {
+          "answerKeys": [
+            "7ad86602"
+          ],
+          "choices": [
+            {
+              "content": "Platform sends a warning notification",
+              "key": "82b055dd"
+            },
+            {
+              "content": "The loan is cancelled, and the collateral is returned",
+              "key": "04b5ab80"
+            },
+            {
+              "content": "The loan is liquidated, and the liquidated funds are sold to independent liquidators at a discounted price",
+              "key": "7ad86602"
+            },
+            {
+              "content": "The platform blocks the user from doing anything",
+              "key": "fb14d64b"
+            }
+          ],
+          "content": "What is the consequence if the value of the collateral provided by a borrower falls below a certain threshold in DeFi lending?",
+          "type": "SingleChoice",
+          "uuid": "bbe6235a-690f-421d-8d15-2a83b239a586"
+        }
+      ],
+      "uuid": "dc3bb217-ffc3-43a6-b5d8-b35932aedbe6"
+    },
+    {
+      "content": "One of the key benefits of using DeFi lending and borrowing is the speed at which transactions can be carried out. Since the lending and borrowing rules are encoded into a Smart Contract using blockchain technology, there is no need for human interaction, and actions can be executed instantly. Furthermore, all DeFi platforms operate 24/7, making their services readily accessible.\n\nDeFi lending and borrowing also offers an open system, which eliminates the need for extensive assessments, paperwork, and other time-consuming procedures typically associated with loan applications. All that is required is a crypto wallet.\n\nAnother significant advantage of DeFi lending and borrowing is the immutability of blockchain technology. Because it is decentralized, data stored on the blockchain cannot be tampered with, resulting in full verifiability and reliability.\n",
+      "name": "Advantages of DeFi over TradFi",
+      "stepItems": [],
+      "uuid": "247ee881-4f73-42b7-bc5e-120e7f2c7210"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "d1330bf5"
+          ],
+          "choices": [
+            {
+              "content": "Tamper-proof data due to blockchain technology",
+              "key": "d1330bf5"
+            },
+            {
+              "content": "Low profit margins for lenders",
+              "key": "3308bec4"
+            },
+            {
+              "content": "Limited accessibility to loan services",
+              "key": "b782fe50"
+            },
+            {
+              "content": "Slow transaction processing times.",
+              "key": "e1c1e969"
+            }
+          ],
+          "content": "What is a significant advantage of using blockchain technology in DeFi lending and borrowing?",
+          "type": "SingleChoice",
+          "uuid": "839cb55a-e467-45de-83a5-f44282b28444"
+        }
+      ],
+      "uuid": "5f1f226f-9da3-4f50-b293-804e19d45417"
+    },
+    {
+      "content": "",
+      "name": "Your Info",
+      "stepItems": [
+        {
+          "label": "Nickname",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "5dfd3f5e-4d40-479a-8e0e-e1b272970528"
+        }
+      ],
+      "uuid": "88ba7785-6835-4b14-8afa-4e247efb3059"
+    }
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/lending_and_borrow_in_defi.png",
+  "uuid": "lending-and-borrowing-in-defi-compound"
+}

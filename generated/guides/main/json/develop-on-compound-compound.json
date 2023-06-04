@@ -1,0 +1,140 @@
+{
+  "categories": [],
+  "content": "For developers wishing to develop on Compound III",
+  "created": "2023-03-14T22:04:39.383Z",
+  "guideIntegrations": {
+    "discordRoleIds": []
+  },
+  "guideType": "course",
+  "key": "develop-on-compound-compound",
+  "name": "Develop on Compound",
+  "publishStatus": "Live",
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "content": "## Compound III\nCompound III is a specialized protocol that aims to achieve greater capital efficiency in DeFi by allowing users to supply volatile assets and borrow a single stable asset. This approach is intended to reduce gas costs and increase capital efficiency. The Compound III Smart Contracts or Coment repository uses a business source license, which Compound governance can grant usage to, as it sees fit, by making changes to compound-community-licenses.eth, a new ENS domain owned by the community.\n\n## Compound Grants Program (CGP)\nCompound is encouraging developers to collaborate and build on top of the new Compound III code base through the Compound Grants Program. This program is designed to promote composability and facilitate the development of new features and functionality related to Compound III. The primary objectives of the program are to expand Compound's grant program, delegate capital allocation to members of the community, and strengthen the builder community during bear market conditions.\n\n## CGP 2.0 Details\nCGP 2.0 is a specific program within the Compound Grants Program that focuses on getting the community to participate in the process of delegating capital allocation. The program disburses $800K (22087.24 COMP) through 4 domain allocators, who are experts in their specific domains and involved in the Compound community. Each domain allocator runs their respective grants program on-chain for full transparency using Questbook. The disbursement of the grant happens on-chain from a multi-sig wallet controlled by the program manager & the domain allocator. The program manager will coordinate with the compound community to ensure that the application is aligned with the Compound growth before signing the disbursal, while the domain allocator approves or rejects the application based on their evaluation.",
+      "name": "Introduction",
+      "stepItems": [],
+      "uuid": "afa31391-4f45-4d9a-a101-c4a381270913"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "84146335"
+          ],
+          "choices": [
+            {
+              "content": "To encourage developers to collaborate and build on top of the new Compound III code base.",
+              "key": "84146335"
+            },
+            {
+              "content": "To allow users to supply volatile assets and borrow a single stable asset.",
+              "key": "14d008df"
+            },
+            {
+              "content": "To reduce gas costs and increase capital efficiency.",
+              "key": "6ba80af4"
+            },
+            {
+              "content": "To strengthen the builder community during bear market conditions.",
+              "key": "074a7439"
+            }
+          ],
+          "content": "What is the main objective of the Compound Grants Program?",
+          "type": "SingleChoice",
+          "uuid": "6b21e44a-a3ab-41ca-b489-2900163c41c9"
+        },
+        {
+          "answerKeys": [
+            "34c918bf"
+          ],
+          "choices": [
+            {
+              "content": "Through a centralized authority",
+              "key": "221a5147"
+            },
+            {
+              "content": "Core team decides",
+              "key": "c6a923af"
+            },
+            {
+              "content": "Through 4 domain allocators who are experts in their specific domains",
+              "key": "34c918bf"
+            },
+            {
+              "content": "Through on-chain voting",
+              "key": "f7223565"
+            }
+          ],
+          "content": "How does CGP 2.0 allocate grants?\n",
+          "type": "SingleChoice",
+          "uuid": "3098fbc7-fc1a-43ed-869b-18bb629c2659"
+        }
+      ],
+      "uuid": "5547b3b4-edfc-4818-9da0-4b12a022a459"
+    },
+    {
+      "content": "These straightforward examples demonstrate the simplicity of working with Comet Smart Contracts for supplying and borrowing.\n\n## Supply\nThe below code block supplies WETH as collateral, approves Comet to move WETH collateral, sends initial supply to Compound, and then prints the current WETH collateral balance. It uses JavaScript to interact with the Comet protocol.\n\n\n```javascript\n    const provider = new ethers.providers.JsonRpcProvider(jsonRpcUrl);\n    const signer = provider.getSigner(me);\n    const comet = new ethers.Contract(cometAddress, cometAbi, signer);\n    const weth = new ethers.Contract(wethAddress, wethAbi, signer);\n    const wethMantissa = 1e18; // WETH and ETH have 18 decimal places\n\n    let tx = await weth.deposit({ value: ethers.utils.parseEther('10') });\n    await tx.wait(1);\n\n    console.log('\\tApproving Comet to move WETH collateral...');\n    tx = await weth.approve(cometAddress, ethers.constants.MaxUint256);\n    await tx.wait(1);\n\n    console.log('\\tSending initial supply to Compound...');\n    tx = await comet.supply(wethAddress, ethers.utils.parseEther('10'));\n    await tx.wait(1);\n\n    let collateralBalance = await comet.callStatic.collateralBalanceOf(me, wethAddress);\n    console.log('\\tMy current WETH collateral balance:', +collateralBalance.toString() / wethMantissa);\n```\n\n## Borrow\nThe below code borrows a specific amount of base assets from the Compound platform using JS. It starts by defining the user account, provider, and signer. It also sets up the contracts for Comet, WETH, and USDC. The user then deposits WETH collateral, approves Comet to move it, and supplies it to the Compound platform. After that, the user borrows a specified amount of USDC from Compound and checks their current balance of base assets.\n\n```javascript\n    const provider = new ethers.providers.JsonRpcProvider(jsonRpcUrl);\n    const signer = provider.getSigner(me);\n    const comet = new ethers.Contract(cometAddress, cometAbi, signer);\n    const weth = new ethers.Contract(wethAddress, wethAbi, signer);\n    const wethMantissa = 1e18; // WETH and ETH have 18 decimal places\n    const usdc = new ethers.Contract(baseAssetAddress, stdErc20Abi, signer);\n    const baseAssetMantissa = 1e6; // USDC has 6 decimal places\n\n    let tx = await weth.deposit({ value: ethers.utils.parseEther('10') });\n    await tx.wait(1);\n\n    console.log('\\tApproving Comet to move WETH collateral...');\n    tx = await weth.approve(cometAddress, ethers.constants.MaxUint256);\n    await tx.wait(1);\n\n    console.log('\\tSending initial WETH supply of collateral to Compound...');\n    tx = await comet.supply(wethAddress, ethers.utils.parseEther('10'));\n    await tx.wait(1);\n\n    // Accounts cannot hold a borrow smaller than baseBorrowMin (100 USDC).\n    const borrowSize = 1000;\n    console.log('\\tExecuting initial borrow of the base asset from Compound...');\n    console.log('\\tBorrow size:', borrowSize);\n\n    tx = await comet.withdraw(usdcAddress, (borrowSize * baseAssetMantissa).toString());\n    await tx.wait(1);\n\n    let bal = await usdc.callStatic.balanceOf(me);\n    console.log('\\tMy current base asset balance:', +bal.toString() / baseAssetMantissa);\n```",
+      "name": "Code Examples",
+      "stepItems": [],
+      "uuid": "7b4eccfc-3676-410d-9a11-65fc72f4f4ae"
+    },
+    {
+      "content": "The Compound team wants developers to collaborate in any capacity. Some of the many several ways to collaborate are:\n\n1. You can extend or update the Comet contracts.\n2. You can develop an analytics dashboard.\n3. You can create educational content, similar to this one.\n4. You can build applications on top of the Comet smart contracts.\n5. Alternatively, you can come up with your own idea - all ideas are welcome.\n\nTo get involved, please join the #development room in the Compound community Discord server and the forums at comp.xyz. Compound Labs and the community members are eager to help you build an application on top of Compound III. If you have any questions or can't find what you're looking for, don't hesitate to ask. Your feedback helps us improve.\n\nFor documentation on the Compound III Protocol, please visit https://docs.compound.finance.",
+      "name": "Next Steps",
+      "stepItems": [],
+      "uuid": "94940518-6e8f-4943-90a2-1e0ca11810e0"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "9901c845"
+          ],
+          "choices": [
+            {
+              "content": "They can extend or update the Comet contracts.",
+              "key": "6d0f1812"
+            },
+            {
+              "content": "They can create educational content, similar to this one.",
+              "key": "b822c539"
+            },
+            {
+              "content": "They can develop an analytics dashboard.",
+              "key": "c18586e6"
+            },
+            {
+              "content": "All of the above",
+              "key": "9901c845"
+            }
+          ],
+          "content": "What are some ways developers can collaborate with the Compound team?\n",
+          "type": "SingleChoice",
+          "uuid": "b0240027-3706-4a97-b253-70193908f9b2"
+        }
+      ],
+      "uuid": "aaafc153-4c35-4801-be92-a49c96f5ee10"
+    },
+    {
+      "content": "",
+      "name": "Your Info",
+      "stepItems": [
+        {
+          "label": "Nickname",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "bad7e1b7-9608-40c9-8078-f962a27d0695"
+        }
+      ],
+      "uuid": "13af5f76-40ff-4a7f-b37c-648de572d057"
+    }
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/developing_on_compound.png",
+  "uuid": "develop-on-compound-compound"
+}

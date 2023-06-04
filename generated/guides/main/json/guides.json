@@ -1,1 +1,10 @@
-[]
+[
+  "lending-and-borrowing-in-defi-compound.json",
+  "compound-working-internals-compound.json",
+  "compound-v2-vs-v3-compound.json",
+  "compound-governance-compound.json",
+  "comet-compound.json",
+  "build-comet-extension-compound.json",
+  "build-v3-liquidator-compound.json",
+  "develop-on-compound-compound.json"
+]

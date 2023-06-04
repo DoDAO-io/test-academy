@@ -1,0 +1,408 @@
+categories: []
+content: Explains the governance process of Compound
+created: '2023-02-16T17:57:43.244Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: onboarding
+key: compound-governance-compound
+name: Compound Governance
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: >-
+      The goal of Compound is to create a sturdy financial infrastructure for
+      developers and applications to rely on. To achieve this, the Compound
+      protocol must be fully decentralized, eliminating the risk of a single
+      point of failure (the team) and creating a robust, unbreakable system that
+      can grow in new directions. The Compound protocol has established a
+      governance structure that enables voters to make changes to the protocol
+      through proposals, discussions, and executions, all without relying on or
+      requiring a centralized team. Community governance takes the lead in this
+      system as the administrator of the Compound protocol.
+
+
+      With the help of the COMP token, governance module (Governor Bravo), and
+      Timelock, COMP token-holders govern and upgrade the Compound protocol.
+      These three components work together to provide the community with the
+      ability to propose, vote, and implement changes through the cToken's
+      administrative functions or the Comptroller. These proposals can change
+      system parameters, introduce new markets, or add new features to the
+      protocol.
+
+
+      This system guarantees that the Compound protocol remains adaptive to the
+      needs of its users and gives every COMP token holder a voice in
+      determining the direction of the platform. If you are seeking a lending
+      platform that places control in your hands, Compound is the perfect choice
+      for you.
+
+
+
+      This "Compound Governance" guide serves as a comprehensive guide for those
+      who want to contribute to the Compound DAO.  This document outlines the
+      different responsibilities, procedures, and opportunities for all parties
+      involved in the Compound DAO. It brings together essential information in
+      a single, easy-to-use source.
+    name: Introduction
+    stepItems: []
+    uuid: f649e4e9-8fac-46a9-bc41-eda744b0af79
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - B
+        choices:
+          - content: Management team   
+            key: A
+          - content: COMP token holders
+            key: B
+          - content: Developers
+            key: C
+          - content: Director
+            key: D
+        content: Who is responsible for compound governance?
+        type: SingleChoice
+        uuid: 2362c94d-b27e-4c0e-aeda-ba0cc3431773
+    uuid: a53e25ce-0f8e-4a5e-bae8-d2fb90001090
+  - content: >-
+      ## Compound Governor Proposals
+
+      Compound Governor Proposals are utilized to authorize various executions
+      of smart contracts, such as the adjustment of risk parameters,
+      distribution parameters, primary modular contracts, and administrative
+      functions (such as reducing reserves or transferring ERC-20 tokens).
+
+
+      The lifecycle of a Compound Governor Proposal involves three stages:
+
+
+      1. Idea stage: Post the proposal in the "Proposal" category on the
+      Compound Forum and provide enough information to demonstrate its impact on
+      Compound.
+
+      2. Community Feedback stage: Use the community's feedback to make any
+      necessary changes to the proposal.
+
+      3. Compound Governor stage: After the proposal is approved by the
+      community and has a high chance of success, it is recommended to move it
+      to an on-chain vote.
+
+
+      Any individual with more than 1% of COMP can propose a proposal to
+      Compound Governance. If they don't have enough COMP, they can request
+      someone else to post the proposal on their behalf. The Compound multisig
+      can also temporarily white-list proposers.
+
+
+      ## Compound Improvement Proposals
+
+      The Compound Improvement Proposals (CIPs) outline the standards,
+      procedures, and upgrades aimed at enhancing the governance protocol. Their
+      objective is to refine both on-chain and off-chain governance of the
+      Compound.
+
+
+      CIPs come in three different forms, each with its distinct methodology,
+      which are detailed below.
+
+
+      1. Meta Process: Any process to be introduced or altered that enhances the
+      coordination of Compound's governance, development, or community
+      initiatives.
+
+      2. Protocol Enhancement: This encompasses any alterations to the smart
+      contracts involved in the Compound Protocol and Governor.
+
+      3. Tooling & Support: This encompasses any new additions or modifications
+      to off-chain infrastructure, tools, documentation, or other supportive
+      components for the use of Compound Protocol.
+    name: Proposal Types
+    stepItems: []
+    uuid: 2272f649-aa1a-439d-82a5-e7d0123d79bc
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - B
+          - D
+        choices:
+          - content: Compound Management Proposals   
+            key: A
+          - content: Compound Governor Proposals
+            key: B
+          - content: Compound Developers Proposals
+            key: C
+          - content: Compound Improvement Proposals
+            key: D
+        content: Select the two correct proposal types in Compound Governance.  
+        type: MultipleChoice
+        uuid: c5c417a4-72d6-4e0f-9a68-58db503c91f5
+      - answerKeys:
+          - C
+        choices:
+          - content: Proposals that outline the standards, procedures, and upgrades aimed at enhancing the governance protocol
+            key: A
+          - content: Proposals that govern service providers
+            key: B
+          - content: Proposals that are used to approve different smart contract executions and administrative tasks.
+            key: C
+          - content: Proposals that are used to update the Compound DAO size.
+            key: D
+        content: Which of these types of proposals qualify for Compound Governor Proposals?
+        type: SingleChoice
+        uuid: abab5509-f8b7-4851-822b-f3d1c3fb11ae
+    uuid: d0e89a04-56e9-41e1-9ece-175de9f88c09
+  - content: >-
+      The authors of CIPs will initiate the process by conceiving an idea,
+      converting it into a CIP document, seeking a peer review, and then
+      undergoing an approval procedure with the Compound Working Group.
+
+
+      To initiate a review, the CIP document should be posted in the #governance
+      channel on Compound's Discord platform.
+
+
+      Potential ideas can be submitted as issues on a shared GitHub repository,
+      similar to Ethereum PM. CIPs can be drafted as pull requests and then
+      request for a review to be scheduled for discussion at the bi-weekly
+      Working Group meetings.
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-governance-compound/cip_appproval_process.png)
+
+
+
+      CIP editors will provide feedback on CIPs. If objections are raised during
+      its first meeting, the CIP must address the feedback and request another
+      review at a future meeting. If there are no objections or a majority of
+      editors support the CIP, it will be approved during its second meeting and
+      remain in the Last Call stage for 14 days before the implementation
+      process commences.
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-governance-compound/cip_implementation_process.png)
+
+
+
+      Once the Working Group approves a CIP, its implementation path will vary
+      based on its type:
+
+
+      1. Meta Process CIPs will be adopted officially through a majority Signal
+      vote by COMP holders without the need for a quorum.
+
+      2. Protocol Enhancements must pass through a Compound Governance vote,
+      just like any other change to the smart contract.
+
+      3. Other CIPs are left to the community to implement, which may include
+      funding approved by a Grant Committee or any other entity willing to
+      support them.
+
+
+      More Details about CIPs can be found
+      [here](https://github.com/compound-finance/cip-pm/pull/1/files)
+    name: CIP Lifecycle
+    stepItems: []
+    uuid: c745fdd3-c72b-4682-a151-eaa3400850fd
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - D
+        choices:
+          - content: Proposals that are used for governance changes
+            key: A
+          - content: Proposal that govern service providers
+            key: B
+          - content: Proposals that outline the standards, procedures, and upgrades aimed at enhancing the governance protocol
+            key: C
+          - content: Proposals that are used to approve different smart contract executions and administrative tasks.
+            key: D
+        content: Which of these types of proposals qualify for Compound Improvement Proposals?
+        type: SingleChoice
+        uuid: 05e49dc8-d160-4333-8d4b-3964391c8cbb
+      - answerKeys:
+          - B
+        choices:
+          - content: Authors of CIPs will initiate the process by conceiving an idea, converting it into a CIP document
+            key: A
+          - content: Organize a twitter spaces to collect feeback from broader DeFi comunity
+            key: B
+          - content: After the draft a peer review is the next step
+            key: C
+          - content: If objections are raised during its first meeting, the CIP must address the feedback and request another review at a future meeting
+            key: D
+        content: Which of these is not a valid step in Compound Improvement Proposal approval process?
+        type: SingleChoice
+        uuid: 0ffa07db-e12c-4176-8c5c-aadc406832f5
+    uuid: 271cd20f-8a81-4779-955b-c2d3a03a4b62
+  - content: >-
+      There are three main roles in the Compound governance process:
+
+
+      ### Delegates
+
+      Delegates have acquired voting power through delegation from other
+      community members or self-delegation. The addresses are ranked by voting
+      weight and only the top 100 delegates are displayed. Any individual
+      holding more than 1% of COMP is eligible to propose a governance action.
+
+
+      Becoming a delegate is open to everyone and does not require any
+      applications. Delegates can access their voting history by visiting their
+      profile.
+
+
+      ### Delegators
+
+      Delegators are community members who own COMP but have assigned their
+      voting power to another individual, referred to as a delegate.
+
+
+      ### Contributors
+
+      Contributors are members of the Compound DAO who actively contribute their
+      time and effort to the organization. They participate by developing on top
+      of the Compound Protocol or supporting the DAO through grants or
+      partnerships, all while working towards common goals.
+
+
+
+      In Compound DAO, there are no established working groups, and no templates
+      exist for creating such groups. Compound DAO has entered into service
+      provider agreements with Open Zeppelin and Gauntlet.
+
+
+      To streamline the process for individuals or teams to participate in the
+      DAO, a standardized "Service Provider" template should be established.
+    name: Governance Roles
+    stepItems: []
+    uuid: 27c079bd-e01c-4d05-9d09-e11d070cbc4f
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - A
+        choices:
+          - content: Director
+            key: A
+          - content: Delegates
+            key: B
+          - content: Delegators
+            key: C
+          - content: Contributors
+            key: D
+        content: Which of these is not a valid role in the Compound governance process?
+        type: SingleChoice
+        uuid: a61fd7c1-76ec-465b-9472-3c64c039e8af
+      - answerKeys:
+          - C
+        choices:
+          - content: Only the developing team can propose proposals
+            key: A
+          - content: Only the management team can propose governance actions
+            key: B
+          - content: Any individual holding more than 1% of COMP is eligible to propose a governance action
+            key: C
+          - content: An individual needs to be a director to propose governance actions
+            key: D
+        content: Which of these is a requirement to be able to propose a governance action?
+        type: SingleChoice
+        uuid: 44c9b36c-77b9-435e-bc5c-a800b3eda4e8
+    uuid: f3f1aabe-2797-4532-b5a7-6c0e844a2621
+  - content: >-
+      Compound DAO has two sources of funding:
+
+
+      ### 1. Direct funding through governance
+
+      - Service providers can enter into agreements with Compound DAO in
+      exchange for payment. This option is currently not frequently used within
+      Compound DAO, but it may become more prevalent in the future as service
+      providers become more common.
+
+      - Open Zeppelin serves as an example of a service provider for Compound
+      DAO.
+
+
+      ### 2. Compound Grants Program 2.0
+
+      - The Compound Grants Program focuses on four areas: Multichain strategy,
+      Developer Tooling, Security Tooling, and New Protocol Ideas & Dapps.
+      Applicants can apply directly for funding through the program.
+
+      - If your proposal does not fall within the specified domains, or if you
+      have any questions about the grants program, please reach out to the team
+      in the #grants channel on the Compound Discord.
+    name: Funding
+    stepItems: []
+    uuid: 9c8b2bb8-1256-4ae6-aeba-0bc246101334
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - D
+        choices:
+          - content: By selling their shares
+            key: A
+          - content: Donations from Voters
+            key: B
+          - content: Raising funds through VCs
+            key: C
+          - content: Other organizations or individuals can enter into Service providers agreements with Compound DAO in exchange for payment
+            key: D
+        content: How can other organizations get funding from Compound DAO?
+        type: SingleChoice
+        uuid: 0b030ae1-75a0-454a-94a0-ce9a1d42806b
+      - answerKeys:
+          - B
+        choices:
+          - content: Providing technical support and advice on Discord
+            key: A
+          - content: Finance initiatives, plans, and activities that benefit Compound and its stakeholders
+            key: B
+          - content: Create proposals for governance
+            key: C
+          - content: Delegate voting rights
+            key: D
+        content: What is the primary purpose of the Compound Grants Program?
+        type: SingleChoice
+        uuid: 422bca37-87fc-44bb-94bf-60ac9a988f9a
+    uuid: 80e53a38-13ea-4d29-b14a-a6997140b21e
+  - content: >
+      All protocol modifications in Compound DAO are executed through Compound
+      Governor. Proposals are actual executable code, not just suggestions for
+      the team or foundation to execute.
+
+
+      After a proposal has been submitted, it goes through a 3-day voting
+      period. For a proposal to be approved, it must receive a minimum of
+      400,000 votes and achieve a majority. Once the proposal has been approved,
+      it is immediately scheduled in the timelock and will be put into effect
+      after a 2-day waiting period.
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-governance-compound/voting.jpeg)
+    name: Voting
+    stepItems: []
+    uuid: 975f7417-1996-44d4-bed2-39c034f64c6c
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - A
+        choices:
+          - content: A proposal needs at least 400,000 votes and a majority in order to be approved
+            key: A
+          - content: A proposal needs at least 4000 votes and a majority in order to be approved
+            key: B
+          - content: A proposal needs at least 100,000 votes 
+            key: C
+          - content: Voting is not required to approve a proposal
+            key: D
+        content: What is a minimal vote requirement to achieve a majority for implementation?
+        type: SingleChoice
+        uuid: 5c257bc8-0ee6-4f40-9dbd-b7341ef0e854
+    uuid: 0cf5638d-512e-4875-aab3-858bf1d021c7
+thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_governance.png
+uuid: compound-governance-compound

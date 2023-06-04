@@ -1,0 +1,237 @@
+{
+  "categories": [],
+  "content": "Into to Comet smart contracts, deployments and configurator",
+  "created": "2023-03-08T15:38:33.982Z",
+  "guideIntegrations": {
+    "discordRoleIds": []
+  },
+  "guideType": "course",
+  "key": "comet-compound",
+  "name": "Comet Protocol",
+  "publishStatus": "Live",
+  "showIncorrectOnCompletion": true,
+  "steps": [
+    {
+      "content": "## Compound III Updates\nUpdates to Compound III can be suggested, but caution must be taken as changes may decrease the program's security. Developers should create tests to ensure that any modifications work properly and do not introduce vulnerabilities. To help ensure safety, companies such as OpenZeppelin, ChainSecurity, and Certora also offer support.\n\nTo make changes safely to Compound III, this guide provides detailed instructions on code-level updates and safety measures. The guide covers topics such as creating tests for new code, running tests to confirm functionality, and using GitHub Actions to aid in testing. It also outlines the program's architecture, how to make changes to it, and how to ensure changes are safe before integrating them into the program.\n\n## Architecture\nThe lending, borrowing, and market creation functions in Compound III are all contained within the \"comet\" smart contracts. \n\n#### Tests\nThe code base undergoes testing using various frameworks, including Solidity unit tests using Mocha.js written in JavaScript, and \"scenarios\" acting as integration tests.\n\n#### Configurator\nThe Configurator is a unique contract that manages all the settings for the Compound III protocol. As even minor changes can have significant consequences, caution must be exercised. Developers must write tests, scenarios, and migration scripts to make changes safely.\n\n#### Github Actions\nThe Compound III repository offers a range of Github Actions that developers can utilize. Some actions, such as testing, are executed automatically upon code commit, while others can be triggered via the Github UI, such as enacting migrations\n",
+      "name": "Introduction",
+      "stepItems": [],
+      "uuid": "3b2af085-1e55-4e13-8f79-9b858692916d"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "5af3ed81"
+          ],
+          "choices": [
+            {
+              "content": "To manage and apply all the updates for the Compound III protocol",
+              "key": "5af3ed81"
+            },
+            {
+              "content": "To contain the lending, borrowing, and market creation functions",
+              "key": "a27e8948"
+            },
+            {
+              "content": "To execute Github Actions automatically upon code commit",
+              "key": "0a090056"
+            },
+            {
+              "content": "To make it easy for developer to add solidity configurations",
+              "key": "e37de358"
+            }
+          ],
+          "content": "What is the purpose of the Configurator in Compound III?",
+          "type": "SingleChoice",
+          "uuid": "40ee6038-ff8f-494b-8567-d1c62b5ae545"
+        },
+        {
+          "answerKeys": [
+            "7bf4b819"
+          ],
+          "choices": [
+            {
+              "content": "Java unit tests using JUnit",
+              "key": "ec8ac03a"
+            },
+            {
+              "content": "Python unit tests using pytest",
+              "key": "be9be06c"
+            },
+            {
+              "content": "Unit tests using Mocha.js written in JavaScript",
+              "key": "7bf4b819"
+            },
+            {
+              "content": "Ruby unit tests using RSpec",
+              "key": "ee237ecd"
+            }
+          ],
+          "content": "Which testing frameworks are used to test the Compound III code base?",
+          "type": "SingleChoice",
+          "uuid": "f5a63411-4925-43b1-9e93-a8eec837e218"
+        }
+      ],
+      "uuid": "0c8ad38a-289e-4a77-8650-274daa258dc6"
+    },
+    {
+      "content": "## About Governor Bravo\nGovernor Bravo is a governance mechanism that facilitates incremental changes to infrastructure without causing disruption. It is administered by Compound Governance and allows users to provide a string explaining their vote along with their vote receipt. The governance process can be customized through adjustable parameters, such as voting period, voting delay, and proposal threshold, which eliminates the need for deploying new contracts to enable governance changes.\n\nIn case of an error, the proposer of a proposal has the option to cancel their proposal at any time. The admin, governed by the Compound timelock, manages the configurable parameters and implementation.\n\n## Compound III Updates\nUpdates to Compound III can be made through two methods:\n1. Configuration updates from Governor Bravo UI\n2. Code changes that utilize migration to generate a Governor Bravo proposal\n\nAlthough these methods have slightly different starting points, both culminate in a Governor Bravo Proposal, which is voted on by the community to determine whether the changes should be implemented.\n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/screenshot_2023-03-08%20at%2009.42.26.png)\n\n## Create proposal from Governor Bravo UI\nTo propose a governance proposal, an individual must have 1% of COMP delegated to their address. \n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/create_proposal.jpeg)\n\n\n## Update code and then create proposal\nThe process for updating the code and using the migration script to create a proposal that will implement those changes is outlined in the following steps.",
+      "name": "Governor Bravo - Proposals",
+      "stepItems": [],
+      "uuid": "d9acccfb-0962-4800-aee7-cb9d16494635"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "2ea6b9ce"
+          ],
+          "choices": [
+            {
+              "content": "A solidity library that governs the number of functions",
+              "key": "cf1dc692"
+            },
+            {
+              "content": "A governance framework that facilitates incremental changes to Compound III",
+              "key": "2ea6b9ce"
+            },
+            {
+              "content": "A testing framework for Solidity code",
+              "key": "0089e8ef"
+            },
+            {
+              "content": "Title of the person who manages all the governance updates ",
+              "key": "fc747d55"
+            }
+          ],
+          "content": "What is Governor Bravo?",
+          "type": "SingleChoice",
+          "uuid": "ca030224-5cc3-49e3-9399-0d6f3914c639"
+        },
+        {
+          "answerKeys": [
+            "f84e0fa6"
+          ],
+          "choices": [
+            {
+              "content": "10%",
+              "key": "6843d115"
+            },
+            {
+              "content": "5%",
+              "key": "8fcece7e"
+            },
+            {
+              "content": "1%",
+              "key": "f84e0fa6"
+            },
+            {
+              "content": "0.1%",
+              "key": "58c22f6a"
+            }
+          ],
+          "content": "How much COMP must be delegated to an individual's address to propose a governance proposal?",
+          "type": "SingleChoice",
+          "uuid": "1229a6b9-fd1e-4a68-a841-9f538ca5f5ee"
+        }
+      ],
+      "uuid": "5d009408-61e3-47f4-9368-f221bbab857a"
+    },
+    {
+      "content": "## Comet Contracts\nThe Comet protocol is made up of different contracts that work together to create a system for exchanging a digital asset called Comet.\n\nThe main contract, `Comet.sol`, is responsible for most of Comet's core functionalities. It uses another contract, `CometExt.sol`, for functions that don't fit within Comet.sol.\n\n`CometInterface.sol` is an abstract contract that contains all the functions and events for `Comet.sol` and `CometExt.sol` and is compatible with ERC-20.\n\nThe `Configurator` contracts manage Comet's configurations and deploy new implementations of Comet.\n\nThere are some supplementary contracts like `Bulker.sol`, which allows multiple Comet functions to be called in a single transaction, and CometRewards.sol, which allows users to claim rewards based on their protocol participation.\n\nFinally, there are Vendor contracts like `ConfiguratorProxy.sol` and `CometProxyAdmin.sol`, which inherit from OZ proxies and are used to deploy and upgrade Comet.\n\n## Scenario Tests\n\nScenarios are tests that check if Comet protocol is working correctly. To run these tests, you use a tool called Hardhat. You can run different scenarios against different versions of the Comet protocol. You can also change the number of workers, which can make the tests run faster.\n\nTo run the scenarios, Hardhat plugin is used. The command `npx hardhat scenario` is used to run the tests. You can also run scenarios against different versions of the Comet protocol using the `--bases` option. Additionally, the `--workers` option can be used to change the number of workers to speed up the testing process. Before we can run all the tests, we need to set some environment variables will be used to fetch existing data from supported blockchains.\n\n`npx hardhat scenario --bases development,goerli,fuji`\n\nTo add a new test, you create a new file in a folder called \"scenario\". You then write the test in the file using a programming language called TypeScript. The test checks that a specific feature of the Comet protocol works correctly.\n\nAll the steps are explained in detail [here](https://github.com/compound-finance/comet/blob/main/SCENARIO.md)\n\nSometimes, a scenario requires the most recent version of the Comet contract. In this case, you add a \"constraint\" to the scenario that says it needs to use the most recent version. This makes sure that the scenario can run on any network, even if some features are not available.",
+      "name": "Contracts and Tests",
+      "stepItems": [],
+      "uuid": "0743e67a-b458-4aab-b057-646ef4f96b44"
+    },
+    {
+      "content": "Migrations are scripts that are used to deploy or modify contracts in a systematic way. The purpose of migration scripts is to make sure that users can see potential changes that are run prior to creating a governance proposal. In other words, it's a way to prepare for governance changes by showing everyone what changes will be made to the code before actually implementing them.\n\nTo create a migration, you can use the command `yarn hardhat gen:migration` followed by the network and deployment options. There are two methods that needs to be implemented in a migration script: \n1. `prepare` - which creates artifacts like new on-chain contracts\n2. `enact` - which makes these artifacts current, such as upgrading the proxy to the address from the previous step.\n\n```javascript\nenact: async (deploymentManager: DeploymentManager) => {\n    const trace = deploymentManager.tracer();\n    const ethers = deploymentManager.hre.ethers;\n\n    const {\n      governor,\n      comet,\n      configurator,\n      cometAdmin,\n      WETH,\n    } = await deploymentManager.getContracts();\n\n    const actions = [\n      // 1. Increase supply cap for WETH\n      {\n        contract: configurator,\n        signature: \"updateAssetSupplyCap(address,address,uint128)\",\n        args: [comet.address, WETH.address, exp(150_000, 18)],\n      },\n\n      // 2. Deploy and upgrade to a new version of Comet\n      {\n        contract: cometAdmin,\n        signature: \"deployAndUpgradeTo(address,address)\",\n        args: [configurator.address, comet.address],\n      },\n    ];\n    const description = \"# Increase WETH Supply Cap in cUSDCv3\\n\"\n    const txn = await deploymentManager.retry(\n      async () => trace((await governor.propose(...await proposal(actions, description))))\n    );\n\n    const event = txn.events.find(event => event.event === 'ProposalCreated');\n    const [proposalId] = event.args;\n\n    trace(`Created proposal ${proposalId}.`);\n  }\n```\n\nYou can run a migration locally using `yarn hardhat migrate` and specifying the network, deployment, and whether to prepare or enact the migration. You can also simulate either of the previous steps without actually modifying the on-chain state.\n\nIf you look carefully you will see the following line towards end of `enact` function, that creates the Governor Bravo proposal\n\n`await governor.propose(...await proposal(actions, description))`\n\n\nThe preferred way to run a migration is in GitHub, via manual workflow dispatch, which allows everyone to see the exact code that was deployed or run. After preparation, a migration stores some artifacts which can be loaded and referenced in the enact step of that migration.\n\nOnce a migration has been created, the next step is to create a pull request on GitHub and get it reviewed, approved, and enacted before merging it. If the migration creates a governance proposal on-chain, then wait until the proposal either executes or fails before merging the pull request.",
+      "name": "Migrations",
+      "stepItems": [],
+      "uuid": "73a81735-14c4-426c-8bd8-950b6e0a2bbf"
+    },
+    {
+      "content": "",
+      "name": "Evaluation",
+      "stepItems": [
+        {
+          "answerKeys": [
+            "9dadc7e0"
+          ],
+          "choices": [
+            {
+              "content": "To make DB updates",
+              "key": "62ea6f61"
+            },
+            {
+              "content": "To make sure that package.json version is updated properly upon deployment",
+              "key": "6e6bd143"
+            },
+            {
+              "content": "To make sure that users can see potential changes that are run prior to creating a governance proposal",
+              "key": "9dadc7e0"
+            },
+            {
+              "content": "Migrate data from testnet to mainnet",
+              "key": "6175f6dd"
+            }
+          ],
+          "content": "What is the purpose of migration scripts in contract deployment?",
+          "type": "SingleChoice",
+          "uuid": "a90c1041-96c3-4074-893f-b50e95f44cc8"
+        },
+        {
+          "answerKeys": [
+            "8ef1e80a"
+          ],
+          "choices": [
+            {
+              "content": "Propose and enact",
+              "key": "5fd5a532"
+            },
+            {
+              "content": "Prepare and enact",
+              "key": "8ef1e80a"
+            },
+            {
+              "content": "Deploy and update",
+              "key": "1c7cf8cd"
+            },
+            {
+              "content": "Upgrade and review",
+              "key": "7904d3c4"
+            }
+          ],
+          "content": "What are the two methods that must be implemented in a migration script?",
+          "type": "SingleChoice",
+          "uuid": "26b97a55-7b09-49eb-a45a-1cb87cf7c97e"
+        }
+      ],
+      "uuid": "5184b94a-c51c-4925-ad5e-f4edfb12fea4"
+    },
+    {
+      "content": "## Enable Workflows and Add Secrets\nAfter we update the code and add the tests, the first thing we need to do is run our scenarios in our CI workflow. To do this, we need to commit our code and push it to GitHub. For the forked comet repo we need to first enable the workflows. The workflows in the forked repository run independently from the official repository.\n\nWe will also need to add the same environment variables as Actions secrets in the repository.\n\nAfter adding all the keys, we can run the workflows in our fork. It's a good idea to run tests in our fork CI before opening a pull request on the official Comet repository. If our branch is up to date, all passing tests in the fork CI will result in passing tests in the pull request to main.\n\n## Run workflow\nWe can click the Actions tab in forked github repo and select the Run Scenarios workflow on the left. We click the Run workflow button on the right, select our branch in the dropdown menu, and then click the green Run workflow button. It will take several minutes to run. \n\n![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/comet-compound/comet_workflow.png)\n\nAfter you execute the enact action, it will create a Governor Bravo Proposal which can be voted upon by the community.  ",
+      "name": "Github Actions",
+      "stepItems": [],
+      "uuid": "20bda8f8-ca1a-4bc8-bdde-815d71401f36"
+    },
+    {
+      "content": "",
+      "name": "Your Info",
+      "stepItems": [
+        {
+          "label": "Nickname",
+          "required": true,
+          "type": "PublicShortInput",
+          "uuid": "8318dbcb-7530-4654-ab51-710ff0a44567"
+        }
+      ],
+      "uuid": "cba7af6a-5dad-489b-9ba7-c7ba97004166"
+    }
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_comet.png",
+  "uuid": "comet-compound"
+}

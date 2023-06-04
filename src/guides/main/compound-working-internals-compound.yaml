@@ -1,0 +1,279 @@
+categories: []
+content: Explains how compound works, how interest rates are calculated
+created: '2023-03-08T17:42:50.612Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: onboarding
+key: compound-working-internals-compound
+name: Compound - Internals
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: >+
+      To achieve greater capital efficiency, including reduced gas costs,
+      Compound III allows users to supply volatile crypto assets and borrow a
+      single asset(often a stable coin). 
+
+
+      This approach is in contrast to the current trend in DeFi where most
+      borrowing involves supplying volatile crypto assets and borrowing a single
+      borrowable base token. Compound III offers more value by providing
+      fine-grained access controls for managing accounts, internalizing
+      liquidation and profits, and optimizing for common usage with crypto
+      collateral and borrows. 
+
+
+      Interest is earned by users who have a positive balance of the base asset,
+      and it's denominated in the base asset. The interest rate is determined by
+      a supply rate model, which is set by governance. On the other hand, users
+      with a negative balance of the base asset have to pay interest based on a
+      borrow rate model, which is also set by governance. These are two separate
+      interest rate models.
+
+
+      The supply and borrow interest rates are determined by the utilization
+      rate of the base asset. Each model has a utilization rate "kink" above
+      which the interest rate increases more rapidly. Interest is calculated
+      every second using the block timestamp. Collateral assets, however, do not
+      earn or pay interest.
+
+    name: Introduction
+    stepItems: []
+    uuid: 4bf5a6e0-7305-4fdc-aa05-e26ebd07ff90
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 5c77143b
+        choices:
+          - content: It is denominated by borrow rate of the banks
+            key: 680976c4
+          - content: It is determined by a borrow rate model
+            key: 5c77143b
+          - content: It is set by governance and is static
+            key: e1e0cc50
+          - content: ' It is determined for all the users at the time of market creation'
+            key: 2d9a16e8
+        content: >-
+          How is the interest rate determined for users who have a positive
+          balance of the base asset?
+        type: SingleChoice
+        uuid: 9adee371-52b6-4fbc-9281-879f5dcac873
+      - answerKeys:
+          - bffd70e3
+        choices:
+          - content: They remain constant regardless of the utilization rate
+            key: db2dfeb9
+          - content: They decrease as the utilization rate increases.
+            key: 21868ece
+          - content: They increase more rapidly above a certain utilization rate "kink"
+            key: bffd70e3
+        content: >
+          How are the supply and borrow interest rates affected by the
+          utilization rate of the base asset?
+        type: SingleChoice
+        uuid: 7a178fb1-e553-4e44-9aaf-bb4ebd948742
+    uuid: 235cff2f-9906-414c-9105-69488cad2e98
+  - content: >-
+      The most significant configuration variables for Compound III that impact
+      the lend and borrow rates are as follows:
+
+
+      `utilization` - The formula for producing the utilization is: `Utilization
+      = TotalBorrows / TotalSupply`
+
+
+      `supplyKink` - This represents the point in the supply rates where the low
+      interest rate slope meets the high interest rate slope, and is measured in
+      factors.
+
+
+      `borrowKink` - This represents the point in the borrow rate where the low
+      interest rate slope meets the high interest rate slope, and is measured in
+      factors.
+
+
+      `supplyPerSecondInterestRateBase` - This is the base interest rate for
+      supply per second, measured in factors.
+
+
+      `supplyPerSecondInterestRateSlopeLow` - This is the interest rate slope
+      for supply per second when the utilization is below the kink point,
+      measured in factors.
+
+
+      `supplyPerSecondInterestRateSlopeHigh` - This is the interest rate slope
+      for supply per second when the utilization is above the kink point,
+      measured in factors.
+
+
+      `borrowPerSecondInterestRateSlopeLow` - This is the interest rate slope
+      for borrow per second when the utilization is below the kink point,
+      measured in factors.
+
+
+      `borrowPerSecondInterestRateSlopeHigh` - This is the interest rate slope
+      for borrow per second when the utilization is above the kink point,
+      measured in factors.
+
+
+      `borrowPerSecondInterestRateBase` - This is the base interest rate for
+      borrow per second, measured in factors.
+    name: Variables
+    stepItems: []
+    uuid: 942bd251-c524-4526-a23a-d7b4f87063e9
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 25ea2b61
+        choices:
+          - content: Utilization = TotalBorrows / TotalSupply
+            key: 25ea2b61
+          - content: >-
+              Utilization = supplyPerSecondInterestRateSlopeHigh /
+              borrowPerSecondInterestRateSlopeHigh
+            key: ff4d9ebf
+          - content: Utilization = supplyKink / borrowKink
+            key: 8e0932c5
+          - content: >-
+              Utilization = borrowPerSecondInterestRateBase /
+              supplyPerSecondInterestRateBase
+            key: d1527b12
+        content: How is the utilization of Compound III calculated?
+        type: SingleChoice
+        uuid: 3c0fa7cc-4ef0-4f69-809e-6d6a11ec4b76
+      - answerKeys:
+          - be858115
+        choices:
+          - content: It determines the base interest rate for supply per second
+            key: '69805950'
+          - content: >-
+              It represents the point where the low interest rate slope meets
+              the high interest rate slope for supply rates
+            key: d3413a49
+          - content: It calculates the utilization of Compound III
+            key: 84c36780
+          - content: ' It determines the interest rate slope for supply per second when the utilization is above the kink point'
+            key: be858115
+        content: What is the purpose of the supplyKink variable in Compound III?
+        type: SingleChoice
+        uuid: 704f2602-cba8-4677-9093-731cb4d80d13
+    uuid: bbf6073b-9740-4420-ba5b-767432170b3f
+  - content: >-
+      The interest rates for supply and borrow can be calculated using the
+      following formulas:
+
+
+      ### Supply Rate:
+
+
+      * When utilization is less than or equal to the supplyKink:
+
+        `supply rate = interestRateBase + interestRateSlopeLow * utilization`
+      * When utilization is greater than the supplyKink:
+
+        `supply rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`
+
+      ### Borrow Rate:
+
+      * When utilization is less than or equal to the borrowKink:
+
+        `borrow rate = interestRateBase + interestRateSlopeLow * utilization`
+      * When utilization is greater than the borrowKink:
+
+        `borrow rate = interestRateBase + interestRateSlopeLow * kink + interestRateSlopeHigh * (utilization - kink)`
+    name: Calculations
+    stepItems: []
+    uuid: 6d22ede4-3bfa-4165-9b4f-da454a60ee3b
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 5d4143ff
+        choices:
+          - content: >-
+              supply rate = interestRateBase + interestRateSlopeLow *
+              utilization
+            key: fcc0bc1a
+          - content: supply rate = interestRateBase + interestRateSlopeLow * kink
+            key: d0f202ca
+          - content: >-
+              supply rate = interestRateBase + interestRateSlopeHigh *
+              (utilization - kink)
+            key: 5d4143ff
+          - content: ' None of the above'
+            key: 6f4a4ec0
+        content: >-
+          What is the formula for calculating supply rate when utilization is
+          greater than the supplyKink?
+        type: SingleChoice
+        uuid: 591f18f4-c9ab-4d90-911a-9cff20d9f1b5
+      - answerKeys:
+          - 776f8728
+        choices:
+          - content: >-
+              borrow rate = interestRateBase + interestRateSlopeLow *
+              utilization
+            key: 776f8728
+          - content: ' borrow rate = interestRateBase + interestRateSlopeLow * kink'
+            key: fbe16fa9
+          - content: >-
+              borrow rate = interestRateBase + interestRateSlopeHigh *
+              (utilization - kink)
+            key: 452c9333
+          - content: None of the above
+            key: 9f28a66b
+        content: >-
+          What is the formula for calculating borrow rate when utilization is
+          less than or equal to the borrowKink?
+        type: SingleChoice
+        uuid: 27e2e0d6-9ccb-47df-b967-354d6c4f02c9
+    uuid: 2e027542-1065-4a31-941b-c97907fb4151
+  - content: >
+      The initialization of variables that affect the calculation of borrow and
+      supply rates occurs when a market is deployed on a blockchain. These
+      variables can be modified through governance proposals even after the
+      market has been created and deployed. The text below illustrates some of
+      these variables.
+
+
+      ```
+
+      borrowKink = 900000000000000000
+
+      borrowPerSecondInterestRateBase = 157680000
+
+      borrowPerSecondInterestRateSlopeHigh = 19552320000
+
+      borrowPerSecondInterestRateSlopeLow = 1639871893
+
+
+      supplyKink = 900000000000000000
+
+      supplyPerSecondInterestRateBase = 0
+
+      supplyPerSecondInterestRateSlopeHigh = 9460800000
+
+      supplyPerSecondInterestRateSlopeLow = 1356048000
+
+      ```
+
+      Based on these variables we can plot how the borrow and interest rates
+      look like with utilization.
+
+
+      ![](https://d31h13bdjwgzxs.cloudfront.net/academy/compound-eth-1/Guide/compound-working-internals-compound/compund_3_eth_3.jpeg)
+    name: Market Updates
+    stepItems: []
+    uuid: 00007ae1-2e33-43a0-ab40-b8d9bd635fa7
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: 53e90f0b-5b5e-42bb-8b82-efd0ed37bc96
+    uuid: 78cc0350-523a-41ed-b002-26a267b5ae64
+thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/how_compound_works.png
+uuid: compound-working-internals-compound

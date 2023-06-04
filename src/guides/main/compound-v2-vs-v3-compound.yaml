@@ -1,0 +1,199 @@
+categories: []
+content: Differences in V2 and V3. How markets are structured in each
+created: '2023-03-01T15:07:18.683Z'
+guideIntegrations:
+  discordRoleIds: []
+guideType: course
+key: compound-v2-vs-v3-compound
+name: Compound V2 vs V3
+publishStatus: Live
+showIncorrectOnCompletion: true
+steps:
+  - content: >-
+      Compound III is a refined version of the protocol that prioritizes
+      security, capital efficiency, and user experience. Its design focuses on
+      simplification rather than complexity, resulting in the most effective
+      borrowing tool in DeFi.
+
+
+      The most significant improvement was moving away from the pooled-risk
+      model, which allowed users to borrow any asset but constantly
+      rehypothecated collateral. This model was vulnerable to a single bad asset
+      or oracle update draining all assets from the protocol.
+
+
+      In Compound III, each market deployment offers a single borrowable asset,
+      and the supplied collateral remains the property of the borrower, except
+      during liquidation. This new approach increases capital efficiency and
+      reduces risk since the collateral is more "useful" when the borrower knows
+      the specific asset being borrowed in advance.
+
+
+      The first release of Compound III allows borrowing of USDC using ETH,
+      WBTC, LINK, UNI, and COMP as collateral. Although borrowers will not earn
+      interest on their collateral, they will be able to borrow more with lower
+      risks of liquidation and penalties while spending less on gas fees.
+
+
+      wETH market is also live now, with `Coinbase Wrapped Staked ETH(cbETH)`
+      and `Lido Staked ETH(stETH)` as collateral.
+
+
+      The repository uses a business source license, which Compound governance
+      can grant usage to, as it sees fit.
+    name: Compound V3 Launch
+    stepItems: []
+    uuid: b23ec5de-91ab-41ab-b251-a08dfdb50b73
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - 694cbeb5
+        choices:
+          - content: Complexity
+            key: 7cdaa480
+          - content: ' Security, capital efficiency, and user experience'
+            key: 694cbeb5
+          - content: KYC/AML
+            key: a100b661
+          - content: Support at least top 200 assets
+            key: bf6a5ce5
+        content: What is the focus of Compound III's design?
+        type: SingleChoice
+        uuid: 8e6b0596-c2cd-470d-aa2e-63743835cbc3
+      - answerKeys:
+          - 38f54060
+        choices:
+          - content: Borrowers couldn't earn interest on their collateral.
+            key: eab83ed4
+          - content: >-
+              The collateral remained the property of the borrower, except
+              during liquidation.
+            key: 8f9740f9
+          - content: The model was vulnerable to a single bad asset or oracle update.
+            key: 38f54060
+          - content: Borrowers could borrow any asset without collateral.
+            key: 16074dca
+        content: >
+          What was the problem with the pooled-risk model in the previous
+          protocol?
+        type: SingleChoice
+        uuid: e7ebf5d0-0e17-447e-b90d-8a7946a95332
+    uuid: 34362683-228d-4373-80d9-646234dd40e6
+  - content: >+
+      ## New Features of Compound V3
+
+      The major changes to the existing protocol in Compound III can be
+      summarized as follows:
+
+
+      1. Each Compound III deployment features a single interest-earning base
+      asset, with all other assets serving as collateral. This simplifies the
+      protocol, reduces risk, and potentially improves capital efficiency.
+
+      2. Collateral size limits, or supply caps, can be set for each collateral
+      asset.
+
+      3. Borrowing collateral factors and liquidation collateral factors are
+      separate, protecting borrowers from early liquidation and improving risk
+      management.
+
+      4. The risk management and liquidation engine has been redesigned to
+      increase the safety of the protocol while maintaining liquidator
+      incentives.
+
+      5. The price feed is designed to use Chainlink directly, without requiring
+      a custom price oracle, making it portable to EVM chains beyond Ethereum.
+      Governance retains the ability to modify this decision in the future.
+
+      6. Supply and borrow interest rate models can be decoupled, giving
+      governance full control over economic policy.
+
+      7. Advanced account management tools enable new user experience patterns
+      and applications to be built on top of the protocol.
+
+      8. An abstract incentive metric is natively built into the core contract
+      to reward user activity from the protocol's inception. A rewards system is
+      also added on top to provide flexible incentives that can be extended by
+      governance.
+
+      9. A code repository includes sophisticated tooling for managing and
+      testing deployments, based on years of experience and feedback from prior
+      versions of the protocol.
+
+
+
+    name: Features and Advantages of V3
+    stepItems: []
+    uuid: cc1dc11a-5ff4-4f68-a130-6948bb4925f7
+  - content: ''
+    name: Evaluation
+    stepItems:
+      - answerKeys:
+          - fa5765af
+        choices:
+          - content: Reduced risk, and potentially improved capital efficiency
+            key: fa5765af
+          - content: Allows for unlimited borrowing
+            key: 17b0b207
+          - content: Eliminates the need for collateral
+            key: '09344250'
+          - content: Minimal risk of liquidation
+            key: d15e53e2
+        content: >-
+          What is the major benefit of each Compound III deployment featuring a
+          single interest-earning base asset?
+        type: SingleChoice
+        uuid: 8581f58c-17eb-4e5f-90bb-2607e0546bf5
+      - answerKeys:
+          - 24a5591e
+        choices:
+          - content: They are no longer used in the protocol.
+            key: c8537322
+          - content: They have been combined into a single factor for simplicity
+            key: 1afcd875
+          - content: >-
+              They are now separate, protecting liquidators from taking too much
+              collateral
+            key: 8a10524d
+          - content: They are now separate, protecting borrowers from early liquidation
+            key: 24a5591e
+        content: >-
+          How have borrowing collateral factors and liquidation collateral
+          factors been separated in Compound III?
+        type: SingleChoice
+        uuid: 9d13ab93-3bad-4b70-960b-07feacc1c68d
+    uuid: 4ad4e3ff-db1f-4f98-b1f6-1ab6e586e2bb
+  - content: >-
+
+
+      | Compound II | Compound III |
+
+      | - | - |
+
+      | Uses pools for assets with no separation  | Each market has a base
+      asset  and no assets are shared between the markets |
+
+      | There is a single deployment of the protocol contracts on a blockchain |
+      Each market is a separate instance of new Comet contracts|
+
+      | Risk Level of some hack draining all the funds is relatively high | Risk
+      Level of some hack draining all the funds is relatively low as the markets
+      are completely isolated |
+
+      | Lender earns interest on all the assets that lent to the protocol | Only
+      the base asset earns interest, while all other assets in the market act as
+      collateral |
+    name: V2 vs V3
+    stepItems: []
+    uuid: f567a39f-c03d-49e2-a461-8984635cc353
+  - content: ''
+    name: Your Info
+    stepItems:
+      - label: Nickname
+        required: true
+        type: PublicShortInput
+        uuid: 0dd3779b-c79b-4c37-934a-498e7f5ec6ea
+    uuid: e680fb01-8f87-4c59-97f9-e8d030c34043
+thumbnail: https://d31h13bdjwgzxs.cloudfront.net/academy/compound/compound_v2_v3.png
+uuid: compound-v2-vs-v3-compound
