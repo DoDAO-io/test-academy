@@ -1,0 +1,37 @@
+content: This is a test byte.
+id: test-byte-the-test-academy
+name: Test Byte
+steps:
+  - content: |-
+
+      Introduction Comments 
+              
+    name: Introduction
+    stepItems: []
+    uuid: 4d7fdc53-a43e-4127-8438-70263d7e5496
+  - content: ''
+    name: Introduction Evaluation
+    stepItems:
+      - type: MultipleChoice
+        uuid: b92da70f-b16a-4389-a9c7-407200b66349
+        answerKeys:
+          - dog_or_cat
+          - only_dog
+          - only_cat
+        choices:
+          - content: Dog And Cat
+            key: dog_and_cat
+          - content: Dog Or Cat
+            key: dog_or_cat
+          - content: Only Dog
+            key: only_dog
+          - content: Only Cat
+            key: only_cat
+        content: What is the best pet?
+        explanation: This is the explanation
+    uuid: 608eb0f7-2396-449f-9bb4-8d3656faf1de
+publishStatus: Live
+admins: []
+tags: []
+priority: 0
+created: '2023-06-08T02:31:20.876Z'
