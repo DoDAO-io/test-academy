@@ -1,0 +1,75 @@
+{
+  "uniqueId": "860ca2e7-030e-4cf0-b722-22889351a620",
+  "id": "microsoft-founders-hub-benefits-the-test-academy",
+  "name": "Microsoft Founders Hub Benefits",
+  "content": "What is Microsoft founders hub and its benefits",
+  "created": "2023-06-16T19:11:01.130Z",
+  "visibility": "Public",
+  "publishStatus": "Live",
+  "admins": [],
+  "tags": [],
+  "priority": 0,
+  "steps": [
+    {
+      "name": "Introduction",
+      "uuid": "effa4118-2ade-4ce0-911d-55e032d1b2f5",
+      "content": "Microsoft for Startups Founders Hub is a program offered by Microsoft to help early-stage startups succeed. It provides a range of benefits that grow with your company as it grows.",
+      "stepItems": []
+    },
+    {
+      "name": "Azure Cloud Credits",
+      "uuid": "1c19f262-5119-456e-902f-a3a44f6b3a3d",
+      "content": "One of the main benefits of the Microsoft Founders Hub is access to Azure cloud credits. These credits allow startups to build their product in the cloud without the need for significant upfront investment.",
+      "stepItems": []
+    },
+    {
+      "name": "GitHub Enterprise",
+      "uuid": "7ab524e8-6ef1-4cc5-b2a1-e684685e233c",
+      "content": "The program also offers access to GitHub Enterprise, a development platform that allows startup teams to collaborate and automate workflows. This benefit is particularly popular among startups.",
+      "stepItems": []
+    },
+    {
+      "name": "LinkedIn Products",
+      "uuid": "b1c11752-b441-4aae-ad3b-d9062c7a1075",
+      "content": "Startups can also leverage LinkedIn products for recruitment and lead generation. This includes access to four LinkedIn products that can help startups find talent, customers, and network with peers.",
+      "stepItems": []
+    },
+    {
+      "name": "Microsoft 365",
+      "uuid": "c1e3e76c-356a-443f-8b94-edb5d55169e9",
+      "content": "Microsoft for Startups Founders Hub provides free access to Microsoft 365, formerly known as Office 365. This includes tools like Teams, Outlook, Excel, and PowerPoint, which can help startups save time and money on productivity and collaboration.",
+      "stepItems": []
+    },
+    {
+      "name": "Microsoft Clarity",
+      "uuid": "fdb92d5b-2c23-4a97-9526-081639da0f11",
+      "content": "The program also includes Microsoft Clarity, a tool that helps startups understand user behavior and improve their website. It provides heatmaps, session recordings, and behavioral insights to identify areas for improvement.",
+      "stepItems": []
+    },
+    {
+      "name": "Trusted Partners",
+      "uuid": "bbe1f1a8-cfb4-411c-b826-1876eed5ebfd",
+      "content": "In addition to these benefits, Microsoft for Startups Founders Hub partners with trusted companies to offer exclusive discounts and offers to its members. This includes companies like OpenAI, Bubble, Ansarada, and Drata.",
+      "stepItems": []
+    },
+    {
+      "name": "Expert Network",
+      "uuid": "0ac37336-591e-4b10-a34f-251cebb32f33",
+      "content": "The program also provides access to a network of experts who can provide one-on-one guidance and support on various topics, from idea validation to fundraising and networking.",
+      "stepItems": []
+    },
+    {
+      "name": "Training Paths",
+      "uuid": "683e2fb9-879f-412f-ad7d-97f7b495f910",
+      "content": "Microsoft for Startups Founders Hub offers tailored training paths for founders to help them expand their core skillset and learn more about running a business, building a team, and attracting investors and customers.",
+      "stepItems": []
+    },
+    {
+      "name": "Technical Advisory",
+      "uuid": "f2500057-4fab-473f-a67f-a0a2c810b2e1",
+      "content": "As startups scale, they can also access technical advisory sessions that provide personalized build recommendations and best practices for building on Azure.",
+      "stepItems": []
+    }
+  ],
+  "spaceId": "test-academy-eth"
+}
