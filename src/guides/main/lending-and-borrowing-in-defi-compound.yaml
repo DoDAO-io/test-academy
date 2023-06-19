@@ -1,8 +1,6 @@
 categories: []
 content: Basics of how lending and borrowing works in DeFi
-created: '2023-03-01T00:10:46.105Z'
-guideIntegrations:
-  discordRoleIds: []
+created: '2023-06-19T19:19:04.011Z'
 guideType: onboarding
 key: lending-and-borrowing-in-defi-compound
 name: 'Lend & Borrow in DeFi '
@@ -300,3 +298,4 @@ steps:
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/academy/compound/lending_and_borrow_in_defi.png
 uuid: lending-and-borrowing-in-defi-compound
+version: 1
