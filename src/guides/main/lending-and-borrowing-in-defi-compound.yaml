@@ -1,6 +1,6 @@
 categories: []
 content: Basics of how lending and borrowing works in DeFi
-created: '2023-06-19T19:19:04.011Z'
+created: '2023-06-30T20:31:01.097Z'
 guideType: onboarding
 key: lending-and-borrowing-in-defi-compound
 name: 'Lend & Borrow in DeFi '
@@ -47,7 +47,85 @@ steps:
       businesses. Providing them with resources they otherwise would not have to
       sustain their business initially.
     name: Introduction
-    stepItems: []
+    stepItems:
+      - answerKeys:
+          - B
+        choices:
+          - content: >-
+              Receiving an item from another party with an agreement to return
+              it at a specified time
+            key: A
+          - content: >-
+              Permitting an individual or organization to utilize the resources
+              of the lender and receiving compensation in the form of interest
+            key: B
+          - content: >-
+              Trading resources between people with surplus resources and people
+              without a particular resource
+            key: C
+          - content: >-
+              Preventing the devaluation of money held by a person by generating
+              value via interests
+            key: D
+        content: What is lending?
+        type: SingleChoice
+        uuid: a525a3d5-5e30-4a78-851b-6f6ed1fdb04c
+        explanation: >-
+          Lending involves permitting an individual or organization to utilize
+          the resources of the lender and receiving compensation in the form of
+          interest.
+      - answerKeys:
+          - A
+        choices:
+          - content: >-
+              Receiving an item from another party with an agreement to return
+              it at a specified time
+            key: A
+          - content: >-
+              Permitting an individual or organization to utilize the resources
+              of the lender and receiving compensation in the form of interest
+            key: B
+          - content: >-
+              Trading resources between people with surplus resources and people
+              without a particular resource
+            key: C
+          - content: >-
+              Preventing the devaluation of money held by a person by generating
+              value via interests
+            key: D
+        content: What is borrowing?
+        type: SingleChoice
+        uuid: 90295d62-6227-4d47-a540-db2b61475c65
+        explanation: >-
+          Borrowing involves receiving an item from another party with an
+          agreement to return it at a specified time.
+      - answerKeys:
+          - C
+        choices:
+          - content: >-
+              Receiving an item from another party with an agreement to return
+              it at a specified time
+            key: A
+          - content: >-
+              Permitting an individual or organization to utilize the resources
+              of the lender and receiving compensation in the form of interest
+            key: B
+          - content: >-
+              Utilizing an asset that is not currently available by providing
+              something you already possess as security for repayment of the
+              borrowed item
+            key: C
+          - content: >-
+              Preventing the devaluation of money held by a person by generating
+              value via interests
+            key: D
+        content: What is the objective of borrowing?
+        type: SingleChoice
+        uuid: 42016dd3-1f8d-4145-8ea6-975a12ca5943
+        explanation: >-
+          The objective of borrowing is to utilize an asset that is not
+          currently available by providing something you already possess as
+          security for repayment of the borrowed item.
     uuid: b6e7714a-4b6e-4073-afb2-5172d98b803f
   - content: ''
     name: Evaluation
@@ -70,6 +148,7 @@ steps:
         content: What is lending?
         type: SingleChoice
         uuid: 9914baa1-f590-4558-b650-57a7a757533d
+        explanation: null
       - answerKeys:
           - 9d906732
         choices:
@@ -84,6 +163,7 @@ steps:
         content: What is collateral?
         type: SingleChoice
         uuid: 852009b5-a713-441b-9878-d2d8072d5322
+        explanation: null
     uuid: e802f3d8-eaf5-450f-a2fd-b218a5b01b8b
   - content: >
       The principle behind lending involves depositing money in banks, which are
@@ -139,6 +219,7 @@ steps:
         content: How do lenders earn compensation in lending?
         type: SingleChoice
         uuid: c5449c09-8c78-4c1c-954a-492f47784870
+        explanation: null
       - answerKeys:
           - a106dfcf
         choices:
@@ -158,6 +239,7 @@ steps:
           What is/are the potential problem/s with the banking sector?
         type: SingleChoice
         uuid: 51b73796-2887-4e7a-bf27-2bf00f1f97e9
+        explanation: null
     uuid: 454af48f-1b9b-4b91-bdde-0e4c6572c1ea
   - content: >
       ## Smart Contracts
@@ -226,6 +308,7 @@ steps:
           compared to TradFi?
         type: SingleChoice
         uuid: 4734999a-2bb1-410f-b6fa-2ca4e10f9b72
+        explanation: null
       - answerKeys:
           - 7ad86602
         choices:
@@ -244,6 +327,7 @@ steps:
           borrower falls below a certain threshold in DeFi lending?
         type: SingleChoice
         uuid: bbe6235a-690f-421d-8d15-2a83b239a586
+        explanation: null
     uuid: dc3bb217-ffc3-43a6-b5d8-b35932aedbe6
   - content: >
       One of the key benefits of using DeFi lending and borrowing is the speed
@@ -286,6 +370,7 @@ steps:
           lending and borrowing?
         type: SingleChoice
         uuid: 839cb55a-e467-45de-83a5-f44282b28444
+        explanation: null
     uuid: 5f1f226f-9da3-4f50-b293-804e19d45417
   - content: ''
     name: Your Info
