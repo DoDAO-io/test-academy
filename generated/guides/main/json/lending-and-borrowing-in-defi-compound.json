@@ -1,12 +1,11 @@
 {
   "categories": [],
   "content": "Basics of how lending and borrowing works in DeFi",
-  "created": "2023-06-30T20:31:13.013Z",
+  "created": "2023-07-08T19:21:01.292Z",
   "guideType": "onboarding",
   "key": "lending-and-borrowing-in-defi-compound",
   "name": "Lend & Borrow in DeFi ",
   "publishStatus": "Live",
-  "showIncorrectOnCompletion": true,
   "steps": [
     {
       "content": "\n## Lending\nLending involves permitting an individual or organization to utilize the resources of the lender. The lender receives compensation for their contribution in the form of interest. Lending helps to prevent the depreciation of asset values, particularly money, over time. While the returns on lending to banks are stable and fixed, they are typically very small.\n\n## Borrowing\nBorrowing involves receiving an item from another party with an agreement that the borrowed asset or an equivalent value will be returned at a specified time. The equivalent value put up against the loan is referred to as collateral. The objective of borrowing is to utilize an asset that is not currently available by providing something you already possess as security for repayment of the borrowed item. Obtaining a favorable loan offer from banks necessitates a strong credit score.\n\n## Advantages of Lending and borrowing\n1. Lending and borrowing facilitate the flow of resources from the people with surplus resources who do not have a use for them and people without a particular resource in necessary amounts. This trading of time value of assets benefits both the parties.\n2. Lending prevents the devaluation of money held by a person by generating value via interests.\n3. Lending ensures the circulation of resources held in surplus which otherwise would be locked up with one person/ entity and unusable.\n4. Lending and borrowing play a crucial role in the ecosystem of small businesses. Providing them with resources they otherwise would not have to sustain their business initially.\n",
