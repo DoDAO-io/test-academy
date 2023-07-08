@@ -4,11 +4,10 @@ excerpt: This times shares details of all the new markets, assets, and configura
 content: This times shares details of all the new markets, assets, and configurations
 publishStatus: ''
 events:
-  - name: Compound III USDC Market on Polygon
+  - title: Compound III USDC Market on Polygon
     uuid: d172c62b-73fa-4778-a130-afa2cbc8c3f3
     date: '2023-03-07T05:00:00.000Z'
-    excerpt: ''
-    content: >-
+    summary: >-
       To ensure users can avoid liquidation easily, Compound III market is being
       deployed on Polygon with USDC as the borrowable asset, and the market is
       being seeded with 500k USDC. At launch, users can use WETH, WBTC, MATIC,
@@ -19,11 +18,10 @@ events:
       modestly reallocating some of the v2 USDT COMP rewards to borrowers in the
       new market.
     moreLink: https://compound.finance/governance/proposals/151
-  - name: Increase cbETH Supply Cap in cWETHv3
+  - title: Increase cbETH Supply Cap in cWETHv3
     uuid: fb7ebaed-52fe-411e-95e3-b00bfc149722
     date: '2023-02-20T05:00:00.000Z'
-    excerpt: ''
-    content: >-
+    summary: >-
       Supply cap for cbETH on Comet was updated via Configurator to 30000.00 The
       motivation behind the parameter updates was to maintain the overall risk
       tolerance of the protocol while making risk trade-offs between specific
@@ -34,11 +32,10 @@ events:
       dashboard covered other key statistics and outputs from their
       simulations. 
     moreLink: https://compound.finance/governance/proposals/149
-  - name: Initialized cWETHv3 on Ethereum
+  - title: Initialized cWETHv3 on Ethereum
     uuid: 5a302600-83b7-446d-b365-b7eea4ab5792
     date: '2023-01-24T05:00:00.000Z'
-    excerpt: ''
-    content: >-
+    summary: >-
       A second market on Ethereum Mainnet was launched, utilizing WETH as the
       base asset: cWETHv3. The market was proposed to be initialized with 2
       collateral assets: wstETH and cbETH.

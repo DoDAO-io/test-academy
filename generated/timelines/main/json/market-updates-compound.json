@@ -6,27 +6,24 @@
   "publishStatus": "",
   "events": [
     {
-      "name": "Compound III USDC Market on Polygon",
+      "title": "Compound III USDC Market on Polygon",
       "uuid": "d172c62b-73fa-4778-a130-afa2cbc8c3f3",
       "date": "2023-03-07T05:00:00.000Z",
-      "excerpt": "",
-      "content": "To ensure users can avoid liquidation easily, Compound III market is being deployed on Polygon with USDC as the borrowable asset, and the market is being seeded with 500k USDC. At launch, users can use WETH, WBTC, MATIC, DAI, USDT, and USDC as collateral. Seeding the market with USDC will provide a cushion for users and create a sustainable market. Additionally, the proposal includes setting the pause guardian to a Gnosis multisig, implementing risk parameters based on recommendations from Gauntlet, and modestly reallocating some of the v2 USDT COMP rewards to borrowers in the new market.",
+      "summary": "To ensure users can avoid liquidation easily, Compound III market is being deployed on Polygon with USDC as the borrowable asset, and the market is being seeded with 500k USDC. At launch, users can use WETH, WBTC, MATIC, DAI, USDT, and USDC as collateral. Seeding the market with USDC will provide a cushion for users and create a sustainable market. Additionally, the proposal includes setting the pause guardian to a Gnosis multisig, implementing risk parameters based on recommendations from Gauntlet, and modestly reallocating some of the v2 USDT COMP rewards to borrowers in the new market.",
       "moreLink": "https://compound.finance/governance/proposals/151"
     },
     {
-      "name": "Increase cbETH Supply Cap in cWETHv3",
+      "title": "Increase cbETH Supply Cap in cWETHv3",
       "uuid": "fb7ebaed-52fe-411e-95e3-b00bfc149722",
       "date": "2023-02-20T05:00:00.000Z",
-      "excerpt": "",
-      "content": "Supply cap for cbETH on Comet was updated via Configurator to 30000.00 The motivation behind the parameter updates was to maintain the overall risk tolerance of the protocol while making risk trade-offs between specific assets. Gauntlet used an optimization function that balanced insolvencies, liquidations, and borrow usage to make parameter recommendations. Their simulations took into account a wide array of varied input data that changed on a daily basis, and the individual collateral pages on their dashboard covered other key statistics and outputs from their simulations. ",
+      "summary": "Supply cap for cbETH on Comet was updated via Configurator to 30000.00 The motivation behind the parameter updates was to maintain the overall risk tolerance of the protocol while making risk trade-offs between specific assets. Gauntlet used an optimization function that balanced insolvencies, liquidations, and borrow usage to make parameter recommendations. Their simulations took into account a wide array of varied input data that changed on a daily basis, and the individual collateral pages on their dashboard covered other key statistics and outputs from their simulations. ",
       "moreLink": "https://compound.finance/governance/proposals/149"
     },
     {
-      "name": "Initialized cWETHv3 on Ethereum",
+      "title": "Initialized cWETHv3 on Ethereum",
       "uuid": "5a302600-83b7-446d-b365-b7eea4ab5792",
       "date": "2023-01-24T05:00:00.000Z",
-      "excerpt": "",
-      "content": "A second market on Ethereum Mainnet was launched, utilizing WETH as the base asset: cWETHv3. The market was proposed to be initialized with 2 collateral assets: wstETH and cbETH.\n\nFor the base asset, the ChainLink ETH/USD price feed was used, as was used for WETH in the cUSDCv3 market. For wstETH, a custom wrapper around the ChainLink stETH/USD feed was used to multiply by the wstETH/stETH exchange rate. This contract was in OpenZeppelin's queue for an audit. For cbETH, Coinbase had launched a new cbETH/USD price feed together with ChainLink.",
+      "summary": "A second market on Ethereum Mainnet was launched, utilizing WETH as the base asset: cWETHv3. The market was proposed to be initialized with 2 collateral assets: wstETH and cbETH.\n\nFor the base asset, the ChainLink ETH/USD price feed was used, as was used for WETH in the cUSDCv3 market. For wstETH, a custom wrapper around the ChainLink stETH/USD feed was used to multiply by the wstETH/stETH exchange rate. This contract was in OpenZeppelin's queue for an audit. For cbETH, Coinbase had launched a new cbETH/USD price feed together with ChainLink.",
       "moreLink": "https://compound.finance/governance/proposals/144"
     }
   ],
