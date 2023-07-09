@@ -1,0 +1,74 @@
+uniqueId: 24f2e3f4-2b02-4446-95ea-a0ca8f374451
+id: concentrated-liquidity-the-test-academy
+name: Concentrated Liquidity
+content: 'Concentrated Liquidity: A Game-Changing Feature'
+created: '2023-07-09T18:03:09.741Z'
+visibility: Public
+publishStatus: Live
+admins: []
+tags: []
+priority: 0
+steps:
+  - name: Introduction
+    uuid: 4b6b4ff5-64e6-4817-a50e-d6d7912845ad
+    content: >-
+      Concentrated liquidity is a new feature that allows liquidity providers
+      (LPs) to accumulate their capital to smaller price intervals, resulting in
+      higher capital efficiency and deeper liquidity for traders.
+    stepItems: []
+  - name: Benefits for Traders and LPs
+    uuid: feae25bf-d154-45e8-99a7-b52cda6cae6e
+    content: >-
+      With concentrated liquidity, traders have access to deeper liquidity
+      around the mid-price, while LPs can earn more trading fees.
+    stepItems: []
+  - name: Flexibility for LPs
+    uuid: 0e909b34-2fa9-4542-a2e3-7b51484af686
+    content: >-
+      LPs have the flexibility to open as many positions in the pool as they
+      want, creating unique price curves that align with their personal needs
+      and preferences.
+    stepItems: []
+  - name: Evaluation
+    uuid: d735baa6-3a93-4ff5-bd7f-21843a01ad66
+    content: ''
+    stepItems:
+      - type: SingleChoice
+        uuid: 4c51354c-cd2e-4c5b-a2e2-9d104a168db3
+        choices:
+          - key: A
+            content: Traders can earn more trading fees.
+          - key: B
+            content: Traders can open as many positions in the pool as they want.
+          - key: C
+            content: Traders can create unique price curves.
+          - key: D
+            content: Traders can accumulate their capital to smaller price intervals.
+        content: What is the benefit of concentrated liquidity for traders?
+        answerKeys:
+          - A
+        explanation: Traders have access to deeper liquidity around the mid-price.
+  - name: Evaluation
+    uuid: ca174abd-f4a3-4f25-98bd-1cb33fc7b2f3
+    content: ''
+    stepItems:
+      - type: SingleChoice
+        uuid: 58c40489-41e7-47f5-a45a-91c9f2377ca6
+        choices:
+          - key: A
+            content: LPs can earn more trading fees.
+          - key: B
+            content: LPs can open as many positions in the pool as they want.
+          - key: C
+            content: LPs can create unique price curves.
+          - key: D
+            content: LPs can accumulate their capital to smaller price intervals.
+        content: >-
+          What is the flexibility provided to liquidity providers (LPs) with
+          concentrated liquidity?
+        answerKeys:
+          - B
+        explanation: >-
+          LPs have the flexibility to open as many positions in the pool as they
+          want.
+spaceId: test-academy-eth
