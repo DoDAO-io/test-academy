@@ -6,14 +6,6 @@
   "publishStatus": "",
   "events": [
     {
-      "title": "Open Zepplin Security Research",
-      "uuid": "d172c62b-73fa-4778-a130-afa2cbc8c3f3",
-      "date": "2023-07-18T06:04:43.430Z",
-      "summary": "Scope\nAll 4.9 changes\nFiles Audited\ncontracts/utils/StorageSlot.sol\n\ncontracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!\n\ncontracts/utils/governance/extensions/GovernorTimelockCompound.sol\n\ncontracts/utils/governance/extensions/GovernorVotesComp.sol\n\ncontracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol\n\ncontracts/utils/governance/extensions/GovernorVotes.so",
-      "fullDetails": null,
-      "moreLink": "https://compound.finance/governance/proposals/151"
-    },
-    {
       "title": "Increase cbETH Supply Cap in cWETHv3",
       "uuid": "fb7ebaed-52fe-411e-95e3-b00bfc149722",
       "date": "2023-02-20T05:00:00.000Z",

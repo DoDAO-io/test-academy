@@ -4,30 +4,6 @@ excerpt: This times shares details of all the new markets, assets, and configura
 content: This times shares details of all the new markets, assets, and configurations
 publishStatus: ''
 events:
-  - title: Open Zepplin Security Research
-    uuid: d172c62b-73fa-4778-a130-afa2cbc8c3f3
-    date: 2023-07-18T06:04:43.430Z
-    summary: |-
-      Scope
-      All 4.9 changes
-      Files Audited
-      contracts/utils/StorageSlot.sol
-
-      contracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol
-
-      contracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol
-
-      contracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!
-
-      contracts/utils/governance/extensions/GovernorTimelockCompound.sol
-
-      contracts/utils/governance/extensions/GovernorVotesComp.sol
-
-      contracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol
-
-      contracts/utils/governance/extensions/GovernorVotes.so
-    fullDetails: null
-    moreLink: https://compound.finance/governance/proposals/151
   - title: Increase cbETH Supply Cap in cWETHv3
     uuid: fb7ebaed-52fe-411e-95e3-b00bfc149722
     date: 2023-02-20T05:00:00.000Z
