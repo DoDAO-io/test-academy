@@ -9,7 +9,7 @@
       "title": "Increase cbETH Supply Cap in cWETHv3",
       "uuid": "fb7ebaed-52fe-411e-95e3-b00bfc149722",
       "date": "2023-02-20T05:00:00.000Z",
-      "summary": "Supply cap for cbETH on Comet was updated via Configurator to 30000.00 The motivation behind the parameter updates was to maintain the overall risk tolerance of the protocol while making risk trade-offs between specific assets. Gauntlet used an optimization function that balanced insolvencies, liquidations, and borrow usage to make parameter recommendations. Their simulations took into account a wide array of varied input data that changed on a daily basis, and the individual collateral pages on their dashboard covered other key statistics and outputs from their simulations. ",
+      "summary": "Files Audited\ncontracts/utils/StorageSlot.sol\n\ncontracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!\n\ncontracts/utils/governance/extensions/GovernorTimelockCompound.sol\n\ncontracts/utils/governance/extensions/GovernorVotesComp.sol\n\ncontracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol\n\ncontracts/utils/governance/extensions/GovernorVotes.sol\n\ncontracts/utils/governance/Governor.sol\n\ncontracts/utils/governance/IGovernor.sol\n\ncontracts/utils/governance/TimelockController.sol\n\ncontracts/utils/governance/utils/IVotes.sol\n\ncontracts/utils/governance/utils/Votes.sol\n\ncontracts/token/ERC20/extensions/ERC20Votes.sol",
       "fullDetails": null,
       "moreLink": "https://compound.finance/governance/proposals/149"
     },
@@ -22,12 +22,12 @@
       "moreLink": "https://compound.finance/governance/proposals/144"
     },
     {
-      "title": "Event New",
-      "uuid": "0a27f9af-73a0-45e0-aa42-28a26b1c5517",
-      "date": "2023-07-18T14:40:41.143Z",
-      "summary": "Summary of new event ",
-      "fullDetails": "Full Details",
-      "moreLink": ""
+      "title": "AUDIT REPORTS",
+      "uuid": "60f56885-0cd6-4fd9-9f67-aa7a216c17e0",
+      "date": "2023-07-18T15:25:14.137Z",
+      "summary": "Files Audited\ncontracts/utils/StorageSlot.sol\n\ncontracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!\n\ncontracts/utils/governance/extensions/GovernorTimelockCompound.sol\n\ncontracts/utils/governance/extensions/GovernorVotesComp.sol\n\ncontracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol\n\ncontracts/utils/governance/extensions/GovernorVotes.sol\n\ncontracts/utils/governance/Governor.sol\n\ncontracts/utils/governance/IGovernor.sol\n\ncontracts/utils/governance/TimelockController.sol\n\ncontracts/utils/governance/utils/IVotes.sol\n\ncontracts/utils/governance/utils/Votes.sol\n\ncontracts/token/ERC20/extensions/ERC20Votes.sol",
+      "fullDetails": "",
+      "moreLink": null
     }
   ],
   "admins": [],

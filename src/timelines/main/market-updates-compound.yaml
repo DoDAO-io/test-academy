@@ -7,16 +7,35 @@ events:
   - title: Increase cbETH Supply Cap in cWETHv3
     uuid: fb7ebaed-52fe-411e-95e3-b00bfc149722
     date: 2023-02-20T05:00:00.000Z
-    summary: >-
-      Supply cap for cbETH on Comet was updated via Configurator to 30000.00 The
-      motivation behind the parameter updates was to maintain the overall risk
-      tolerance of the protocol while making risk trade-offs between specific
-      assets. Gauntlet used an optimization function that balanced insolvencies,
-      liquidations, and borrow usage to make parameter recommendations. Their
-      simulations took into account a wide array of varied input data that
-      changed on a daily basis, and the individual collateral pages on their
-      dashboard covered other key statistics and outputs from their
-      simulations. 
+    summary: |-
+      Files Audited
+      contracts/utils/StorageSlot.sol
+
+      contracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol
+
+      contracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol
+
+      contracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!
+
+      contracts/utils/governance/extensions/GovernorTimelockCompound.sol
+
+      contracts/utils/governance/extensions/GovernorVotesComp.sol
+
+      contracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol
+
+      contracts/utils/governance/extensions/GovernorVotes.sol
+
+      contracts/utils/governance/Governor.sol
+
+      contracts/utils/governance/IGovernor.sol
+
+      contracts/utils/governance/TimelockController.sol
+
+      contracts/utils/governance/utils/IVotes.sol
+
+      contracts/utils/governance/utils/Votes.sol
+
+      contracts/token/ERC20/extensions/ERC20Votes.sol
     fullDetails: null
     moreLink: https://compound.finance/governance/proposals/149
   - title: Initialized cWETHv3 on Ethereum
@@ -35,12 +54,40 @@ events:
       Coinbase had launched a new cbETH/USD price feed together with ChainLink.
     fullDetails: null
     moreLink: https://compound.finance/governance/proposals/144
-  - title: Event New
-    uuid: 0a27f9af-73a0-45e0-aa42-28a26b1c5517
-    date: 2023-07-18T14:40:41.143Z
-    summary: 'Summary of new event '
-    fullDetails: Full Details
-    moreLink: ''
+  - title: AUDIT REPORTS
+    uuid: 60f56885-0cd6-4fd9-9f67-aa7a216c17e0
+    date: 2023-07-18T15:25:14.137Z
+    summary: |-
+      Files Audited
+      contracts/utils/StorageSlot.sol
+
+      contracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol
+
+      contracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol
+
+      contracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!
+
+      contracts/utils/governance/extensions/GovernorTimelockCompound.sol
+
+      contracts/utils/governance/extensions/GovernorVotesComp.sol
+
+      contracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol
+
+      contracts/utils/governance/extensions/GovernorVotes.sol
+
+      contracts/utils/governance/Governor.sol
+
+      contracts/utils/governance/IGovernor.sol
+
+      contracts/utils/governance/TimelockController.sol
+
+      contracts/utils/governance/utils/IVotes.sol
+
+      contracts/utils/governance/utils/Votes.sol
+
+      contracts/token/ERC20/extensions/ERC20Votes.sol
+    fullDetails: ''
+    moreLink: null
 admins: []
 tags: []
 priority: 50
