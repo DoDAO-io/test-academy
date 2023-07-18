@@ -8,34 +8,34 @@ events:
     uuid: fb7ebaed-52fe-411e-95e3-b00bfc149722
     date: 2023-02-20T05:00:00.000Z
     summary: |-
-      Files Audited
-      contracts/utils/StorageSlot.sol
-
-      contracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol
-
-      contracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol
-
-      contracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!
-
-      contracts/utils/governance/extensions/GovernorTimelockCompound.sol
-
-      contracts/utils/governance/extensions/GovernorVotesComp.sol
-
-      contracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol
-
-      contracts/utils/governance/extensions/GovernorVotes.sol
-
-      contracts/utils/governance/Governor.sol
-
-      contracts/utils/governance/IGovernor.sol
-
-      contracts/utils/governance/TimelockController.sol
-
-      contracts/utils/governance/utils/IVotes.sol
-
-      contracts/utils/governance/utils/Votes.sol
-
-      contracts/token/ERC20/extensions/ERC20Votes.sol
+      - *Files Audited
+      - contracts/utils/StorageSlot.sol
+      - 
+      - contracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol
+      - 
+      - contracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol
+      - 
+      - contracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!
+      - 
+      - contracts/utils/governance/extensions/GovernorTimelockCompound.sol
+      - 
+      - contracts/utils/governance/extensions/GovernorVotesComp.sol
+      - 
+      - contracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol
+      - 
+      - contracts/utils/governance/extensions/GovernorVotes.sol
+      - 
+      - contracts/utils/governance/Governor.sol
+      - 
+      - contracts/utils/governance/IGovernor.sol
+      - 
+      - contracts/utils/governance/TimelockController.sol
+      - 
+      - contracts/utils/governance/utils/IVotes.sol
+      - 
+      - contracts/utils/governance/utils/Votes.sol
+      - 
+      - contracts/token/ERC20/extensions/ERC20Votes.sol*
     fullDetails: null
     moreLink: https://compound.finance/governance/proposals/149
   - title: Initialized cWETHv3 on Ethereum
