@@ -16,7 +16,7 @@ events:
       the proposal includes setting the pause guardian to a Gnosis multisig,
       implementing risk parameters based on recommendations from Gauntlet, and
       modestly reallocating some of the v2 USDT COMP rewards to borrowers in the
-      new market.Check
+      new market.kjh
     fullDetails: null
     moreLink: https://compound.finance/governance/proposals/151
   - title: Increase cbETH Supply Cap in cWETHv3
