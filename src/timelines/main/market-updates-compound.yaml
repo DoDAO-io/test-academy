@@ -35,6 +35,12 @@ events:
       Coinbase had launched a new cbETH/USD price feed together with ChainLink.
     fullDetails: null
     moreLink: https://compound.finance/governance/proposals/144
+  - title: Event New
+    uuid: 0a27f9af-73a0-45e0-aa42-28a26b1c5517
+    date: 2023-07-18T14:40:41.143Z
+    summary: 'Summary of new event '
+    fullDetails: Full Details
+    moreLink: https://google.com
 admins: []
 tags: []
 priority: 50

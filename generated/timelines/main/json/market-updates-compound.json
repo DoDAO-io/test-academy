@@ -20,6 +20,14 @@
       "summary": "A second market on Ethereum Mainnet was launched, utilizing WETH as the base asset: cWETHv3. The market was proposed to be initialized with 2 collateral assets: wstETH and cbETH.\n\nFor the base asset, the ChainLink ETH/USD price feed was used, as was used for WETH in the cUSDCv3 market. For wstETH, a custom wrapper around the ChainLink stETH/USD feed was used to multiply by the wstETH/stETH exchange rate. This contract was in OpenZeppelin's queue for an audit. For cbETH, Coinbase had launched a new cbETH/USD price feed together with ChainLink.",
       "fullDetails": null,
       "moreLink": "https://compound.finance/governance/proposals/144"
+    },
+    {
+      "title": "Event New",
+      "uuid": "0a27f9af-73a0-45e0-aa42-28a26b1c5517",
+      "date": "2023-07-18T14:40:41.143Z",
+      "summary": "Summary of new event ",
+      "fullDetails": "Full Details",
+      "moreLink": "https://google.com"
     }
   ],
   "admins": [],
