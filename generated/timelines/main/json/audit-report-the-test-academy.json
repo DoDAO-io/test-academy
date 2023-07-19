@@ -6,12 +6,20 @@
   "publishStatus": "",
   "events": [
     {
-      "title": "Audit performed by Open Zeplin Research",
+      "title": "Open Zeppelin Security Research Audit",
       "uuid": "5a63859f-b6be-4901-b283-8924fe8d4750",
       "date": "2023-07-18T15:00:15.523Z",
       "summary": "## Audit 4.9.0 changes. \n\n| Issue Type                    | Issues Found                                    |\n|------------------------------|-------------------------------------------------|\n| Total Issues                  | 26 (18 resolved, 1 partially resolved)         |\n| Critical Severity            | 0                                               |\n| High Severity                | 0                                               |\n| Medium Severity              | 3 (2 resolved)                                  |\n| Low Severity                 | 3 (3 resolved)                                  |\n| Notes & Additional Info      | 20 (13 resolved, 1 partially resolved)         |\n",
       "fullDetails": "\n## Files Audited\n```\ncontracts/utils/StorageSlot.sol\n\ncontracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!\n\ncontracts/utils/governance/extensions/GovernorTimelockCompound.sol\n\ncontracts/utils/governance/extensions/GovernorVotesComp.sol\n\ncontracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol\n\ncontracts/utils/governance/extensions/GovernorVotes.sol\n\ncontracts/utils/governance/Governor.sol\n\ncontracts/utils/governance/IGovernor.sol\n\ncontracts/utils/governance/TimelockController.sol\n\ncontracts/utils/governance/utils/IVotes.sol\n\ncontracts/utils/governance/utils/Votes.sol\n\ncontracts/token/ERC20/extensions/ERC20Votes.sol\n\ncontracts/token/ERC20/extensions/ERC4626.sol\n\ncontracts/token/ERC721/extensions/ERC721Votes.sol\n\ncontracts/access/AccessControlDefaultAdminRules.sol\n\ncontracts/access/IAccessControlDefaultAdminRules.sol\n\ncontracts/access/manager/AccessManaged.sol\n\ncontracts/access/manager/AccessManagerAdapter.sol\n\ncontracts/access/manager/AccessManager.sol\n\ncontracts/access/manager/IAuthority.sol\n```",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2023-05-v4.9.pdf"
+    },
+    {
+      "title": "Open Zeppelin Secuirty Research Audit",
+      "uuid": "eb2b0562-d970-4ff2-855f-c3644d0d80a8",
+      "date": "2023-07-19T20:19:51.174Z",
+      "summary": "## Audit 4.8.0 changes. \n\n| Issue Type                    | Issues Found                                    |\n|------------------------------|-------------------------------------------------|\n| Total Issues                  |\t8 (2 resolved, 1 partially resolved)   |\n| Critical Severity            | 0                                               |\n| High Severity                \t1 (resolved in 4.9.0)                                         |\n| Medium Severity              |0                              |\n| Low Severity                 | \t2 (1 resolved)                               |\n| Notes & Additional Info      \t5 (1 resolved, 1 partially resolved)   |",
+      "fullDetails": "**Scope\nERC4626 Tokenized Vaults**\n\n## Files Audited\ncontracts/token/ERC20/extensions/ERC4626.sol\n\ncontracts/utils/math/Math.sol",
+      "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2022-10-ERC4626.pdf"
     }
   ],
   "admins": [],
