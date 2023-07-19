@@ -87,19 +87,35 @@ events:
     uuid: eb2b0562-d970-4ff2-855f-c3644d0d80a8
     date: 2022-11-14T20:19:51.000Z
     summary: "## Audit 4.8.0 changes. \n\n| Issue Type                    | Issues Found                                    |\n|------------------------------|-------------------------------------------------|\n| Total Issues                  |\t8 (2 resolved, 1 partially resolved)   |\n| Critical Severity            | 0                                               |\n| High Severity               | \t1 (resolved in 4.9.0)                                         |\n| Medium Severity              |0                              |\n| Low Severity                 | \t2 (1 resolved)                               |\n| Notes & Additional Info      |\t5 (1 resolved, 1 partially resolved)   |"
-    fullDetails: |
-      **Scope
-      ERC4626 Tokenized Vaults**
+    fullDetails: |-
+      ##  Files Audited
 
-      ## Files Audited
       ```
-
       contracts/token/ERC20/extensions/ERC4626.sol
 
       contracts/utils/math/Math.sol
+
       ```
     moreLink: >-
       https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2022-10-ERC4626.pdf
+  - title: Open Zeppelin Secuirty Research Audit
+    uuid: 7e44fc63-ceb1-4098-a67b-293c0ea37175
+    date: 2022-11-14T20:33:03.000Z
+    summary: "## Audit 4.8.0 changes. \n\n| Issue Type                    | Issues Found                                    |\n|------------------------------|-------------------------------------------------|\n| Total Issues                  |\t\t6 (3 resolved)   |\n| Critical Severity            | 0                                               |\n| High Severity               | 0                                         |\n| Medium Severity              |0                              |\n| Low Severity                 | \t\t2 (1 resolved)                             |\n| Notes & Additional Info      |\t4 (2 resolved)   |"
+    fullDetails: |-
+      **Scope
+      Checkpoints**
+
+      ##Files Audited
+      ```
+      contracts/utils/math/SafeCast.sol
+
+      contracts/utils/math/Math.sol
+
+      contracts/utils/Checkpoints.sol
+      ```
+    moreLink: >-
+      https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2022-10-Checkpoints.pdf
   - title: LevelK
     uuid: d744efc2-0a81-4876-88fd-80b9281ff9f4
     date: 2018-10-20T20:24:00.000Z
