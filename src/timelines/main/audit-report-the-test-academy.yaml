@@ -87,16 +87,146 @@ events:
     uuid: eb2b0562-d970-4ff2-855f-c3644d0d80a8
     date: 2023-07-19T20:19:51.174Z
     summary: "## Audit 4.8.0 changes. \n\n| Issue Type                    | Issues Found                                    |\n|------------------------------|-------------------------------------------------|\n| Total Issues                  |\t8 (2 resolved, 1 partially resolved)   |\n| Critical Severity            | 0                                               |\n| High Severity               | \t1 (resolved in 4.9.0)                                         |\n| Medium Severity              |0                              |\n| Low Severity                 | \t2 (1 resolved)                               |\n| Notes & Additional Info      |\t5 (1 resolved, 1 partially resolved)   |"
-    fullDetails: |-
+    fullDetails: |
       **Scope
       ERC4626 Tokenized Vaults**
 
       ## Files Audited
+      ```
+
       contracts/token/ERC20/extensions/ERC4626.sol
 
       contracts/utils/math/Math.sol
+      ```
     moreLink: >-
       https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2022-10-ERC4626.pdf
+  - title: LevelK
+    uuid: d744efc2-0a81-4876-88fd-80b9281ff9f4
+    date: 2023-07-19T20:24:00.793Z
+    summary: "## Audit 2.0.0 changes. \n\n| Issue Type                    | Issues Found                                    |\n|------------------------------|-------------------------------------------------|\n| Total Issues                  |\t26 (23 resolved)   |\n| Critical Severity            | \t1 (1 resolved)                                       |\n| High Severity               | \t\t2 (2 resolved)                                      |\n| Medium Severity              |\t4 (4 resolved)                   |\n| Low Severity                 | \t\t19 (16 resolved)                       |\n"
+    fullDetails: |-
+      ## Files Audited
+      ```
+      contracts/access/Roles.sol
+
+      contracts/access/roles/CapperRole.sol
+
+      contracts/access/roles/MinterRole.sol
+
+      contracts/access/roles/PauserRole.sol
+
+      contracts/access/roles/SignerRole.sol
+
+      contracts/crowdsale/Crowdsale.sol
+
+      contracts/crowdsale/distribution/FinalizableCrowdsale.sol
+
+      contracts/crowdsale/distribution/PostDeliveryCrowdsale.sol
+
+      contracts/crowdsale/distribution/RefundableCrowdsale.sol
+
+      contracts/crowdsale/emission/AllowanceCrowdsale.sol
+
+      contracts/crowdsale/emission/MintedCrowdsale.sol
+
+      contracts/crowdsale/price/IncreasingPriceCrowdsale.sol
+
+      contracts/crowdsale/validation/CappedCrowdsale.sol
+
+      contracts/crowdsale/validation/IndividuallyCappedCrowdsale.sol
+
+      contracts/crowdsale/validation/TimedCrowdsale.sol
+
+      contracts/cryptography/ECDSA.sol
+
+      contracts/cryptography/MerkleProof.sol
+
+      contracts/drafts/BreakInvariantBounty.sol
+
+      contracts/drafts/Counter.sol
+
+      contracts/drafts/ERC20Migrator.sol
+
+      contracts/drafts/SignatureBouncer.sol
+
+      contracts/drafts/TokenVesting.sol
+
+      contracts/drafts/ERC1046/TokenMetadata.sol
+
+      contracts/introspection/ERC165.sol
+
+      contracts/introspection/ERC165Checker.sol
+
+      contracts/introspection/IERC165.sol
+
+      contracts/lifecycle/Pausable.sol
+
+      contracts/math/Math.sol
+
+      contracts/math/SafeMath.sol
+
+      contracts/ownership/Ownable.sol
+
+      contracts/ownership/Secondary.sol
+
+      contracts/payment/ConditionalEscrow.sol
+
+      contracts/payment/Escrow.sol
+
+      contracts/payment/PullPayment.sol
+
+      contracts/payment/RefundEscrow.sol
+
+      contracts/payment/SplitPayment.sol
+
+      contracts/token/ERC20/ERC20.sol
+
+      contracts/token/ERC20/ERC20Burnable.sol
+
+      contracts/token/ERC20/ERC20Capped.sol
+
+      contracts/token/ERC20/ERC20Detailed.sol
+
+      contracts/token/ERC20/ERC20Mintable.sol
+
+      contracts/token/ERC20/ERC20Pausable.sol
+
+      contracts/token/ERC20/IERC20.sol
+
+      contracts/token/ERC20/SafeERC20.sol
+
+      contracts/token/ERC20/TokenTimelock.sol
+
+      contracts/token/ERC721/ERC721.sol
+
+      contracts/token/ERC721/ERC721Burnable.sol
+
+      contracts/token/ERC721/ERC721Enumerable.sol
+
+      contracts/token/ERC721/ERC721Full.sol
+
+      contracts/token/ERC721/ERC721Holder.sol
+
+      contracts/token/ERC721/ERC721Metadata.sol
+
+      contracts/token/ERC721/ERC721Mintable.sol
+
+      contracts/token/ERC721/ERC721Pausable.sol
+
+      contracts/token/ERC721/IERC721.sol
+
+      contracts/token/ERC721/IERC721Enumerable.sol
+
+      contracts/token/ERC721/IERC721Full.sol
+
+      contracts/token/ERC721/IERC721Metadata.sol
+
+      contracts/token/ERC721/IERC721Receiver.sol
+
+      contracts/utils/Address.sol
+
+      contracts/utils/ReentrancyGuard.sol
+      ```
 admins: []
 tags: []
 priority: 50
