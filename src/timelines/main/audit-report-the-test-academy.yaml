@@ -56,7 +56,8 @@ events:
 
       contracts/access/manager/IAuthority.sol
       ```
-    moreLink: null
+    moreLink: >-
+      https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/audits/2023-05-v4.9.pdf
 admins: []
 tags: []
 priority: 50
