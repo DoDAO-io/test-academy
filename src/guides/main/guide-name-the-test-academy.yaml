@@ -1,6 +1,6 @@
 categories: []
 content: New Guide
-created: '2023-07-20T21:29:07.632Z'
+created: '2023-07-20T21:30:00.904Z'
 guideType: onboarding
 key: guide-name-the-test-academy
 name: Guide Name
@@ -47,7 +47,7 @@ steps:
       your transactions.
 
                   <div align="center">
-                    <img style="max-height:400px;margin-bottom:30px" src=https://d31h13bdjwgzxs.cloudfront.net/academy/test-academy-eth/Guide/guide_name_the_test_academy/1689888432174_token_risk.png"/>
+                    <img style="max-height:400px;margin-bottom:30px" src="https://d31h13bdjwgzxs.cloudfront.net/academy/test-academy-eth/Guide/guide_name_the_test_academy/1689888432174_token_risk.png"/>
                   </div>
                   
     name: How Credit Companies make money
