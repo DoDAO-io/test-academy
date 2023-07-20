@@ -4,7 +4,7 @@ excerpt: This timeline shows all the security audits that were performed by OZ t
 content: 'Auditing is an essential step. '
 publishStatus: ''
 events:
-  - title: Open Zeppelin Security Research Audit
+  - title: 4.9.0 - Open Zeppelin Security Research Audit
     uuid: 5a63859f-b6be-4901-b283-8924fe8d4750
     date: 2023-05-09T15:00:15.000Z
     summary: |-
