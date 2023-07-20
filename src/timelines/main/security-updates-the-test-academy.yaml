@@ -8,13 +8,14 @@ events:
     uuid: afcfd093-aef3-4a8b-ba74-4eeac651dec8
     date: 2023-06-06T15:24:30.000Z
     summary: >-
-      ##Issue Fixed
+      ## Issue Fixed
 
-      **Governor proposal creation may be blocked by frontrunning
+
+      ** Governor proposal creation may be blocked by frontrunning
 
       **
 
-      ##Issue Impact
+      ## Issue Impact
 
       By frontrunning the creation of a proposal, an attacker can become the
       proposer and gain the ability to cancel it. The attacker can do this
