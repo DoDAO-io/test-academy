@@ -8,6 +8,7 @@ events:
     uuid: 5a63859f-b6be-4901-b283-8924fe8d4750
     date: 2023-05-09T15:00:15.000Z
     summary: |-
+      ### Audit Details
       <br/>
       <table>
           <tr>
@@ -42,38 +43,6 @@ events:
     fullDetails: |-
       ## Audit History
 
-
-      ### Audit Details
-      <table>
-          <tr>
-              <td width="200px">Issue Type</td>
-              <td width="200px">Issues Found</td>
-          </tr>
-          <tr>
-              <td>Total Issues</td>
-              <td>26 (18 resolved, 1 partially resolved)</td>
-          </tr>
-          <tr>
-              <td>Critical Severity</td>
-              <td>0</td>
-          </tr>
-          <tr>
-              <td>High Severity</td>
-              <td>0</td>
-          </tr>
-          <tr>
-              <td>Medium Severity</td>
-              <td>3 (2 resolved)</td>
-          </tr>
-          <tr>
-              <td>Low Severity</td>
-              <td>3 (3 resolved)</td>
-          </tr>
-          <tr>
-              <td>Notes &amp; Additional Info</td>
-              <td>20 (13 resolved, 1 partially resolved)</td>
-          </tr>
-      </table>
 
       ### Files Audited
 
