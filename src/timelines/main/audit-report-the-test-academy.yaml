@@ -12,8 +12,8 @@ events:
 
       <table>
           <tr>
-              <td width="150px">Issue Type</td>
-              <td width="150px">Issues Found</td>
+              <td >Issue Type</td>
+              <td>Issues Found</td>
           </tr>
           <tr>
               <td>Total Issues</td>
