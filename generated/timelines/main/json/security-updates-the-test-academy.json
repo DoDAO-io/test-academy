@@ -9,7 +9,7 @@
       "title": "4.9.1",
       "uuid": "afcfd093-aef3-4a8b-ba74-4eeac651dec8",
       "date": "2023-06-06T15:24:30.000Z",
-      "summary": "## Issue Fixed\n\n** Governor proposal creation may be blocked by frontrunning\n**\n## Issue Impact\nBy frontrunning the creation of a proposal, an attacker can become the proposer and gain the ability to cancel it. The attacker can do this repeatedly to try to prevent a proposal from being proposed at all. This impacts the Governor contract in v4.9.0 only, and the GovernorCompatibilityBravo contract since v4.3.0.",
+      "summary": "## Issue Fixed\n\n**Governor proposal creation may be blocked by frontrunning**\n## Issue Impact\nBy frontrunning the creation of a proposal, an attacker can become the proposer and gain the ability to cancel it. The attacker can do this repeatedly to try to prevent a proposal from being proposed at all. This impacts the Governor contract in v4.9.0 only, and the GovernorCompatibilityBravo contract since v4.3.0.",
       "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-5h3x-9wvq-w4m2"
     }
