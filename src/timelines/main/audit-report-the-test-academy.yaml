@@ -9,7 +9,6 @@ events:
     date: 2023-05-09T15:00:15.000Z
     summary: |-
       <br/>
-      <br/>
       <table>
           <tr>
               <td width="200px">Issue Type</td>
@@ -129,6 +128,7 @@ events:
     uuid: eb2b0562-d970-4ff2-855f-c3644d0d80a8
     date: 2022-11-14T20:19:51.000Z
     summary: |-
+      <br/>
 
       <table>
           <tr>
@@ -210,6 +210,7 @@ events:
     uuid: 7e44fc63-ceb1-4098-a67b-293c0ea37175
     date: 2022-11-14T20:33:03.000Z
     summary: |-
+      <br/>
       <table>
           <tr>
               <td width="200px">Issue Type</td>
@@ -293,6 +294,7 @@ events:
     uuid: d744efc2-0a81-4876-88fd-80b9281ff9f4
     date: 2018-10-20T20:24:00.000Z
     summary: |
+      <br/>
 
       <table>
           <tr>
@@ -482,6 +484,7 @@ events:
     uuid: 9530aa81-dd5b-4f2a-b704-065cc9b9fe0f
     date: 2017-02-28T20:28:04.000Z
     summary: |-
+      <br/>
       <table>
           <tr>
               <td width="200px">Issue Type</td>
