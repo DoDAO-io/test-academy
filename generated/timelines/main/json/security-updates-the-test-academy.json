@@ -12,6 +12,22 @@
       "summary": "## Issue Fixed\n\n**Governor proposal creation may be blocked by frontrunning**\n",
       "fullDetails": "## Issue Impact\n\n*By frontrunning the creation of a proposal, an attacker can become the proposer and gain the ability to cancel it. The attacker can do this repeatedly to try to prevent a proposal from being proposed at all. This impacts the Governor contract in v4.9.0 only, and the GovernorCompatibilityBravo contract since v4.3.0.*",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-5h3x-9wvq-w4m2"
+    },
+    {
+      "title": "4.8.3",
+      "uuid": "a141cf1e-bee1-404c-9149-1040bd58c78c",
+      "date": "2023-04-13T15:30:01.000Z",
+      "summary": "## Issue Fixed\n\n**TransparentUpgradeableProxy clashing selector calls may not be delegated**",
+      "fullDetails": "## Issue Impact\n\n*A function in the implementation contract may be inaccessible if its selector clashes with one of the proxy's own selectors. Specifically, if the clashing function has a different signature with incompatible ABI encoding, the proxy could revert while attempting to decode the arguments from calldata. The probability of an accidental clash is negligible, but one could be caused deliberately.*",
+      "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-mx2q-35m2-x2rh"
+    },
+    {
+      "title": "4.8.3",
+      "uuid": "49266e70-6da2-45ad-98c1-24c3e7915cb3",
+      "date": "2023-04-13T15:31:30.000Z",
+      "summary": "## Issue Fixed\n\n**GovernorCompatibilityBravo may trim proposal calldata**",
+      "fullDetails": "## Issue Impact\n\n*The proposal creation entrypoint (propose) in GovernorCompatibilityBravo allows the creation of proposals with a signatures array shorter than the calldatas array. This causes the additional elements of the latter to be ignored, and if the proposal succeeds the corresponding actions would eventually execute without any calldata. The ProposalCreated event correctly represents what will eventually execute, but the proposal parameters as queried through getActions appear to respect the original intended calldata.*",
+      "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-93hq-5wgc-jc82"
     }
   ],
   "admins": [],
