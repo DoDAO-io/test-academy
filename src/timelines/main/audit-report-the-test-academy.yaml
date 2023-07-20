@@ -41,8 +41,8 @@ events:
           </tr>
       </table>
     fullDetails: |-
-      ### Audit History
-      asdasd
+      ## Audit History
+
 
       ### Audit Details
       <table>
@@ -128,8 +128,75 @@ events:
   - title: Open Zeppelin Secuirty Research Audit
     uuid: eb2b0562-d970-4ff2-855f-c3644d0d80a8
     date: 2022-11-14T20:19:51.000Z
-    summary: "## Audit 4.8.0 changes. \n\n| Issue Type                    | Issues Found                                    |\n|------------------------------|-------------------------------------------------|\n| Total Issues                  |\t8 (2 resolved, 1 partially resolved)   |\n| Critical Severity            | 0                                               |\n| High Severity               | \t1 (resolved in 4.9.0)                                         |\n| Medium Severity              |0                              |\n| Low Severity                 | \t2 (1 resolved)                               |\n| Notes & Additional Info      |\t5 (1 resolved, 1 partially resolved)   |"
+    summary: |-
+      ## Audit 4.8.0 changes. 
+
+      <table>
+          <tr>
+              <td width="200px">Issue Type</td>
+              <td width="200px">Issues Found</td>
+          </tr>
+          <tr>
+              <td>Total Issues</td>
+              <td>8 (2 resolved, 1 partially resolved)</td>
+          </tr>
+          <tr>
+              <td>Critical Severity</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>High Severity</td>
+              <td>1 (resolved in 4.9.0)</td>
+          </tr>
+          <tr>
+              <td>Medium Severity</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Low Severity</td>
+              <td>2 (1 resolved)</td>
+          </tr>
+          <tr>
+              <td>Notes &amp; Additional Info</td>
+              <td>5 (1 resolved, 1 partially resolved)</td>
+          </tr>
+      </table>
     fullDetails: |-
+      ## Audit History
+
+      ## Audit 4.8.0 changes. 
+
+      <table>
+          <tr>
+              <td width="200px">Issue Type</td>
+              <td width="200px">Issues Found</td>
+          </tr>
+          <tr>
+              <td>Total Issues</td>
+              <td>8 (2 resolved, 1 partially resolved)</td>
+          </tr>
+          <tr>
+              <td>Critical Severity</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>High Severity</td>
+              <td>1 (resolved in 4.9.0)</td>
+          </tr>
+          <tr>
+              <td>Medium Severity</td>
+              <td>0</td>
+          </tr>
+          <tr>
+              <td>Low Severity</td>
+              <td>2 (1 resolved)</td>
+          </tr>
+          <tr>
+              <td>Notes &amp; Additional Info</td>
+              <td>5 (1 resolved, 1 partially resolved)</td>
+          </tr>
+      </table>
+
       ##  Files Audited
 
       ```
