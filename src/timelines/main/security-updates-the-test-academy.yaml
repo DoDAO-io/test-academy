@@ -7,11 +7,13 @@ events:
   - title: 4.9.1
     uuid: afcfd093-aef3-4a8b-ba74-4eeac651dec8
     date: 2023-06-06T15:24:30.000Z
-    summary: |
+    summary: >-
       ## Issue Fixed
 
+
       **Governor proposal creation may be blocked by frontrunning**
-    fullDetails: >-
+
+
       ## Issue Impact
 
 
@@ -20,6 +22,7 @@ events:
       repeatedly to try to prevent a proposal from being proposed at all. This
       impacts the Governor contract in v4.9.0 only, and the
       GovernorCompatibilityBravo contract since v4.3.0.*
+    fullDetails: ''
     moreLink: >-
       https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-5h3x-9wvq-w4m2
   - title: 4.8.3
