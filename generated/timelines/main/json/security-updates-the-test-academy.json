@@ -17,112 +17,112 @@
       "title": "4.8.3",
       "uuid": "a141cf1e-bee1-404c-9149-1040bd58c78c",
       "date": "2023-04-13T15:30:01.000Z",
-      "summary": "## Issue Fixed\n\n**TransparentUpgradeableProxy clashing selector calls may not be delegated**",
-      "fullDetails": "## Issue Impact\n\n*A function in the implementation contract may be inaccessible if its selector clashes with one of the proxy's own selectors. Specifically, if the clashing function has a different signature with incompatible ABI encoding, the proxy could revert while attempting to decode the arguments from calldata. The probability of an accidental clash is negligible, but one could be caused deliberately.*",
+      "summary": "## Issue Fixed\n\n**TransparentUpgradeableProxy clashing selector calls may not be delegated**\n\n## Issue Impact\n\n*A function in the implementation contract may be inaccessible if its selector clashes with one of the proxy's own selectors. Specifically, if the clashing function has a different signature with incompatible ABI encoding, the proxy could revert while attempting to decode the arguments from calldata. The probability of an accidental clash is negligible, but one could be caused deliberately.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-mx2q-35m2-x2rh"
     },
     {
       "title": "4.8.3",
       "uuid": "49266e70-6da2-45ad-98c1-24c3e7915cb3",
       "date": "2023-04-13T15:31:30.000Z",
-      "summary": "## Issue Fixed\n\n**GovernorCompatibilityBravo may trim proposal calldata**",
-      "fullDetails": "## Issue Impact\n\n*The proposal creation entrypoint (propose) in GovernorCompatibilityBravo allows the creation of proposals with a signatures array shorter than the calldatas array. This causes the additional elements of the latter to be ignored, and if the proposal succeeds the corresponding actions would eventually execute without any calldata. The ProposalCreated event correctly represents what will eventually execute, but the proposal parameters as queried through getActions appear to respect the original intended calldata.*",
+      "summary": "## Issue Fixed\n\n**GovernorCompatibilityBravo may trim proposal calldata**\n\n## Issue Impact\n\n*The proposal creation entrypoint (propose) in GovernorCompatibilityBravo allows the creation of proposals with a signatures array shorter than the calldatas array. This causes the additional elements of the latter to be ignored, and if the proposal succeeds the corresponding actions would eventually execute without any calldata. The ProposalCreated event correctly represents what will eventually execute, but the proposal parameters as queried through getActions appear to respect the original intended calldata.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-93hq-5wgc-jc82"
     },
     {
       "title": "4.8.2",
       "uuid": "22f3f5c3-f97f-42fb-a05b-00f5a9f7541e",
       "date": "2023-03-02T15:34:31.000Z",
-      "summary": "## Issue Fixed \n**ERC721Consecutive incorrect balance update with batch of 1**",
-      "fullDetails": "## Issue Impact\n*The ERC721Consecutive contract designed for minting NFTs in batches does not update balances when a batch has size 1 and consists of a single token. Subsequent transfers from the receiver of that token may overflow the balance as reported by balanceOf.*",
+      "summary": "## Issue Fixed \n**ERC721Consecutive incorrect balance update with batch of 1**\n\n## Issue Impact\n*The ERC721Consecutive contract designed for minting NFTs in batches does not update balances when a batch has size 1 and consists of a single token. Subsequent transfers from the receiver of that token may overflow the balance as reported by balanceOf.*v",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-878m-3g6q-594q"
     },
     {
       "title": "4.7.3",
       "uuid": "0a3597af-659e-4371-9c4e-cfa94c82eeca",
       "date": "2022-08-10T15:36:14.000Z",
-      "summary": "## Issue Fixed\n\n**ECDSA signature malleability**",
-      "fullDetails": "## Issue Impact\n*The functions ECDSA.recover and ECDSA.tryRecover are vulnerable to a kind of signature malleability due to accepting EIP-2098 compact signatures in addition to the traditional 65 byte signature format. This is only an issue for the functions that take a single bytes argument, and not the functions that take r, v, s or r, vs as separate arguments.*",
+      "summary": "## Issue Fixed\n\n**ECDSA signature malleability**\n\n## Issue Impact\n*The functions ECDSA.recover and ECDSA.tryRecover are vulnerable to a kind of signature malleability due to accepting EIP-2098 compact signatures in addition to the traditional 65 byte signature format. This is only an issue for the functions that take a single bytes argument, and not the functions that take r, v, s or r, vs as separate arguments.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-4h98-2769-gh6h"
     },
     {
       "title": "4.7.2",
       "uuid": "5bf13a21-5334-4d21-94a1-da4abf98d781",
       "date": "2022-06-28T15:37:36.000Z",
-      "summary": "## Issue Fixed",
-      "fullDetails": "## Issue Impact\n*Contracts using the cross chain utilies for Arbitrum L2, CrossChainEnabledArbitrumL2 or LibArbitrumL2, will classify direct interactions of externally owned accounts (EOAs) as cross chain calls, even though they are not started on L1. This is assessed as low severity because any action taken by an EOA on the contract could also be taken by the EOA through the bridge if the issue was not present.*",
+      "summary": "## Issue Fixed\n\n## Issue Impact\n*Contracts using the cross chain utilies for Arbitrum L2, CrossChainEnabledArbitrumL2 or LibArbitrumL2, will classify direct interactions of externally owned accounts (EOAs) as cross chain calls, even though they are not started on L1. This is assessed as low severity because any action taken by an EOA on the contract could also be taken by the EOA through the bridge if the issue was not present.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-9j3m-g383-29qr"
     },
     {
       "title": "4.7.2",
       "uuid": "fcbd158c-253c-48ca-a0bf-6506cca4f3bb",
       "date": "2022-06-28T15:38:45.000Z",
-      "summary": "## Issue Fixed\n**GovernorVotesQuorumFraction updates to quorum may affect past defeated proposals**",
-      "fullDetails": "## Issue Impact\n*This issue concerns instances of Governor that use the module GovernorVotesQuorumFraction, a mechanism that determines quorum requirements as a percentage of the voting token's total supply. In affected instances, when a proposal is passed to lower the quorum requirement, past proposals may become executable if they had been defeated only due to lack of quorum, and the number of votes it received meets the new quorum requirement.*",
+      "summary": "## Issue Fixed\n**GovernorVotesQuorumFraction updates to quorum may affect past defeated proposals**\n\n## Issue Impact\n*This issue concerns instances of Governor that use the module GovernorVotesQuorumFraction, a mechanism that determines quorum requirements as a percentage of the voting token's total supply. In affected instances, when a proposal is passed to lower the quorum requirement, past proposals may become executable if they had been defeated only due to lack of quorum, and the number of votes it received meets the new quorum requirement.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-xrc4-737v-9q75"
     },
     {
       "title": "4.7.2",
       "uuid": "c77adb0b-2a54-4a2a-a766-67ee0c872332",
       "date": "2022-06-28T15:39:48.000Z",
-      "summary": "## Issue Fixed\n**ERC165Checker unbounded gas consumption**",
-      "fullDetails": "## Issue Impact\n*The target contract of an EIP-165 supportsInterface query can cause unbounded gas consumption by returning a lot of data, while it is generally assumed that this operation has a bounded cost.*",
+      "summary": "## Issue Fixed\n**ERC165Checker unbounded gas consumption**\n\n## Issue Impact\n*The target contract of an EIP-165 supportsInterface query can cause unbounded gas consumption by returning a lot of data, while it is generally assumed that this operation has a bounded cost.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-7grf-83vw-6f5x"
     },
     {
       "title": "4.7.1",
       "uuid": "ae385bb8-b67c-413c-bddd-5f102ba32367",
       "date": "2022-07-20T15:40:34.000Z",
-      "summary": "## Issue Fixed\n**SignatureChecker may revert on invalid EIP-1271 signers**",
-      "fullDetails": "## Issue Impact\n*SignatureChecker.isValidSignatureNow is not expected to revert. However, an incorrect assumption about Solidity 0.8's abi.decode allows some cases to revert, given a target contract that doesn't implement EIP-1271 as expected.*",
+      "summary": "## Issue Fixed\n**SignatureChecker may revert on invalid EIP-1271 signers**\n\n## Issue Impact\n*SignatureChecker.isValidSignatureNow is not expected to revert. However, an incorrect assumption about Solidity 0.8's abi.decode allows some cases to revert, given a target contract that doesn't implement EIP-1271 as expected.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-4g63-c64m-25w9"
     },
     {
       "title": "4.7.1",
       "uuid": "d0b9f1f7-976c-43dc-9557-19f621698991",
       "date": "2022-07-20T15:41:30.000Z",
-      "summary": "## Issue Fixed\n**ERC165Checker may revert instead of returning false**",
-      "fullDetails": "## Issue Impact\n*ERC165Checker.supportsInterface is designed to always successfully return a boolean, and under no circumstance revert. However, an incorrect assumption about Solidity 0.8's abi.decode allows some cases to revert, given a target contract that doesn't implement EIP-165 as expected, specifically if it returns a value other than 0 or 1.*",
+      "summary": "## Issue Fixed\n**ERC165Checker may revert instead of returning false**\n\n## Issue Impact\n*ERC165Checker.supportsInterface is designed to always successfully return a boolean, and under no circumstance revert. However, an incorrect assumption about Solidity 0.8's abi.decode allows some cases to revert, given a target contract that doesn't implement EIP-165 as expected, specifically if it returns a value other than 0 or 1.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-qh9x-gcfh-pcrw"
     },
     {
       "title": "4.4.2",
       "uuid": "b9b59391-3d96-41ad-8c9d-ab4c6ce64965",
       "date": "2022-01-11T15:42:25.000Z",
-      "summary": "## Issue Fixed\n**GovernorCompatibilityBravo incorrect ABI encoding may lead to unexpected behavior**",
-      "fullDetails": "## Issue Impact\n*The GovernorCompatibilityBravo module may lead to the creation of governance proposals that execute function calls with incorrect arguments due to bad ABI encoding. This happens if the proposal is created using explicit function signatures, e.g. a proposal to invoke the function foo(uint256) is created as propose([target], [0], [\"foo(uint256)\"], [\"0x00..01\"]). If the function selector is provided as part of the encoded proposal data the issue is not present, e.g. the same proposal is created as propose([target], [0], [\"0x2fbebd3800..01\"]), where 2fbebd38 is the function selector. We've assessed the instances of this contract found on chain, and did not find any occurrence of this bug in the past. Proposal creation through Tally or OpenZeppelin Defender is not affected. The core Governor contract on its own is not affected.*",
+      "summary": "## Issue Fixed\n**GovernorCompatibilityBravo incorrect ABI encoding may lead to unexpected behavior**\n\n## Issue Impact\n*The GovernorCompatibilityBravo module may lead to the creation of governance proposals that execute function calls with incorrect arguments due to bad ABI encoding. This happens if the proposal is created using explicit function signatures, e.g. a proposal to invoke the function foo(uint256) is created as propose([target], [0], [\"foo(uint256)\"], [\"0x00..01\"]). If the function selector is provided as part of the encoded proposal data the issue is not present, e.g. the same proposal is created as propose([target], [0], [\"0x2fbebd3800..01\"]), where 2fbebd38 is the function selector. We've assessed the instances of this contract found on chain, and did not find any occurrence of this bug in the past. Proposal creation through Tally or OpenZeppelin Defender is not affected. The core Governor contract on its own is not affected.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-m6w8-fq7v-ph4m"
     },
     {
       "title": "4.4.1",
       "uuid": "82ccb9cd-b6d8-4e2d-bb18-823efe158896",
       "date": "2021-12-14T15:43:38.000Z",
-      "summary": "## Issue Fixed\n**Initializer reentrancy may lead to double initialization**",
-      "fullDetails": "## Issue Impact\n*Initializer functions that are invoked separate from contract creation (the most prominent example being minimal proxies) may be reentered if they make an untrusted non-view external call.*",
+      "summary": "## Issue Fixed\n**Initializer reentrancy may lead to double initialization**\n\n## Issue Impact\n*Initializer functions that are invoked separate from contract creation (the most prominent example being minimal proxies) may be reentered if they make an untrusted non-view external call.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-9c22-pwxw-p6hx"
     },
     {
       "title": "4.3.3",
       "uuid": "a651610e-9a28-4928-b879-b6f9f079fbd7",
       "date": "2021-11-15T15:44:14.000Z",
-      "summary": "## Issue Fixed\n**ERC1155Supply vulnerability in OpenZeppelin Contracts**",
-      "fullDetails": "## Issue Impact\n*When ERC1155 tokens are minted, a callback is invoked on the receiver of those tokens, as required by the spec. When including the ERC1155Supply extension, total supply is not updated until after the callback, thus during the callback the reported total supply is lower than the real number of tokens in circulation*",
+      "summary": "## Issue Fixed\n**ERC1155Supply vulnerability in OpenZeppelin Contracts**\n\n## Issue Impact\n*When ERC1155 tokens are minted, a callback is invoked on the receiver of those tokens, as required by the spec. When including the ERC1155Supply extension, total supply is not updated until after the callback, thus during the callback the reported total supply is lower than the real number of tokens in circulation*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-wmpv-c2jp-j2xg"
     },
     {
       "title": "4.3.2",
       "uuid": "b82da1d3-e72f-4b7c-b22f-e6c5f7a930cc",
       "date": "2021-09-14T15:45:07.000Z",
-      "summary": "## Issue Fixed\n**UUPSUpgradeable vulnerability in OpenZeppelin Contracts**",
-      "fullDetails": "## Issue Impact\n*Upgradeable contracts using UUPSUpgradeable may be vulnerable to an attack affecting uninitialized implementation contracts. We will update this advisory with more information soon.*",
+      "summary": "## Issue Fixed\n**UUPSUpgradeable vulnerability in OpenZeppelin Contracts**\n\n## Issue Impact\n*Upgradeable contracts using UUPSUpgradeable may be vulnerable to an attack affecting uninitialized implementation contracts. We will update this advisory with more information soon.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-5vp3-v4hc-gx76"
     },
     {
       "title": "4.3.1 & 3.4.2",
       "uuid": "f4ef7e81-ecd3-411b-85f8-7c047e128be5",
       "date": "2021-08-26T15:46:21.000Z",
-      "summary": "## Issue Fixed\n**TimelockController vulnerability in OpenZeppelin Contracts**",
-      "fullDetails": "## Issue Impact\n*A vulnerability in TimelockController allowed an actor with the executor role to take immediate control of the timelock, by resetting the delay to 0 and escalating privileges, thus gaining unrestricted access to assets held in the contract. Instances with the executor role set to \"open\" allow anyone to use the executor role, thus leaving the timelock at risk of being taken over by an attacker.*",
+      "summary": "## Issue Fixed\n**TimelockController vulnerability in OpenZeppelin Contracts**\n\n## Issue Impact\n*A vulnerability in TimelockController allowed an actor with the executor role to take immediate control of the timelock, by resetting the delay to 0 and escalating privileges, thus gaining unrestricted access to assets held in the contract. Instances with the executor role set to \"open\" allow anyone to use the executor role, thus leaving the timelock at risk of being taken over by an attacker.*",
+      "fullDetails": "",
       "moreLink": "https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-fg47-3c2x-m2wr"
     }
   ],
