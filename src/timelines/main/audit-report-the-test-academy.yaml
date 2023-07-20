@@ -12,12 +12,12 @@ events:
 
       <table>
           <tr>
-              <td width="200px">Issue Type</td>
-              <td width="200px">Issues Found</td>
+              <td width="100px">Issue Type</td>
+              <td width="100px">Issues Found</td>
           </tr>
           <tr>
-              <td width ="500px">Total Issues</td>
-              <td width ="500px">26 (18 resolved, 1 partially resolved)</td>
+              <td>Total Issues</td>
+              <td >26 (18 resolved, 1 partially resolved)</td>
           </tr>
           <tr>
               <td>Critical Severity</td>
