@@ -1,0 +1,69 @@
+{
+  "categories": [],
+  "content": "New Guide",
+  "created": "2023-08-02T20:01:21.302Z",
+  "guideType": "onboarding",
+  "key": "guide-name-the-test-academy-251",
+  "name": "Guide Name",
+  "publishStatus": "Live",
+  "steps": [
+    {
+      "content": "\nIntroduction Comments \n        ",
+      "name": "Introduction",
+      "stepItems": [
+        {
+          "label": "Full Name",
+          "required": false,
+          "type": "PublicShortInput",
+          "uuid": "3736011d-77bd-4148-aea0-422104e1ded0"
+        }
+      ],
+      "uuid": "8f6c3301-bba5-4904-9937-1f27f6e8f2fd"
+    },
+    {
+      "content": "",
+      "name": "Introduction Evaluation",
+      "stepItems": [
+        {
+          "label": "Full Name",
+          "required": false,
+          "type": "PublicShortInput",
+          "uuid": "07a17a0d-959e-4e83-b0da-ded61d40aa6f"
+        },
+        {
+          "answerKeys": [
+            "choice_1",
+            "choice_2",
+            "choice_3"
+          ],
+          "choices": [
+            {
+              "content": "Choice 1",
+              "key": "choice_1"
+            },
+            {
+              "content": "Choice 2",
+              "key": "choice_2"
+            },
+            {
+              "content": "Choice 3",
+              "key": "choice_3"
+            },
+            {
+              "content": "Choice 4",
+              "key": "choice_4"
+            }
+          ],
+          "content": "Contents of the question",
+          "type": "MultipleChoice",
+          "uuid": "85734cd7-49ee-47d4-9b51-405737850a34",
+          "explanation": "Explanation of the question"
+        }
+      ],
+      "uuid": "295c50e5-8c15-4d14-a4aa-ebc87915bf34"
+    }
+  ],
+  "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi",
+  "uuid": "bdd66b83-9fd3-44a2-8dba-06f70faaff76",
+  "version": 1
+}
