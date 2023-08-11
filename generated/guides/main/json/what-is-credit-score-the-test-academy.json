@@ -1,12 +1,11 @@
 {
   "categories": [],
   "content": "What is Credit Score and What does it measure",
-  "created": "2023-06-26T15:01:09.757Z",
+  "created": "2023-08-11T17:21:02.241Z",
   "guideType": "onboarding",
   "key": "what-is-credit-score-the-test-academy",
   "name": "What is Credit Score",
   "publishStatus": "Live",
-  "showIncorrectOnCompletion": true,
   "steps": [
     {
       "content": "A credit score is a three-digit number that represents your credit risk, or the likelihood that you will pay your bills on time. It is used by creditors and lenders to determine whether to approve you for credit and what terms to offer you. Your credit score is based on information from your credit reports, such as your bill-paying history, current debt, types of loans, length of credit history, and new credit applications. It is calculated using a mathematical formula called a scoring model. \n\nThere are many different credit scores and scoring models, so your credit score may vary depending on the scoring model used and the credit report it is based on. The most widely used credit scoring system is the FICO score, which ranges from 300 to 850. A higher credit score generally makes it easier to qualify for a loan and may result in better interest rates and loan terms. However, there is no \"magic number\" that guarantees approval or specific terms. \n\nTo improve your credit score, it is important to make payments on time, reduce your debt, and maintain a healthy mix of credit. Closing accounts can negatively impact your credit score, so it is best to keep them open if possible. Bankruptcy can significantly lower your credit score and stay on your credit report for several years. It is important to understand how credit scoring works and the factors that affect your credit score in order to improve your financial health and qualify for the best terms on financial products.",
@@ -26,7 +25,7 @@
       "name": "Introduction Evaluation",
       "stepItems": [
         {
-          "label": "Full Name",
+          "label": "Full Name 444",
           "required": false,
           "type": "PublicShortInput",
           "uuid": "b70edef7-0620-4fb9-b71b-25048beee30a"
@@ -57,13 +56,14 @@
           ],
           "content": "Contents of the question",
           "type": "MultipleChoice",
-          "uuid": "6a9be869-d49b-4853-a06a-a3cef49a22ed"
+          "uuid": "6a9be869-d49b-4853-a06a-a3cef49a22ed",
+          "explanation": null
         }
       ],
       "uuid": "36cf3b89-264d-452b-a778-cde28d69886c"
     }
   ],
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi",
-  "uuid": "8bf114db-66e5-469d-ab59-98c192e892f6",
+  "uuid": "what-is-credit-score-the-test-academy",
   "version": 1
 }

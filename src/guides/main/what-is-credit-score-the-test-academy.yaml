@@ -1,11 +1,10 @@
 categories: []
 content: What is Credit Score and What does it measure
-created: '2023-06-26T15:01:09.757Z'
+created: '2023-08-11T17:21:02.241Z'
 guideType: onboarding
 key: what-is-credit-score-the-test-academy
 name: What is Credit Score
 publishStatus: Live
-showIncorrectOnCompletion: true
 steps:
   - content: >-
       A credit score is a three-digit number that represents your credit risk,
@@ -44,7 +43,7 @@ steps:
   - content: ''
     name: Introduction Evaluation
     stepItems:
-      - label: Full Name
+      - label: Full Name 444
         required: false
         type: PublicShortInput
         uuid: b70edef7-0620-4fb9-b71b-25048beee30a
@@ -64,8 +63,9 @@ steps:
         content: Contents of the question
         type: MultipleChoice
         uuid: 6a9be869-d49b-4853-a06a-a3cef49a22ed
+        explanation: null
     uuid: 36cf3b89-264d-452b-a778-cde28d69886c
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi
-uuid: 8bf114db-66e5-469d-ab59-98c192e892f6
+uuid: what-is-credit-score-the-test-academy
 version: 1
