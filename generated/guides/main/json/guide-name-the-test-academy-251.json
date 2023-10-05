@@ -1,7 +1,7 @@
 {
   "categories": [],
   "content": "New Guide",
-  "created": "2023-10-05T01:12:44.944Z",
+  "created": "2023-10-05T01:13:14.454Z",
   "guideType": "onboarding",
   "key": "guide-name-the-test-academy-251",
   "name": "Guide Name",
@@ -66,5 +66,5 @@
   "thumbnail": "https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi",
   "uuid": "guide-name-the-test-academy-251",
   "version": 1,
-  "priority": 100
+  "priority": -1
 }
