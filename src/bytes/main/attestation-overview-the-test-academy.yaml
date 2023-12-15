@@ -1,0 +1,103 @@
+uniqueId: de76b440-c08c-4914-930e-68ddaa5d7136
+id: attestation-overview-the-test-academy
+name: Attestation Overview
+content: Understanding the concept and role of attestation in digital
+created: '2023-10-03T13:18:35.360Z'
+visibility: Public
+publishStatus: Live
+admins: []
+tags: []
+priority: 0
+steps:
+  - name: Attestation Role
+    uuid: 2cf4c984-632f-47b5-a199-4010e4fcd3ba
+    content: >-
+      Attestations are crucial in representing trust and identity in digital
+      interactions. They are fundamental components of decentralized identity
+      systems. These attestations help create a comprehensive picture of an
+      entity's identity as they can both receive and issue attestations about
+      themselves.
+    stepItems: []
+  - name: Ecosystem Fragmentation
+    uuid: 523acc92-d0ed-4a03-9e68-dd88c9b7b854
+    content: >-
+      The development of numerous identity protocols has led to fragmentation in
+      the ecosystem. This fragmentation makes it challenging for developers to
+      create a comprehensive view of digital identity. Identity can be
+      represented as an aggregate of attestations made by various entities over
+      time.
+    stepItems: []
+  - name: EAS Introduction
+    uuid: 52904c43-e8a3-4185-af85-ea5c603dcb4d
+    content: >-
+      Ethereum Attestation Service (EAS) is an open-source infrastructure
+      designed to provide a public good for creating attestations. It is
+      intended to serve as a foundational layer for various applications and use
+      cases, offering flexibility for developers to choose the most suitable
+      approach for their specific needs.
+    stepItems: []
+  - name: EAS Tools
+    uuid: b95c1b3a-3e2f-412a-86a6-3803fd5237c7
+    content: >-
+      EAS provides an SDK and a set of developer tools to simplify the process
+      of working with attestations. This makes it easier for developers to
+      integrate EAS into their projects. The focus of EAS is on providing a
+      service to the community rather than generating revenue from the
+      infrastructure itself.
+    stepItems: []
+  - name: EAS Contracts
+    uuid: 6ba08f74-3164-45d8-8717-094ba0769290
+    content: >-
+      EAS includes a contract that allows users to register structured data
+      about various topics. This serves as a way to define and categorize the
+      types of data that can be attested to within the EAS ecosystem. Another
+      contract enables the creation of attestations based on the registered
+      schemas.
+    stepItems: []
+  - name: Evaluation
+    uuid: a350a322-435c-42a4-a24a-59f00466d3a9
+    content: ''
+    stepItems:
+      - type: SingleChoice
+        uuid: 33692a03-fef6-439e-b07d-5940e5392d02
+        choices:
+          - key: A
+            content: They are used to buy things from a shop
+          - key: B
+            content: They are used for fun activities
+          - key: C
+            content: They are used to decrease the value of assets
+          - key: D
+            content: They are used to increase the value of assets over time
+        content: What is the role of attestations in digital identity?
+        answerKeys:
+          - A
+        explanation: >-
+          Attestations are crucial in representing trust and identity in digital
+          interactions. They help create a comprehensive picture of an entity's
+          identity as they can both receive and issue attestations about
+          themselves.
+  - name: Evaluation
+    uuid: 56a5298a-2f06-4606-a56b-80a7f198b8b8
+    content: ''
+    stepItems:
+      - type: SingleChoice
+        uuid: 9e288e40-5850-4cf4-ae2f-f2358c466cf3
+        choices:
+          - key: A
+            content: To generate revenue from the infrastructure itself
+          - key: B
+            content: To provide a public good for creating attestations
+          - key: C
+            content: To simplify the process of working with attestations
+          - key: D
+            content: To register structured data about various topics
+        content: What is the purpose of Ethereum Attestation Service (EAS)?
+        answerKeys:
+          - B
+        explanation: >-
+          Ethereum Attestation Service (EAS) is an open-source infrastructure
+          designed to provide a public good for creating attestations. It offers
+          flexibility for developers to choose the most suitable approach for
+          their specific needs.
+spaceId: test-academy-eth

@@ -1,13 +1,10 @@
 categories: []
 content: For developers wishing to develop on Compound III
-created: '2023-03-14T22:04:39.383Z'
-guideIntegrations:
-  discordRoleIds: []
+created: '2023-12-13T16:27:18.022Z'
 guideType: course
 key: develop-on-compound-compound
 name: Develop on Compound
 publishStatus: Live
-showIncorrectOnCompletion: true
 steps:
   - content: >-
       ## Compound III
@@ -70,6 +67,7 @@ steps:
         content: What is the main objective of the Compound Grants Program?
         type: SingleChoice
         uuid: 6b21e44a-a3ab-41ca-b489-2900163c41c9
+        explanation: null
       - answerKeys:
           - 34c918bf
         choices:
@@ -87,6 +85,7 @@ steps:
           How does CGP 2.0 allocate grants?
         type: SingleChoice
         uuid: 3098fbc7-fc1a-43ed-869b-18bb629c2659
+        explanation: null
     uuid: 5547b3b4-edfc-4818-9da0-4b12a022a459
   - content: >-
       These straightforward examples demonstrate the simplicity of working with
@@ -216,6 +215,7 @@ steps:
           What are some ways developers can collaborate with the Compound team?
         type: SingleChoice
         uuid: b0240027-3706-4a97-b253-70193908f9b2
+        explanation: null
     uuid: aaafc153-4c35-4801-be92-a49c96f5ee10
   - content: ''
     name: Your Info
@@ -228,3 +228,5 @@ steps:
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/academy/compound/developing_on_compound.png
 uuid: develop-on-compound-compound
+version: 1
+priority: 99
