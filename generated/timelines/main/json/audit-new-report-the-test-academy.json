@@ -113,5 +113,6 @@
   "admins": [],
   "tags": [],
   "priority": 50,
-  "created": "2023-07-18T14:59:41.527Z"
+  "created": "2023-07-18T14:59:41.527Z",
+  "timelineStyle": "V2_OneSide"
 }
