@@ -10,3 +10,6 @@
  | 6      | Build Comet Extension | How to build a new comet extension  |  [Link](markdown/build-comet-extension-compound.md) |
  | 7      | Compound III Liquidator | How to build Liquidator for the new version of Compound |  [Link](markdown/build-v3-liquidator-compound.md) |
  | 8      | Develop on Compound | For developers wishing to develop on Compound III |  [Link](markdown/develop-on-compound-compound.md) |
+ | 9      | Guide Name | New Guide |  [Link](markdown/guide-name-the-test-academy.md) |
+ | 10      | What is Credit Score | What is Credit Score and What does it measure |  [Link](markdown/what-is-credit-score-the-test-academy.md) |
+ | 11      | Guide Name | New Guide |  [Link](markdown/guide-name-the-test-academy-251.md) |

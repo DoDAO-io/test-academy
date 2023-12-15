@@ -1,0 +1,2538 @@
+id: audit-new-v2-report-the-test-academy
+name: Compound - Audit Reports
+excerpt: >-
+  Captures a comprehensive record of the security audits conducted by
+  OpenZeppelin
+content: >+
+  OpenZeppelin, renowned for its expertise in blockchain security, has
+  meticulously conducted a comprehensive series of security audits on the
+  Compound protocol. These audits aimed to enhance the security and reliability
+  of Compound. The audits encompassed an in-depth examination of smart contract
+  functionalities, codebase intricacies, and interactions with external
+  components. Through collaborative efforts with Compound's developers,
+  vulnerabilities were identified, assessed, and mitigated to bolster the
+  protocol's defenses against potential threats. The summary report encapsulates
+  the audit's key findings, security assessments, and recommended improvements,
+  reinforcing OpenZeppelin's dedication to fortifying the integrity of
+  blockchain projects and the broader DeFi landscape.
+
+  <br/>
+
+
+publishStatus: Live
+events:
+  - title: 'Audit Report: Compound V2 DSR Integration'
+    uuid: eddc0012-cc43-4817-81ef-8bce22a6e8bb
+    date: 2023-05-03T01:26:48.000Z
+    summary: >+
+      ### Overview
+
+      The OpenZeppelin team investigated security concerns in Maker's proposal
+      for Compound to use the Dai Savings Rate (DSR) again. The initial
+      discussion occurred on Compound's forum, and Maker's proposal draft is in
+      the compound-finance/comet repository (commit c83f84e). While this commit
+      affects only one file, the security assessment covers all impacted files,
+      mainly from Compound's compound-protocol repository. Note that the
+      reviewed version might differ from an official proposal due to potential
+      changes.
+
+
+      ### Findings
+
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Severity Level</th>
+
+      <th width="400px">Count of Issues</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>Critical</td>
+
+      <td>0 (0 resolved)</td>
+
+      </tr>
+
+      <tr>
+
+      <td>High</td>
+
+      <td>0 (0 resolved)</td>
+
+      </tr>
+
+
+      <tr>
+
+      <td>Medium</td>
+
+      <td>1 (0 resolved, 1 partially resolved)</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Low</td>
+
+      <td>1 (0 resolved)</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Note</td>
+
+      <td>1 (0 resolved)</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+
+
+
+
+
+
+    fullDetails: >
+      ### Overview
+
+      The OpenZeppelin team investigated security concerns in Maker's proposal
+      for Compound to use the Dai Savings Rate (DSR) again. The initial
+      discussion occurred on Compound's forum, and Maker's proposal draft is in
+      the compound-finance/comet repository (commit c83f84e). While this commit
+      affects only one file, the security assessment covers all impacted files,
+      mainly from Compound's compound-protocol repository. Note that the
+      reviewed version might differ from an official proposal due to potential
+      changes.
+
+
+      ### Findings
+
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Severity Level</th>
+
+      <th width="400px">Count of Issues</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>Critical</td>
+
+      <td>0 (0 resolved)</td>
+
+      </tr>
+
+      <tr>
+
+      <td>High</td>
+
+      <td>0 (0 resolved)</td>
+
+      </tr>
+
+
+      <tr>
+
+      <td>Medium</td>
+
+      <td>1 (0 resolved, 1 partially resolved)</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Low</td>
+
+      <td>1 (0 resolved)</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Note</td>
+
+      <td>1 (0 resolved)</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+
+
+
+      ### Contracts Audited
+
+
+      ```
+
+      compound-finance/comet
+
+      └── deployments/mainnet/usdc/migrations/1673462854_v2_dai_dsr_restore.ts
+
+      compound-finance/compound-protocol
+
+      ├── contracts
+
+      │ ├── CDaiDelegate.sol
+
+      │ ├── DAIInterestRateModelV3.sol
+
+      │ └── CErc20Delegator.sol
+
+      └── spec/certora/contracts/mcd
+
+      ├── Dai.sol
+
+      ├── join.sol
+
+      └── Pot.sol
+
+      ```
+
+
+      ### Table of the issues found and updates for them
+
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Issue Number</th>
+
+      <th width="300px">Description</th>
+
+      <th width="300px">Status / Updates</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>M-01</td>
+
+      <td>Old block rate is hardcoded in calculations affecting the accuracy of
+      system calculations.</td>
+
+      <td>Partially resolved in PR #231; parameters updated but requires
+      community consensus before the governance vote.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L-01</td>
+
+      <td>Lack of validation when setting the interest rate, potentially leading
+      to silent transaction failures.</td>
+
+      <td>Acknowledged; MakerDAO team will validate the script as part of the
+      proposal. Advised for Compound community to verify final addresses.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N-01</td>
+
+      <td>Typographical error in the deployed CDaiDelegate contract.</td>
+
+      <td>Acknowledged but not resolved; MakerDAO team believes the effort to
+      fix does not match the benefit of changing a comment.</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+
+      <p>Note: The provided text was summarized and organized into the requested
+      format. It's important to ensure that the summary and tables accurately
+      represent the original content before using them for decision-making or
+      dissemination.</p>
+    moreLink: https://drive.google.com/file/d/1bfKZ4cvIjUo70B_4ULe08eFMxx7PA-fk/view
+  - title: ' Audit Report: Comet Custom WBTC Price Feed Audit'
+    uuid: 4bb0933d-a295-4697-9285-366ac3959918
+    date: 2023-05-30T18:14:23.000Z
+    summary: >-
+      ### Overview
+
+      OpenZeppelin audited the WBTCPriceFeed.sol contract in the
+      compound-protocol/comet repository. The audit found issues with stale
+      oracle prices, unused named return variables, and constants not using the
+      recommended UPPER_CASE format. Some issues were addressed, while others
+      were acknowledged without immediate resolution.
+
+
+      ### Findings
+
+      Count of Issues by Severity:
+
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Severity</th>
+
+      <th width="400px">Count</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>Critical</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+
+      <td>High</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Medium</td>
+
+      <td>0</td>
+
+      </tr>
+
+
+      <tr>
+
+      <td>Low</td>
+
+      <td>1</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Note</td>
+
+      <td>2</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+    fullDetails: >-
+      ### Summary
+
+      OpenZeppelin audited the WBTCPriceFeed.sol contract in the
+      compound-protocol/comet repository. The audit found issues with stale
+      oracle prices, unused named return variables, and constants not using the
+      recommended UPPER_CASE format. Some issues were addressed, while others
+      were acknowledged without immediate resolution.
+
+
+      ### Findings
+
+      Count of Issues by Severity:
+
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Severity</th>
+
+      <th width="400px">Count</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>Low</td>
+
+      <td>1</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Note</td>
+
+      <td>2</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+
+
+      ### Table of the Issues Found and Updates for Them
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th>Issue ID</th>
+
+      <th>Description</th>
+
+      <th>Update</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>L01</td>
+
+      <td>Stale Oracle Prices Not Handled</td>
+
+      <td>Acknowledged, not resolved. The Compound team stated: <em>Stale price
+      data is definitely a risk... would likely have to be introduced in a
+      larger effort...</em></td>
+
+      </tr>
+
+      <tr>
+
+      <td>N01</td>
+
+      <td>Unused named return variables</td>
+
+      <td>Resolved in <a
+      href="https://github.com/compound-finance/comet/pull/737">pull request
+      #737</a> at commit <a
+      href="https://github.com/compound-finance/comet/blob/bde60e14f65d6fcb2e97e58b3c6859a720505f5d/contracts/pricefeeds/WBTCPriceFeed.sol">bde60e1</a>.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N02</td>
+
+      <td>Constant not using <code>UPPER_CASE</code> format</td>
+
+      <td>Acknowledged, not resolved. The Compound team stated: <em>The Comet
+      repo has chosen to stylistically define... will be used here to remain
+      consistent...</em></td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+    moreLink: https://gist.github.com/kacperrams/7242067e60392e4c96f9a01ba81a7026
+  - title: 'Audit Report: Compound Arbitrum Bridge Receiver Audit'
+    uuid: 001157cb-39ec-4534-be0b-18e0f7781f9a
+    date: 2023-04-04T18:12:00.000Z
+    summary: >+
+
+      ### Overview
+
+      OpenZeppelin audited the compound-finance/comet repository, targeting its
+      recent deployment to the Arbitrum network. The audit encompassed key files
+      linked to the Arbitrum Bridge Receiver. While most issues from past
+      deployments were addressed, some new concerns emerged during this review.
+
+
+      ### Findings
+
+      <table>
+          <tr>
+              <td width="200px">Severity</td>
+              <td width="400px">Count</td>
+          </tr>
+          <tr>
+              <td>Low</td>
+              <td>1</td>
+          </tr>
+          <tr>
+              <td>Notes</td>
+              <td>2</td>
+          </tr>
+      </table>
+
+    fullDetails: >-
+
+      ### Overview
+
+      OpenZeppelin audited the compound-finance/comet repository, targeting its
+      recent deployment to the Arbitrum network. The audit encompassed key files
+      linked to the Arbitrum Bridge Receiver. While most issues from past
+      deployments were addressed, some new concerns emerged during this review.
+
+
+      ### Findings
+
+      <table>
+          <tr>
+              <td width="200px">Severity</td>
+              <td width="400px">Count</td>
+          </tr>
+          <tr>
+              <td>Low</td>
+              <td>1</td>
+          </tr>
+          <tr>
+              <td>Notes</td>
+              <td>2</td>
+          </tr>
+      </table>
+
+
+
+      ### Issues Found
+
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">ID</th>
+
+      <th width="200px">Severity</th>
+
+      <th width="300px">Title</th>
+
+      <th width="300px">Update</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>L-01</td>
+
+      <td>Low</td>
+
+      <td>ETH can get stuck in the ArbitrumBridgeReceiver contract</td>
+
+      <td>Resolved in <a
+      href="https://github.com/compound-finance/comet/pull/733">pull request
+      733</a> at commit <a
+      href="https://github.com/compound-finance/comet/pull/733/commits/6fc6be678732ac2aeaff862cb490aa20c9c11575">6fc6be6</a>.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N-01</td>
+
+      <td>Note</td>
+
+      <td>Cannot configure rewards for tokens with twenty decimals or
+      greater</td>
+
+      <td>Acknowledged, not resolved.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N-02</td>
+
+      <td>Note</td>
+
+      <td>Solidity compiler version not pinned</td>
+
+      <td>Resolved in <a
+      href="https://github.com/compound-finance/comet/pull/731">pull request
+      731</a> at commit <a
+      href="https://github.com/compound-finance/comet/pull/731/commits/ab022818aba15a55897ee831ee29692bef92b677">ab02281</a>.</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+    moreLink: https://gist.github.com/antonleviathan/79d539469779c240ce694142957b0451
+  - title: 'Audit Report: Polygon Bridge Receiver Audit'
+    uuid: 018ac34b-994c-4147-be85-d5881a92fdbb
+    date: 2023-02-17T18:07:03.000Z
+    summary: >-
+      ### Overview
+
+      Compound Finance's comet repository, focused on bridging Ethereum Mainnet
+      and Polygon for its v3 protocol, was audited. While the infrastructure
+      presents reduced attack surfaces due to interlinked contracts, concerns
+      were raised on potential vulnerabilities like rendering the
+      BaseBridgeReceiver inoperable, inability to cancel proposals, and
+      unidirectional message paths. Several issues were acknowledged but left
+      unresolved, and some were addressed in pull requests.
+
+
+      ### Findings
+
+
+      <table>
+        <tr>
+          <th width="200px">Languages</th>
+          <td width="400px">Solidity</td>
+        </tr>
+        <tr>
+          <th>Total Issues</th>
+          <td>14 (4 resolved, 2 partially resolved)</td>
+        </tr>
+        <tr>
+          <th>Critical Severity Issues</th>
+          <td>0 (0 resolved)</td>
+        </tr>
+        <tr>
+          <th>High Severity Issues</th>
+          <td>0 (0 resolved)</td>
+        </tr>
+        <tr>
+          <th>Medium Severity Issues</th>
+          <td>2 (1 resolved)</td>
+        </tr>
+        <tr>
+          <th>Low Severity Issues</th>
+          <td>7 (3 resolved)</td>
+        </tr>
+        <tr>
+          <th>Notes & Additional Information</th>
+          <td>5 (0 resolved, 2 partially resolved)</td>
+        </tr>
+      </table>
+    fullDetails: >
+      ### Overview
+
+      Compound Finance's comet repository, focused on bridging Ethereum Mainnet
+      and Polygon for its v3 protocol, was audited. While the infrastructure
+      presents reduced attack surfaces due to interlinked contracts, concerns
+      were raised on potential vulnerabilities like rendering the
+      BaseBridgeReceiver inoperable, inability to cancel proposals, and
+      unidirectional message paths. Several issues were acknowledged but left
+      unresolved, and some were addressed in pull requests.
+
+
+      ### Contracts Audited
+        ```
+      - contracts/bridges/BaseBridgeReceiver.sol
+
+      - contracts/bridges/polygon/PolygonBridgeReceiver.sol
+
+      - contracts/bridges/vendor/fx-portal/contracts/FxChild.sol
+
+      - contracts/vendor/Timelock.sol
+
+      - contracts/ITimelock.sol
+
+      ```
+
+
+      ### Findings
+
+
+      <table>
+        <tr>
+          <th width="200px">Languages</th>
+          <td width="400px">Solidity</td>
+        </tr>
+        <tr>
+          <th>Total Issues</th>
+          <td>14 (4 resolved, 2 partially resolved)</td>
+        </tr>
+        <tr>
+          <th>Critical Severity Issues</th>
+          <td>0 (0 resolved)</td>
+        </tr>
+        <tr>
+          <th>High Severity Issues</th>
+          <td>0 (0 resolved)</td>
+        </tr>
+        <tr>
+          <th>Medium Severity Issues</th>
+          <td>2 (1 resolved)</td>
+        </tr>
+        <tr>
+          <th>Low Severity Issues</th>
+          <td>7 (3 resolved)</td>
+        </tr>
+        <tr>
+          <th>Notes & Additional Information</th>
+          <td>5 (0 resolved, 2 partially resolved)</td>
+        </tr>
+      </table>
+
+
+      ### Details
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Severity</th>
+            <th>Issue</th>
+            <th>Update</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Medium Severity</td>
+            <td>BaseBridgeReceiver can be rendered inoperable by incorrectly setting the localTimelock</td>
+            <td>Resolved in pull request 665 at commit 1ffc7e9.</td>
+          </tr>
+          <tr>
+            <td>Medium Severity</td>
+            <td>Proposals cannot be canceled</td>
+            <td>Acknowledged, not resolved. L2Timelock proposals cannot be canceled by design.</td>
+          </tr>
+          <tr>
+            <td>Low Severity</td>
+            <td>Reversions in Polygon will not be seen in Ethereum</td>
+            <td>Acknowledged, not resolved. Unidirectional approach by design.</td>
+          </tr>
+          <tr>
+            <td>Low Severity</td>
+            <td>Inconsistent transaction expiry</td>
+            <td>Resolved in pull request 666 at commit fcb9ef3.</td>
+          </tr>
+          <tr>
+            <td>Low Severity</td>
+            <td>Inconsistent usage of uint across loops</td>
+            <td>Resolved in pull request 666 at commit 55712fb.</td>
+          </tr>
+          <tr>
+            <td>Low Severity</td>
+            <td>Lack of indexed parameter</td>
+            <td>Resolved in pull request 666 at commit 4b9bcb5.</td>
+          </tr>
+          <tr>
+            <td>Low Severity</td>
+            <td>Missing distinction between queued and ready-to-execute state</td>
+            <td>Acknowledged, not resolved. Functionally equivalent states.</td>
+          </tr>
+          <tr>
+            <td>Low Severity</td>
+            <td>Identical transactions can be executed inside the same proposal</td>
+            <td>Acknowledged, not resolved. Identical transactions aren't a problem.</td>
+          </tr>
+          <tr>
+            <td>Low Severity</td>
+            <td>Unused return value from executeTransaction</td>
+            <td>Acknowledged, not resolved. Unclear benefits from exposing return values.</td>
+          </tr>
+          <tr>
+            <td>Notes & Additional Information</td>
+            <td>Inconsistent Nomenclature</td>
+            <td>Partially resolved in pull request 666 at commit ccba0d9. GRACE_PERIOD unchanged. Timelock untouched. FxChild docstrings not added.</td>
+          </tr>
+          <tr>
+            <td>Notes & Additional Information</td>
+            <td>Missing docstrings</td>
+            <td>Partially resolved in pull request 666 at commit ccba0d9. Timelock unchanged. FxChild docstrings not added.</td>
+          </tr>
+          <tr>
+            <td>Notes & Additional Information</td>
+            <td>Non-explicit imports are used</td>
+            <td>Acknowledged, not resolved. Will continue using non-explicit imports for consistency.</td>
+          </tr>
+          <tr>
+            <td>Notes & Additional Information</td>
+            <td>Same configuration values as Mainnet deployment</td>
+            <td>Acknowledged, will resolve. Configuration values in #598 not final.</td>
+          </tr>
+          <tr>
+            <td>Notes & Additional Information</td>
+            <td>Inconsistency between backlog and implementation</td>
+            <td>Acknowledged, will resolve. Configuration values in #598 not final.</td>
+          </tr>
+        </tbody>
+      </table>
+    moreLink: https://blog.openzeppelin.com/compound-polygon-bridge-receiver-audit
+  - title: Compound Changes - cETH IRM
+    uuid: 13e0442d-d72c-4537-ad23-dc1cdc852e7d
+    date: 2022-09-03T00:10:18.000Z
+    summary: >
+      ### Overview:
+
+      Compound's proposed ETH Interest Rate Model changes, ahead of the Merge,
+      involve the adaptation of the `LegacyJumpRateModelV2` to the legacy cToken
+      cETH contract. The adjustments include a new block time assumption and
+      transitioning from a single rate to a jump model. The new interest model,
+      upon deployment, will have its ownership shifted to the Timelock, with
+      cETH getting updated via `_setInterestRateModel`.
+
+
+      ### Audit Findings
+
+      Certainly! Here's a table showing the number of Low and Medium findings
+      based on the audit:
+
+
+      ### Findings Severity Count Table:
+
+
+      <table>
+          <tr>
+              <td width="200px">Severity</td>
+              <td width="400px">Count</td>
+          </tr>
+          <tr>
+              <td>Low</td>
+              <td>9</td>
+          </tr>
+          <tr>
+              <td>Medium</td>
+              <td>3</td>
+          </tr>
+      </table>
+
+
+      Total findings: 12.
+    fullDetails: >
+      ### Overview:
+
+      Compound's proposed ETH Interest Rate Model changes, ahead of the Merge,
+      involve the adaptation of the `LegacyJumpRateModelV2` to the legacy cToken
+      cETH contract. The adjustments include a new block time assumption and
+      transitioning from a single rate to a jump model. The new interest model,
+      upon deployment, will have its ownership shifted to the Timelock, with
+      cETH getting updated via `_setInterestRateModel`.
+
+
+      ### Findings Table:
+
+      <table>
+          <tr>
+              <td width="200px">No.</td>
+              <td width="300px">Issue</td>
+              <td width="300px">Severity</td>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>Ownership of the contract can&#39;t be transferred.</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Old solidity version used.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>Missing SPDX-License-Identifier.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>Solidity version is not pinned.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>5</td>
+              <td>Incorrect naming convention for `blocksPerYear`.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>6</td>
+              <td>Imports are not explicit.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>Hardcoded `1e18` instead of predefined variable.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>8</td>
+              <td>`reserves` parameter discrepancy in docstrings.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>9</td>
+              <td>Inconsistent code style for input parameters.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>10</td>
+              <td>Hardcoded `0` used for `getBorrowRate` errors.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>11</td>
+              <td>Redundant `getSupplyRate` function not used in cETH contract.</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>12</td>
+              <td>Scaling down of yearly rates in the new model should be tested for numerical accuracy.</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>13</td>
+              <td>New utilization calculations now account for reserves, impacting the utilization rate calculation.</td>
+              <td>Medium</td>
+          </tr>
+      </table>
+    moreLink: https://gist.github.com/cylon56/f835800252fd580846c06d3d213ff1ba
+  - title: Compound III Audit
+    uuid: 041c152f-6e04-45f8-b3ac-9d6d109f536f
+    date: 2022-06-14T23:35:54.000Z
+    summary: >
+      ### Overview
+
+      OpenZepplin audited a new upcoming version of the Compound lending
+      protocol developed by Compound Labs: “Compound III”, codenamed Comet in
+      this report. This new version will only contain one base asset and can
+      have multiple instances deployed on Ethereum Mainnet and other
+      EVM-compatible networks.
+
+
+      OpenZepplin audited the
+      [compound-finance/comet](https://github.com/compound-finance/comet)
+      repository at the
+      [0f1221967149115f50a09681eea9580879ee7720](https://github.com/compound-finance/comet/tree/0f1221967149115f50a09681eea9580879ee7720)
+      commit.
+
+
+      ### Findings
+
+      Below is a tabular representation of the security audit findings:
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th width="200px">Severity</th>
+            <th width="400px">Issue Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>High Severity</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Medium Severity</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Low Severity</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+    fullDetails: |
+      ### Details
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Severity</th>
+            <th>Issue</th>
+            <th>Update</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>High Severity</td>
+            <td>Locked assets in contracts</td>
+            <td>Partially fixed in commit 3681613. “We think it’s a good idea to add sweep functions to the Bulker to prevent funds from being locked in there. As for Comet, we purposely made the receive function payable in case we ever wanted to support a payable function in CometExt. Doing so allows us to add a payable function to CometExt without having to also upgrade Comet. Since Comet is upgradeable, I don’t think we need to support a way to sweep ETH out of the contract right off the bat”.</td>
+          </tr>
+          <tr>
+            <td>Medium Severity</td>
+            <td>governor can approve anyone to transfer the base and collateral assets within the Comet contract</td>
+            <td>Fixed. “The main intention for approveThis is to allow governance to transfer out any ERC20s accidentally sent to Comet. However, as OpenZeppelin has noted, this will likely require a governance attack. We’d like to point out that in the case of a governance attack, the attacker would not even need approveThis to steal user funds as they could upgrade the implementation of Comet to whatever they please.”</td>
+          </tr>
+          <tr>
+            <td>Medium Severity</td>
+            <td>The protocol may end up holding collateral assets in an unwanted manner</td>
+            <td>Acknowledged. “We intend for targetReserves to be a pretty large value so the protocol can use liquidations to build up a sizable reserve. Once reserves have reached targetReserves, we believe it may be advantageous for the protocol to start HODLing the collateral assets. We’ve run backtesting simulations to identify this as the best strategy for the protocol to build up reserves, but this strategy can definitely change as we conduct more research around liquidation auction strategies.”</td>
+          </tr>
+          <tr>
+            <td>Medium Severity</td>
+            <td>Incorrect accounting of used gas</td>
+            <td>Acknowledged. The team has improved docstrings in commit 14fbc27.</td>
+          </tr>
+      <tr>
+              <td>Low Severity</td>
+              <td>Everyone can deploy new Comet instances</td>
+              <td>Not fixed. The team acknowledge the issue...</td>
+          </tr>
+          <tr>
+              <td>Low Severity</td>
+              <td>Gas inefficiencies</td>
+              <td>Partially fixed in commit 90ca4d0.</td>
+          </tr>
+          <tr>
+              <td>Low Severity</td>
+              <td>Inconvenient use of immutable keyword</td>
+              <td>Fixed in commits 43b5502 and 4d1c1a4.</td>
+          </tr>
+          <tr>
+              <td>Low Severity</td>
+              <td>Logic contracts initialization allowed</td>
+              <td>Fixed in commit 79f59e5.</td>
+          </tr>
+          <tr>
+              <td>Low Severity</td>
+              <td>Missing validations</td>
+              <td>Partially fixed in PR 455, merged commit bf20ccf...</td>
+          </tr>
+      <tr>
+            <td>Low</td>
+            <td>Incorrect or missing docstrings</td>
+            <td>Partially fixed in commit 9227075. Docstring was only changed in the Configurator contract.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Lack of indexed parameters</td>
+            <td>Fixed in commit 7124b98.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Contracts folder is not properly organized</td>
+            <td>Acknowledged. No changes at this time.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>rewardsClaimed can be mixed between different tokens</td>
+            <td>Fixed in commit ced8026.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Naming issues</td>
+            <td>Partially fixed in commit b5a64d0.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Use of Global imports</td>
+            <td>Acknowledged. No refactoring planned.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Potential front-run</td>
+            <td>Scenario added in PR#431 for testing.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Potential reentrancies</td>
+            <td>Acknowledged. Emphasis on testing, static analysis or code changes.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Repetitive code</td>
+            <td>Acknowledged. Organizational decisions based on clarity, code size, gas cost.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Typos</td>
+            <td>Fixed in commit a1bd99f.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Unnecessary return values</td>
+            <td>Acknowledged. Used for handoff control flow.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Lack of explicitness on data type sizes</td>
+            <td>Partially fixed in PR#421 and PR#454.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>PRICE_SCALE constant is not used</td>
+            <td>Acknowledged. Used via the priceScale function.</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>Wrong value emitted in event</td>
+            <td>Fixed in commit edc5a0a.</td>
+          </tr>
+        </tbody>
+      </table>
+    moreLink: https://blog.openzeppelin.com/compound-iii-audit
+  - title: Audit of Compound Changes  - PR193 & PR177
+    uuid: da0e8047-34d1-4013-a107-2a6b1fe4684a
+    date: 2022-05-11T23:58:37.000Z
+    summary: >
+      ### Summary
+
+      Audit for Compound Changes by OpenZeppelin highlighted concerns in
+      [PR193](https://github.com/compound-finance/compound-protocol/pull/193)
+      regarding unchecked transfers, naming conventions, and outdated Solidity
+      versions. In
+      [PR177](https://github.com/compound-finance/compound-protocol/pull/177), a
+      potential risk of ethers being irretrievably locked in the Governor was
+      identified. Both PRs contain several areas needing remediation or
+      attention.
+
+
+      ### Findings
+
+      Count of Issues by Severity:
+
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Severity</th>
+
+      <th width="400px">Count</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>Critical</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+
+      <td>High</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+            <td>Medium (M)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Low (L)</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Negligible (N)</td>
+            <td>6</td>
+          </tr>
+      </tbody>
+
+      </table>
+    fullDetails: >-
+      ### Summary
+
+      Audit for Compound Changes by OpenZeppelin highlighted concerns in
+      [PR193](https://github.com/compound-finance/compound-protocol/pull/193)
+      regarding unchecked transfers, naming conventions, and outdated Solidity
+      versions. In
+      [PR177](https://github.com/compound-finance/compound-protocol/pull/177), a
+      potential risk of ethers being irretrievably locked in the Governor was
+      identified. Both PRs contain several areas needing remediation or
+      attention.
+
+
+      ### Findings
+
+      Count of Issues by Severity:
+
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Severity</th>
+
+      <th width="400px">Count</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>Critical</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+
+      <td>High</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+            <td>Medium (M)</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Low (L)</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Negligible (N)</td>
+            <td>6</td>
+          </tr>
+      </tbody>
+
+      </table>
+
+
+      ### Details
+
+
+      Here's a concise table of the audit findings:
+
+      <table>
+          <tr>
+              <td width="200px">PR Link</td>
+              <td width="300px">Code ID</td>
+              <td width="300px">Finding Summary</td>
+          </tr>
+          <tr>
+              <td><a href="https://github.com/compound-finance/compound-protocol/pull/193">PR193</a></td>
+              <td>M01</td>
+              <td>`sweep` function doesn&#39;t check for sweeping COMP token.</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>L01</td>
+              <td>Unchecked silent fail inside `EIP20NonStandardInterface.transfer`.</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>L02</td>
+              <td>Unused imports: `ErrorReporter` &amp; `ComptrollerInterface`.</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>N01</td>
+              <td>Missing error string in require statement in line 20.</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>N02</td>
+              <td>Absence of named import syntax for contracts.</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>N03</td>
+              <td>Outdated, unpinned Solidity version.</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>N04</td>
+              <td>Missing &quot;_&quot; prefix for admin functions as per Compound convention.</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>N05</td>
+              <td>Missing docstrings for `sweep` and `_become`.</td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>N06</td>
+              <td>Recommended visibility for `sweep` and `_become` to be external.</td>
+          </tr>
+          <tr>
+              <td><a href="https://github.com/compound-finance/compound-protocol/pull/177" >PR177</a></td>
+              <td>L01</td>
+              <td>Risk of ethers being locked when sent to Governor using selfdestruct.</td>
+          </tr>
+      </table>
+    moreLink: https://gist.github.com/cylon56/752f9061713a8d737e526fdce4b85f1f
+  - title: Compound UAV Oracle Upgrade Audit
+    uuid: 7e44fc63-ceb1-4098-a67b-293c0ea37175
+    date: 2022-03-31T20:33:03.000Z
+    summary: >
+      ### Overview
+
+      As part of OpenZeppelin's Security Partnership with Compound, OZ have
+      audited a refactor of
+
+      the already existing open oracle solution. The refactor includes a
+      migration to Uniswap v3
+
+      liquidity pools. Given that oracle pricing feeds are a critical component
+      of new asset listings,
+
+      we are also auditing this upgrade to better understand the oracle system
+      before moving to
+
+      create an asset listing security checklist.
+
+
+      ### Findings
+
+      <table>
+          <tr>
+              <th width="200px">Issue Type</td>
+              <td width="400px">Issues Found</td>
+          </tr>
+          <tr>
+                  <td>Critical</td>
+                  <td>0 (0 resolved)</td> 
+              </tr>
+              <tr>
+                  <td>High</td>
+                  <td>0 (0 resolved)</td> 
+              </tr>
+              <tr>
+                  <td>Medium</td>
+                  <td>1 (0 resolved)</td> 
+              </tr>
+              <tr>
+                  <td>Low</td>
+                  <td>4 (0 resolved)</td> 
+              </tr>
+              <tr>
+                  <td>Notes & Additional Information</td>
+                  <td>12 (0 resolved)</td> 
+              </tr>
+
+      </table>
+    fullDetails: >+
+      ### Overview
+
+      As part of OpenZeppelin's Security Partnership with Compound, OZ have
+      audited a refactor of
+
+      the already existing open oracle solution. The refactor includes a
+      migration to Uniswap v3
+
+      liquidity pools. Given that oracle pricing feeds are a critical component
+      of new asset listings,
+
+      we are also auditing this upgrade to better understand the oracle system
+      before moving to
+
+      create an asset listing security checklist.
+
+
+      ### Audit Summary
+
+      <table>
+          <tr>
+              <th width="200px">Issue Type</td>
+              <td width="400px">Issues Found</td>
+          </tr>
+          <tr>
+                  <td>Critical</td>
+                  <td>0 (0 resolved)</td> 
+              </tr>
+              <tr>
+                  <td>High</td>
+                  <td>0 (0 resolved)</td> 
+              </tr>
+              <tr>
+                  <td>Medium</td>
+                  <td>1 (0 resolved)</td> 
+              </tr>
+              <tr>
+                  <td>Low</td>
+                  <td>4 (0 resolved)</td> 
+              </tr>
+              <tr>
+                  <td>Notes & Additional Information</td>
+                  <td>12 (0 resolved)</td> 
+              </tr>
+
+      </table>
+
+
+      ### Details
+
+
+      <table>
+          <thead>
+              <tr>
+                  <th>Severity</th>
+                  <th>Issue ID</th>
+                  <th>Description</th>
+                  <th>Update</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Medium Severity -->
+              <tr>
+                  <td rowspan="2">Medium</td>
+                  <td>M-01</td>
+                  <td>Oracle implementation is not scalable</td>
+                  <td>Acknowledged. Chainlink: "We are working with Compound on future oracle architectures".</td>
+              </tr>
+              <tr>
+                  <td>M-02</td>
+                  <td>Dangerous use of abi.encodePacked</td>
+                  <td>Fixed in commits 2df57c7 and 8126681.</td>
+              </tr>
+
+              <!-- Low Severity -->
+              <tr>
+                  <td rowspan="4">Low</td>
+                  <td>L-01</td>
+                  <td>Gas inefficiencies</td>
+                  <td>Partially fixed in PR 9.</td>
+              </tr>
+              <tr>
+                  <td>L-02</td>
+                  <td>Ownership cannot be abandoned</td>
+                  <td>Not fixed. Chainlink: "Won't change as Compound community is against this".</td>
+              </tr>
+              <tr>
+                  <td>L-03</td>
+                  <td>Failover issues</td>
+                  <td>Fixed in commit a5cf8.</td>
+              </tr>
+              <tr>
+                  <td>L-04</td>
+                  <td>Unchecked downcast</td>
+                  <td>Fixed in commit 6b975.</td>
+              </tr>
+
+              <!-- Notes -->
+              <tr>
+                  <td rowspan="12">Notes</td>
+                  <td>N-01</td>
+                  <td>Visibility issues in state variables</td>
+                  <td>Fixed in commit 07f6da1.</td>
+              </tr>
+              <tr>
+                  <td>N-02</td>
+                  <td>Constants not explicit</td>
+                  <td>Should define constants for magic values.</td>
+              </tr>
+              <tr>
+                  <td>N-03</td>
+                  <td>Docstrings issues</td>
+                  <td>Partially fixed in 0fc7f.</td>
+              </tr>
+              <tr>
+                  <td>N-04</td>
+                  <td>Missing error strings</td>
+                  <td>Not fixed. Chainlink doesn't want to change external code.</td>
+              </tr>
+              <tr>
+                  <td>N-05</td>
+                  <td>pendingOwner has no getter</td>
+                  <td>Not fixed. Chainlink: "pendingOwner is from an imported contract".</td>
+              </tr>
+              <tr>
+                  <td>N-06</td>
+                  <td>Naming issues</td>
+                  <td>Partially fixed in commit 65051.</td>
+              </tr>
+              <tr>
+                  <td>N-07</td>
+                  <td>Imports style issues</td>
+                  <td>Partially fixed in commit 8df32.</td>
+              </tr>
+              <tr>
+                  <td>N-08</td>
+                  <td>Outdated Solidity versions</td>
+                  <td>Not fixed. Chainlink prefers current version.</td>
+              </tr>
+              <tr>
+                  <td>N-09</td>
+                  <td>Typographical errors</td>
+                  <td>Partially fixed in commit 0cedb.</td>
+              </tr>
+              <tr>
+                  <td>N-10</td>
+                  <td>Implicit uint use</td>
+                  <td>Fixed in commit 75f4a.</td>
+              </tr>
+              <tr>
+                  <td>N-11</td>
+                  <td>Unclear mulDiv function</td>
+                  <td>Not fixed. Chainlink: "mulDiv is from an imported contract".</td>
+              </tr>
+              <tr>
+                  <td>N-12</td>
+                  <td>Unused variables</td>
+                  <td>Not fixed. Chainlink doesn't change external code.</td>
+              </tr>
+          </tbody>
+      </table>
+
+    moreLink: https://drive.google.com/file/d/1usfoYjWtlvrf8Ca6akFDvITwHC-wk73Y/view
+  - title: 'Audit Report: Deployed Contracts Audit'
+    uuid: eb2b0562-d970-4ff2-855f-c3644d0d80a8
+    date: 2022-01-23T20:19:51.000Z
+    summary: |-
+      ### Audit Summary
+      <table>
+        <tr>
+          <th width="200px">Start Date</th>
+          <td width="400px">January 24, 2022</td>
+        </tr>
+        <tr>
+          <th>End Date</th>
+          <td>March 4, 2022</td>
+        </tr>
+        <tr>
+          <th>Language</th>
+          <td>Solidity</td>
+        </tr>
+        <tr>
+          <th>Codebase</th>
+          <td>Primarily written in Solidity.</td>
+        </tr>
+        <tr>
+          <th>Total Issues</th>
+          <td>30</td>
+        </tr>
+        <tr>
+          <th>Critical</th>
+          <td>1 (Resolved)</td>
+        </tr>
+        <tr>
+          <th>High</th>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>Medium</th>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>Low</th>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th>Notes</th>
+          <td>19 Additional observations and recommendations provided for codebase improvement.</td>
+        </tr>
+      </table>
+    fullDetails: >
+      Deployed Contracts Audit
+
+
+      Overview: Auditing deployed Compound contracts affecting governance
+      proposals. Establishes baseline knowledge.
+
+      Scope: All contracts except currently deployed CToken contracts.
+
+      Participants: Compound Labs team, community developers.
+
+      Timeline: Jan - Mar 2023.
+
+      Expected Outcome: Feedback and security recommendations for potential
+      improvements.
+
+      CToken Refactor Audit
+
+
+      Overview: Auditing refactored CToken contracts.
+
+      Scope: Refactoring of previously audited contracts.
+
+      Participants: Equilibria team (community grant).
+
+      Timeline: Jan - Mar 2023.
+
+      Expected Outcome: Resolution of issues found, report for community review
+      prior to governance proposals.
+
+      Security Advisory
+
+
+      Defining security measures for governance proposal changes.
+
+      Tooling recommendations for secure deployment.
+
+      Asset listing security guidance.
+
+      Additional measures including bug bounties, incident response, and
+      learnings from protocol audit.
+
+      Security Monitoring
+
+
+      Building Security Monitoring Dashboard for Compound.
+
+      Gathering requirements, selecting metrics and tools.
+
+      Utilizing Forta for real-time threat detection.
+
+      Sponsoring development of Forta agents.
+
+      Evolving solution iteratively with new metrics.
+
+      Community Participation
+
+      Sharing protocol change plans early.
+
+      Expressing security concerns to OpenZeppelin and community.
+
+      Leveraging OpenZeppelin resources for smart contract security education.
+
+      Providing feedback and suggestions for initiatives.
+    moreLink: https://www.comp.xyz/t/openzeppelin-security-updates-for-jan-2022/2918/2
+  - title: 'Audit Report: Governor Bravo'
+    uuid: 0891236a-28dc-4b0c-8b4c-faf835b6d002
+    date: 2021-02-12T13:15:08.000Z
+    summary: >
+      ### Overview
+
+      The audit evaluated the new governance mechanism called Governor Bravo
+      introduced by the Compound team. No critical or high severity issues were
+      discovered; however, some medium and low severity issues were identified
+      and recommendations provided. Overall, the codebase was deemed clear and
+      readable, with incremental changes from Governor Alpha commended.
+
+
+      ### Findings
+
+      Count of Issues by Severity:
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th width="200px">Severity</th>
+            <th width="400px">Issue Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Critical</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>High</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Notes & Additional Information</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    fullDetails: >
+      ### Overview
+
+      The audit evaluated the new governance mechanism called Governor Bravo
+      introduced by the Compound team. No critical or high severity issues were
+      discovered; however, some medium and low severity issues were identified
+      and recommendations provided. Overall, the codebase was deemed clear and
+      readable, with incremental changes from Governor Alpha commended.
+
+
+      ### Findings
+
+      Count of Issues by Severity:
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th width="200px">Severity</th>
+            <th width="400px">Issue Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Critical</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>High</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Notes & Additional Information</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      ### Table of Issues Found and Updates for Them:
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Severity</th>
+            <th>Issue</th>
+            <th>Update</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Medium</td>
+            <td>[M01] Lack of input validation</td>
+            <td>Partially fixed in pull request #5</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>[M02] Proposals cannot contain duplicate transactions</td>
+            <td>Not Specified</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>[L01] Unexecuted proposals from Governor Alpha will be frozen</td>
+            <td>Not Specified</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>[L02] initialize can be called multiple times</td>
+            <td>Fixed in pull request #4</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>[L03] Missing docstrings</td>
+            <td>Fixed in pull request #10</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>[L04] Superfluous condition in require statement</td>
+            <td>Not Specified</td>
+          </tr>
+          <tr>
+            <td>Low</td>
+            <td>[L05] Unused return value</td>
+            <td>Fixed in pull request #6</td>
+          </tr>
+          <tr>
+            <td>Notes</td>
+            <td>[N01] Inconsistent style</td>
+            <td>Fixed in pull request #7</td>
+          </tr>
+          <tr>
+            <td>Notes</td>
+            <td>[N02] Misleading revert messages</td>
+            <td>Partially fixed in pull request #8</td>
+          </tr>
+          <tr>
+            <td>Notes</td>
+            <td>[N03] Overflow protection unneeded</td>
+            <td>Not Specified</td>
+          </tr>
+          <tr>
+            <td>Notes</td>
+            <td>[N04] Declare uint as uint256</td>
+            <td>Not Specified</td>
+          </tr>
+          <tr>
+            <td>Notes</td>
+            <td>[N05] Upgradeable proxy design can be improved</td>
+            <td>Fixed in pull request #9</td>
+          </tr>
+        </tbody>
+      </table>
+    moreLink: https://blog.openzeppelin.com/compound-governor-bravo-audit
+  - title: 'Audit Report:  Open Price Feed – Uniswap Integration'
+    uuid: ac07bb59-c47d-4522-8fbe-6ba6bcfb3dd4
+    date: 2020-07-16T02:05:35.000Z
+    summary: >-
+      ### Overview
+
+      The Compound team's new view for the Open Price Feed has been audited,
+      which incorporates an integration with Uniswap V2. The system enables a
+      trusted reporter to post asset prices on-chain, anchored by Uniswap V2
+      prices, ensuring reporter's limited ability to manipulate. Although there
+      are no critical or high-severity issues, multiple medium and low-severity
+      concerns were identified.
+
+
+      ### Findings
+
+      <table >
+          <thead>
+              <tr>
+                  <th width="200px">Severity</th>
+                  <th width="400px">Count</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Critical</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>High</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>Medium</td>
+                  <td>8</td>
+              </tr>
+              <tr>
+                  <td>Low</td>
+                  <td>8</td>
+              </tr>
+          </tbody>
+      </table>
+    fullDetails: >-
+      ### Overview
+
+      The Compound team's new view for the Open Price Feed has been audited,
+      which incorporates an integration with Uniswap V2. The system enables a
+      trusted reporter to post asset prices on-chain, anchored by Uniswap V2
+      prices, ensuring reporter's limited ability to manipulate. Although there
+      are no critical or high-severity issues, multiple medium and low-severity
+      concerns were identified.
+
+
+      ### Findings
+
+      <table >
+          <thead>
+              <tr>
+                  <th width="200px">Severity</th>
+                  <th width="400px">Count</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Critical</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>High</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>Medium</td>
+                  <td>8</td>
+              </tr>
+              <tr>
+                  <td>Low</td>
+                  <td>8</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+      <h3>Issues</h3>
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th>ID</th>
+
+      <th>Description</th>
+
+      <th>Severity</th>
+
+      <th>Recommendation</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>L01</td>
+
+      <td>No overflow checks in price calculation</td>
+
+      <td>Medium</td>
+
+      <td>Implement SafeMath or similar logic.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L02</td>
+
+      <td>Events not capturing enough information</td>
+
+      <td>Medium</td>
+
+      <td>Augment event emissions.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L03</td>
+
+      <td>Functions can be external</td>
+
+      <td>Medium</td>
+
+      <td>Change visibility from public to external.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L04</td>
+
+      <td>No use of latest Solidity version</td>
+
+      <td>Medium</td>
+
+      <td>Upgrade to the latest version.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L05</td>
+
+      <td>Potential division by zero</td>
+
+      <td>Medium</td>
+
+      <td>Add guards against zero denominators.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L06</td>
+
+      <td>Absence of function revert messages</td>
+
+      <td>Low</td>
+
+      <td>Add revert messages.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L07</td>
+
+      <td>Misleading naming</td>
+
+      <td>Low</td>
+
+      <td>Refactor to more intuitive names.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L08</td>
+
+      <td>Usage of selfdestruct</td>
+
+      <td>Low</td>
+
+      <td>Consider its implications.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L09</td>
+
+      <td>Lack of indexed parameters in events</td>
+
+      <td>Low</td>
+
+      <td>Index parameters of the concerned events.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L10</td>
+
+      <td>Lack of event emissions</td>
+
+      <td>Low</td>
+
+      <td>Emit the necessary event after the required operation.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L11</td>
+
+      <td>Missing docstrings</td>
+
+      <td>Low</td>
+
+      <td>Add relevant docstrings in NatSpec format.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L12</td>
+
+      <td>Erroneous comments</td>
+
+      <td>Low</td>
+
+      <td>Update the misleading comments.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>L13</td>
+
+      <td>Constructor’s parameter order mismatch</td>
+
+      <td>Low</td>
+
+      <td>Align parameter order with the specification.</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+
+      <h3>Notes &amp; Additional Information</h3>
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th>ID</th>
+
+      <th>Description</th>
+
+      <th>Recommendation</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>N01</td>
+
+      <td>Prone-to-error implementation in UniswapConfig contract</td>
+
+      <td>Favor better data structures over many individual state
+      variables.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N02</td>
+
+      <td>Implicit upcasting of uint112 variable</td>
+
+      <td>Explicitly cast variables for clarity.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N03</td>
+
+      <td>Code repetition</td>
+
+      <td>Factor out repetitive functions into libraries.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N04</td>
+
+      <td>Copied code from Uniswap V2 Periphery repository</td>
+
+      <td>Import directly and attribute authors.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N05</td>
+
+      <td>Missing units</td>
+
+      <td>Clarify units in docstrings or inline comments.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N06</td>
+
+      <td>Redundant boolean check</td>
+
+      <td>Remove redundant boolean comparisons.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N07</td>
+
+      <td>Constants not declared explicitly</td>
+
+      <td>Declare magic values as named constants.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N08</td>
+
+      <td>Naming</td>
+
+      <td>Adopt more descriptive and consistent naming.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N09</td>
+
+      <td>Inconsistent use of uint and uint256 types</td>
+
+      <td>Favor consistent usage of type declarations.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N10</td>
+
+      <td>Typographical errors</td>
+
+      <td>Correct the typographical errors.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N11</td>
+
+      <td>Lack of explicit visibility in state variables</td>
+
+      <td>Declare state variables' visibility explicitly.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>N12</td>
+
+      <td>Unnecessary public visibility in functions</td>
+
+      <td>Change visibility from public to external where applicable.</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+    moreLink: >-
+      https://blog.openzeppelin.com/compound-open-price-feed-uniswap-integration-audit
+  - title: 'Audit Report: Tether Integration'
+    uuid: a4897aaa-a10a-459e-8596-0b61442c10ed
+    date: 2020-04-26T12:05:53.000Z
+    summary: >-
+      ### Overview
+
+      The Compound team's integration of Tether’s USDT token into the
+      PriceOracleProxy contract, along with other codebase modifications,
+      underwent a thorough security audit. No critical or high severity issues
+      were identified; however, recommendations for medium and low severity
+      issues were made. Monitoring of USDT and USDC real market prices was
+      emphasized, and the overall code quality was commended as clean and
+      well-organized.
+
+
+      ### Findings
+
+      Table with the count of the issues by severity:
+
+      <table>
+          <thead>
+              <tr>
+                  <th width="200px">Severity</th>
+                  <th width="400px">Count</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Critical</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>High</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>Medium</td>
+                  <td>1</td>
+              </tr>
+              <tr>
+                  <td>Low</td>
+                  <td>3</td>
+              </tr>
+          </tbody>
+      </table>
+    fullDetails: >
+      ### Overview
+
+      The Compound team's integration of Tether’s USDT token into the
+      PriceOracleProxy contract, along with other codebase modifications,
+      underwent a thorough security audit. No critical or high severity issues
+      were identified; however, recommendations for medium and low severity
+      issues were made. Monitoring of USDT and USDC real market prices was
+      emphasized, and the overall code quality was commended as clean and
+      well-organized.
+
+
+      ### Findings
+
+      Table with the count of the issues by severity:
+
+      <table>
+          <thead>
+              <tr>
+                  <th width="200px">Severity</th>
+                  <th width="400px">Count</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Critical</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>High</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>Medium</td>
+                  <td>1</td>
+              </tr>
+              <tr>
+                  <td>Low</td>
+                  <td>3</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+      ### Table of the issues found and updates for them:
+
+      <table>
+          <thead>
+              <tr>
+                  <th>Issue ID</th>
+                  <th>Severity</th>
+                  <th>Description</th>
+                  <th>Recommendation</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>M01</td>
+                  <td>Medium</td>
+                  <td>Undocumented assembly blocks in the CErc20Delegator contract.</td>
+                  <td>Consider extensive documentation for the assembly blocks to improve clarity and trust.</td>
+              </tr>
+              <tr>
+                  <td>L01</td>
+                  <td>Low</td>
+                  <td>Price manipulation possible in SimplePriceOracle due to lack of access control.</td>
+                  <td>Highlight its deployment only on testnets and ensure this through comments or code checks.</td>
+              </tr>
+              <tr>
+                  <td>L02</td>
+                  <td>Low</td>
+                  <td>Lack of indexed parameters in PricePosted event.</td>
+                  <td>Consider indexing the asset parameter for efficient event searches.</td>
+              </tr>
+              <tr>
+                  <td>L03</td>
+                  <td>Low</td>
+                  <td>The SAI Price is unchangeable after SCD shutdown, posing potential risks.</td>
+                  <td>Monitor SAI's price and possibly switch to a real-time oracle or restrict further borrowing if divergences occur.</td>
+              </tr>
+          </tbody>
+      </table>
+    moreLink: https://blog.openzeppelin.com/compound-tether-integration-audit
+  - title: 'Audit Report: Multicollateral DAI and DSR Integration'
+    uuid: ff8cdf56-4534-437a-9778-ba88933c1682
+    date: 2020-02-10T02:54:46.000Z
+    summary: >-
+      ### Overview
+
+      Compound Finance introduced changes to support Multi-collateral DAI and
+      the DAI Savings Rate contracts, allowing DAI suppliers to earn both from
+      the DAI Savings Rate (DSR) and the interest from DAI borrowers.
+
+      The logic for this integration is managed by the new CDaiDelegate contract
+      which uses the DAIInterestRateModel contract to set borrow and supply
+      rates.
+
+      No critical or high severity issues were found in the audit, but some
+      medium severity issues were identified that could affect user withdrawals,
+      interest rates, and gas efficiency.
+
+
+      ### Findings
+
+      Table with the Count of the Issues by Severity:
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Severity</th>
+
+      <th width="400px">Issue Count</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>Critical</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+
+      <td>High</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Medium</td>
+
+      <td>3</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Low</td>
+
+      <td>0</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+    fullDetails: >-
+      ### Overview
+
+      Compound Finance introduced changes to support Multi-collateral DAI and
+      the DAI Savings Rate contracts, allowing DAI suppliers to earn both from
+      the DAI Savings Rate (DSR) and the interest from DAI borrowers.
+
+      The logic for this integration is managed by the new CDaiDelegate contract
+      which uses the DAIInterestRateModel contract to set borrow and supply
+      rates.
+
+      No critical or high severity issues were found in the audit, but some
+      medium severity issues were identified that could affect user withdrawals,
+      interest rates, and gas efficiency.
+
+
+      ### Findings
+
+      Table with the Count of the Issues by Severity:
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th width="200px">Severity</th>
+
+      <th width="400px">Issue Count</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>Critical</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+
+      <td>High</td>
+
+      <td>0</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Medium</td>
+
+      <td>3</td>
+
+      </tr>
+
+      <tr>
+
+      <td>Low</td>
+
+      <td>0</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+
+
+      ### Table of the Issues Found and Updates for Them
+
+      <table>
+
+      <thead>
+
+      <tr>
+
+      <th>Issue Code</th>
+
+      <th>Description</th>
+
+      <th>Updates/Suggestions</th>
+
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      <tr>
+
+      <td>M01</td>
+
+      <td><code>daiJoin.cage</code> prevents withdrawals</td>
+
+      <td>Inform users about risks of using Compound’s DAI market and consider
+      actions for pauseGuardian/admin roles if "caged".</td>
+
+      </tr>
+
+      <tr>
+
+      <td>M02</td>
+
+      <td>Negative DSR causes unexpected reverts</td>
+
+      <td>Return 0 when <code>dsr &lt; 1e27</code> and consider mechanism to
+      halt deposits into the DSR contract if <code>dsr</code> is below
+      <code>1e27</code>.</td>
+
+      </tr>
+
+      <tr>
+
+      <td>M03</td>
+
+      <td>Unnecessary calls to <code>drip</code> function of <code>pot</code>
+      contract</td>
+
+      <td>Wrap line 103 of <code>CDaiDelegate.sol</code> in an if condition
+      (<code>PotLike(potAddress).rho() != now</code>) for better gas
+      efficiency.</td>
+
+      </tr>
+
+      </tbody>
+
+      </table>
+    moreLink: ''
+admins: []
+tags: []
+priority: 50
+created: '2023-07-18T14:59:41.527Z'

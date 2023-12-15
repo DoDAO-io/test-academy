@@ -63,7 +63,7 @@ steps:
         content: Contents of the question
         type: MultipleChoice
         uuid: 6a9be869-d49b-4853-a06a-a3cef49a22ed
-        explanation: null
+        explanation: "null"
     uuid: 36cf3b89-264d-452b-a778-cde28d69886c
 thumbnail: >-
   https://d31h13bdjwgzxs.cloudfront.net/QmWy8EeMnxqx96VEPx2NBwzqtKxvMQqVVYvmPKgAYS2cUi

@@ -36,7 +36,7 @@ events:
       - contracts/utils/governance/utils/Votes.sol
       - 
       - contracts/token/ERC20/extensions/ERC20Votes.sol*
-    fullDetails: null
+    fullDetails: ''
     moreLink: https://compound.finance/governance/proposals/149
   - title: Initialized cWETHv3 on Ethereum
     uuid: 5a302600-83b7-446d-b365-b7eea4ab5792
@@ -52,7 +52,7 @@ events:
       ChainLink stETH/USD feed was used to multiply by the wstETH/stETH exchange
       rate. This contract was in OpenZeppelin's queue for an audit. For cbETH,
       Coinbase had launched a new cbETH/USD price feed together with ChainLink.
-    fullDetails: null
+    fullDetails: ''
     moreLink: https://compound.finance/governance/proposals/144
   - title: AUDIT REPORTS
     uuid: 60f56885-0cd6-4fd9-9f67-aa7a216c17e0
@@ -87,7 +87,7 @@ events:
 
       contracts/token/ERC20/extensions/ERC20Votes.sol
     fullDetails: ''
-    moreLink: null
+    moreLink: ''
 admins: []
 tags: []
 priority: 50

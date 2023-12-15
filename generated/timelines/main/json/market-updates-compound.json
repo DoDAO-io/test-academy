@@ -10,7 +10,7 @@
       "uuid": "fb7ebaed-52fe-411e-95e3-b00bfc149722",
       "date": "2023-02-20T05:00:00.000Z",
       "summary": "- *Files Audited\n- contracts/utils/StorageSlot.sol\n- \n- contracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol\n- \n- contracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol\n- \n- contracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!\n- \n- contracts/utils/governance/extensions/GovernorTimelockCompound.sol\n- \n- contracts/utils/governance/extensions/GovernorVotesComp.sol\n- \n- contracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol\n- \n- contracts/utils/governance/extensions/GovernorVotes.sol\n- \n- contracts/utils/governance/Governor.sol\n- \n- contracts/utils/governance/IGovernor.sol\n- \n- contracts/utils/governance/TimelockController.sol\n- \n- contracts/utils/governance/utils/IVotes.sol\n- \n- contracts/utils/governance/utils/Votes.sol\n- \n- contracts/token/ERC20/extensions/ERC20Votes.sol*",
-      "fullDetails": null,
+      "fullDetails": "",
       "moreLink": "https://compound.finance/governance/proposals/149"
     },
     {
@@ -18,7 +18,7 @@
       "uuid": "5a302600-83b7-446d-b365-b7eea4ab5792",
       "date": "2023-01-24T05:00:00.000Z",
       "summary": "A second market on Ethereum Mainnet was launched, utilizing WETH as the base asset: cWETHv3. The market was proposed to be initialized with 2 collateral assets: wstETH and cbETH.\n\nFor the base asset, the ChainLink ETH/USD price feed was used, as was used for WETH in the cUSDCv3 market. For wstETH, a custom wrapper around the ChainLink stETH/USD feed was used to multiply by the wstETH/stETH exchange rate. This contract was in OpenZeppelin's queue for an audit. For cbETH, Coinbase had launched a new cbETH/USD price feed together with ChainLink.",
-      "fullDetails": null,
+      "fullDetails": "",
       "moreLink": "https://compound.finance/governance/proposals/144"
     },
     {
@@ -27,7 +27,7 @@
       "date": "2023-07-18T15:25:14.137Z",
       "summary": "Files Audited\ncontracts/utils/StorageSlot.sol\n\ncontracts/utils/governance/compatibility/GovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/compatibility/IGovernorCompatibilityBravo.sol\n\ncontracts/utils/governance/extensions/GovernorPreventLateQuorum.sol!\n\ncontracts/utils/governance/extensions/GovernorTimelockCompound.sol\n\ncontracts/utils/governance/extensions/GovernorVotesComp.sol\n\ncontracts/utils/governance/extensions/GovernorVotesQuorumFraction.sol\n\ncontracts/utils/governance/extensions/GovernorVotes.sol\n\ncontracts/utils/governance/Governor.sol\n\ncontracts/utils/governance/IGovernor.sol\n\ncontracts/utils/governance/TimelockController.sol\n\ncontracts/utils/governance/utils/IVotes.sol\n\ncontracts/utils/governance/utils/Votes.sol\n\ncontracts/token/ERC20/extensions/ERC20Votes.sol",
       "fullDetails": "",
-      "moreLink": null
+      "moreLink": ""
     }
   ],
   "admins": [],

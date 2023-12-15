@@ -15,6 +15,6 @@
   },
   "homepage": "https://github.com/DoDAO-io/compound-finance-academy#readme",
   "dependencies": {
-    "dodao-academy-processor": "0.0.19"
+    "dodao-academy-processor": "0.0.21"
   }
 }

@@ -17,6 +17,37 @@ Borrowing involves receiving an item from another party with an agreement that t
 4. Lending and borrowing play a crucial role in the ecosystem of small businesses. Providing them with resources they otherwise would not have to sustain their business initially.
 
 
+
+
+##### What is lending?  
+     
+- [ ]  Receiving an item from another party with an agreement to return it at a specified time
+- [x]  Permitting an individual or organization to utilize the resources of the lender and receiving compensation in the form of interest
+- [ ]  Trading resources between people with surplus resources and people without a particular resource
+- [ ]  Preventing the devaluation of money held by a person by generating value via interests
+
+
+
+
+
+##### What is borrowing?  
+     
+- [x]  Receiving an item from another party with an agreement to return it at a specified time
+- [ ]  Permitting an individual or organization to utilize the resources of the lender and receiving compensation in the form of interest
+- [ ]  Trading resources between people with surplus resources and people without a particular resource
+- [ ]  Preventing the devaluation of money held by a person by generating value via interests
+
+
+
+
+
+##### What is the objective of borrowing?  
+     
+- [ ]  Receiving an item from another party with an agreement to return it at a specified time
+- [ ]  Permitting an individual or organization to utilize the resources of the lender and receiving compensation in the form of interest
+- [x]  Utilizing an asset that is not currently available by providing something you already possess as security for repayment of the borrowed item
+- [ ]  Preventing the devaluation of money held by a person by generating value via interests
+
     
 
 

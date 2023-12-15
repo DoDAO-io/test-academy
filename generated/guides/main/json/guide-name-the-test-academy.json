@@ -50,7 +50,7 @@
           "content": "Contents of the question",
           "type": "MultipleChoice",
           "uuid": "f397c0a9-8b63-4c36-b005-b844180f2985",
-          "explanation": null
+          "explanation": "null"
         }
       ],
       "uuid": "686364b9-4ea5-481d-a496-76e3f2ba91a1"

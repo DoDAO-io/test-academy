@@ -24,10 +24,10 @@ dedent-js@^1.0.1:
   resolved "https://registry.yarnpkg.com/dedent-js/-/dedent-js-1.0.1.tgz#bee5fb7c9e727d85dffa24590d10ec1ab1255305"
   integrity sha512-OUepMozQULMLUmhxS95Vudo0jb0UchLimi3+pQ2plj61Fcy8axbP9hbiD4Sz6DPqn6XG3kfmziVfQ1rSys5AJQ==
 
-dodao-academy-processor@0.0.19:
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/dodao-academy-processor/-/dodao-academy-processor-0.0.19.tgz#c3398a0a6c0734f9c8ddc9fd4520d95351541d44"
-  integrity sha512-SrDHGQISpajkXMXM6SJ/xKon/C1GSU82LdliBWG9eCm4/q2IN6cP2euBAsb5Byb8r3JECX7+bX2HM8JxL2nBUw==
+dodao-academy-processor@0.0.21:
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/dodao-academy-processor/-/dodao-academy-processor-0.0.21.tgz#2a7cd32767035e691fc1e7531235aca9745cf301"
+  integrity sha512-MfkPerNGQMuD+kesOo3fuQMV3eoh2aAtUiGSB5kInPTqfStg58EAqGT6/x1c2AHJkRKXJ+kGhnH47hB/weTaZA==
   dependencies:
     "@types/commander" "^2.12.2"
     commander "^9.3.0"
