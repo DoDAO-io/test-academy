@@ -1,36 +1,37 @@
 {
-  "content": "Guide to Liquidity Provision on Uniswap V3",
   "id": "liquidity-provision-guide-the-test-academy",
   "name": "Liquidity Provision Guide",
-  "steps": [
-    {
-      "content": "Uniswap V3's concentrated liquidity offers liquidity providers unprecedented flexibility, but also complexity. This guide aims to provide guidance on optimal strategies for liquidity provision.",
-      "name": "Introduction",
-      "stepItems": [],
-      "uuid": "68d15b88-eb8b-4bfc-a2e6-75610c22874f"
-    },
-    {
-      "content": "Liquidity providers can choose which pool to deposit their liquidity, select their fee tier, and specify the price range. This level of customization was previously unattainable.",
-      "name": "Pool and Fee Selection",
-      "stepItems": [],
-      "uuid": "88b25482-b6a8-4258-a2bc-e44e0af9a8d2"
-    },
-    {
-      "content": "Liquidity providers must consider their strategic approach, pool selection, asset allocation, range width, timeframe, and rebalancing when providing liquidity on Uniswap V3.",
-      "name": "Considerations",
-      "stepItems": [],
-      "uuid": "7bdeb8c1-67ae-4281-a1c2-1a5202639773"
-    },
-    {
-      "content": "Optimal strategies for liquidity provision on Uniswap V3 depend on the liquidity provider's goals and risk tolerance. This guide provides guidance on how to navigate the dynamic world of Uniswap V3.",
-      "name": "Conclusion",
-      "stepItems": [],
-      "uuid": "a27ba11f-3427-49e3-a968-cdcceb1b94fa"
-    }
-  ],
-  "publishStatus": "Live",
+  "content": "Guide to Liquidity Provision on Uniswap V3",
+  "created": "2023-05-24T23:35:35.038Z",
   "admins": [],
   "tags": [],
   "priority": 50,
-  "created": "2023-05-24T23:35:35.038Z"
+  "steps": [
+    {
+      "name": "Introduction",
+      "uuid": "68d15b88-eb8b-4bfc-a2e6-75610c22874f",
+      "content": "Uniswap V3's concentrated liquidity offers liquidity providers unprecedented flexibility, but also complexity. This guide aims to provide guidance on optimal strategies for liquidity provision.\n\n\n\n<div align=\"center\">\n  <img style=\"max-height:400px;margin-bottom:30px\" src=\"https://images.unsplash.com/photo-1640340435016-1964cf4e723b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb\"/>\n</div>\n\n",
+      "stepItems": []
+    },
+    {
+      "name": "Pool and Fee Selection",
+      "uuid": "88b25482-b6a8-4258-a2bc-e44e0af9a8d2",
+      "content": "Liquidity providers can choose which pool to deposit their liquidity, select their fee tier, and specify the price range. This level of customization was previously unattainable.",
+      "stepItems": []
+    },
+    {
+      "name": "Considerations",
+      "uuid": "7bdeb8c1-67ae-4281-a1c2-1a5202639773",
+      "content": "Liquidity providers must consider their strategic approach, pool selection, asset allocation, range width, timeframe, and rebalancing when providing liquidity on Uniswap V3.",
+      "stepItems": []
+    },
+    {
+      "name": "Conclusion",
+      "uuid": "a27ba11f-3427-49e3-a968-cdcceb1b94fa",
+      "content": "Optimal strategies for liquidity provision on Uniswap V3 depend on the liquidity provider's goals and risk tolerance. This guide provides guidance on how to navigate the dynamic world of Uniswap V3.",
+      "stepItems": []
+    }
+  ],
+  "spaceId": "test-academy-eth",
+  "videoUrl": null
 }
