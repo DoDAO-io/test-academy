@@ -1,0 +1,54 @@
+id: online-fraud-types-the-test-academy
+name: Online Fraud Types
+content: Overview of Common Types of Online Business Fraud
+created: '2024-02-28T15:28:39.849Z'
+admins: []
+tags: []
+priority: 0
+steps:
+  - name: Introduction
+    uuid: 5bc1a8d8-2939-44a4-b100-b599601b7aab
+    content: >-
+      Online business fraud is a significant concern for e-commerce platforms.
+      Understanding why fraud occurs and the types of fraud that exist is
+      crucial for designing effective prevention strategies. It's important to
+      identify the kind of fraud on your platform and address it promptly.
+    stepItems: []
+  - name: Fraud Types
+    uuid: dad32b96-404b-4b94-afdf-09ff7d1a8ca0
+    content: >-
+      Some common types of online business fraud include Card Testing Fraud,
+      Friendly Fraud, Refund Fraud, Account Takeover Fraud, Interception Fraud,
+      and Triangulation Fraud. These methods are used by scammers to defraud
+      both small and large e-commerce websites.
+    stepItems: []
+  - name: Card and Friendly Fraud
+    uuid: a3284db0-a6d8-4dd1-b0f1-724c919574e4
+    content: >-
+      Card Testing Fraud involves the use of stolen credit card numbers to make
+      small test purchases on an e-commerce site. Once the fraudster confirms
+      that a card number works, they proceed to make larger purchases. Friendly
+      Fraud involves a consumer buying a product or service online, claiming the
+      transaction was invalid, and requesting a chargeback from their processor.
+    stepItems: []
+  - name: Refund and Account Takeover Fraud
+    uuid: 9bf96414-dfcc-46a4-8f67-827ac5d27dde
+    content: >-
+      Refund Fraud occurs when a stolen credit card is used for a transaction,
+      and the scammer then requests a refund due to an unintentional
+      overpayment. Account Takeover Fraud involves gaining access to a user's
+      account on an e-commerce site, often through stolen passwords or phishing
+      operations, and engaging in fraudulent activity.
+    stepItems: []
+  - name: Interception and Triangulation Fraud
+    uuid: 27b518f5-30c3-4d2e-9514-ddcc33ef3f65
+    content: >-
+      Interception Fraud involves fraudsters placing orders with stolen credit
+      card information, then attempting to intercept the package before it
+      reaches the intended recipient. Triangulation Fraud involves a fraudster
+      setting up a fake storefront, attracting customers with low prices, and
+      then using stolen credit card information to order goods from legitimate
+      e-commerce sites.
+    stepItems: []
+spaceId: test-academy-eth
+videoUrl: null
