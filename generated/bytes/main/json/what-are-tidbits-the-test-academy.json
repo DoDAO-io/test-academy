@@ -1,0 +1,32 @@
+{
+  "id": "what-are-tidbits-the-test-academy",
+  "name": "What are Tidbits?",
+  "content": "Understanding the concept of tidbits in learning",
+  "created": "2024-03-07T18:40:47.840Z",
+  "admins": [],
+  "tags": [],
+  "priority": 0,
+  "steps": [
+    {
+      "name": "Tidbits Overview",
+      "uuid": "832a57ed-f6e5-42d2-adfd-c8ca3802f709",
+      "content": "Tidbits are essentially mini-lessons designed to facilitate quick and easy learning. They provide just the right amount of information on a topic, allowing for understanding without the need for extensive studying.",
+      "stepItems": []
+    },
+    {
+      "name": "Tidbits Objective",
+      "uuid": "86fd2610-c2a8-413f-b841-7e378884d5fa",
+      "content": "The concept behind tidbits is to simplify complex ideas into smaller, manageable chunks. This approach makes it possible to learn something new even when time is limited, thus making learning more flexible and accessible.",
+      "stepItems": []
+    },
+    {
+      "name": "Tidbits Application",
+      "uuid": "9461c90e-151b-4fdc-969d-0c135995fc91",
+      "content": "Regardless of your interest, be it acquiring a new skill, understanding a complex subject, or simply satisfying your curiosity, tidbits provide a straightforward and efficient learning method. They enable you to gradually increase your knowledge, one step at a time.",
+      "stepItems": []
+    }
+  ],
+  "spaceId": "test-academy-eth",
+  "videoUrl": null,
+  "byteStyle": "CardAndCircleProgress"
+}
