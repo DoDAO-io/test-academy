@@ -1,0 +1,43 @@
+id: what-are-academy-websites-the-test-academy
+name: What are Academy Websites?
+content: Understanding the functionality of Academy Websites
+created: '2024-03-07T19:37:31.031Z'
+admins: []
+tags: []
+priority: 0
+steps:
+  - name: Introduction
+    uuid: 13755e86-8f33-41de-b02a-67279d4306b9
+    content: >-
+      Academy websites are specialized online learning platforms designed to
+      offer tailored educational experiences, particularly for companies looking
+      to enhance the knowledge and skills of their employees or customers. These
+      sites provide a range of learning resources that cater to various
+      preferences and time constraints.
+    stepItems: []
+  - name: Content Delivery
+    uuid: 3a634599-0785-4283-aafa-f45cfc7f15de
+    content: >-
+      With a focus on delivering content that's both engaging and effective,
+      academy websites utilize a variety of formats, from nano-courses and
+      bite-sized tidbits to comprehensive courses and timely updates through
+      timelines. This approach allows learners to dive into topics at their own
+      pace, whether they're looking for a quick overview or an in-depth
+      exploration of a subject.
+    stepItems: []
+  - name: Flexibility
+    uuid: 117a66a4-c240-41e7-b93d-7f73b91c8dba
+    content: >-
+      Academy websites make learning easy, flexible, and suitable for everyone,
+      whether you're looking to quickly touch on a subject or get a full
+      understanding of it.
+    stepItems: []
+  - name: Business Benefits
+    uuid: fbf7e224-151d-4814-81fe-c0fcc00fa571
+    content: >-
+      They're a smart way for businesses to make sure their people or customers
+      know what they need to, in a way that's easy for them.
+    stepItems: []
+spaceId: test-academy-eth
+videoUrl: null
+byteStyle: CardAndCircleProgress
