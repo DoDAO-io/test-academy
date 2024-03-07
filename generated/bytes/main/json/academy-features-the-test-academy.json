@@ -1,0 +1,38 @@
+{
+  "id": "academy-features-the-test-academy",
+  "name": "Academy Features",
+  "content": "Overview of the features of Academy Websites",
+  "created": "2024-03-07T20:18:42.293Z",
+  "admins": [],
+  "tags": [],
+  "priority": 0,
+  "steps": [
+    {
+      "name": "Nano-courses and TidBits",
+      "uuid": "3756b9f2-fdc5-4a30-b5ba-e4029a165369",
+      "content": "Academy websites are rich in features that make learning both effective and engaging, catering to the diverse needs of learners. Features like nano-courses, which are short and focused for quick comprehension, and TidBits, even shorter snippets ideal for grasping key points rapidly.",
+      "stepItems": []
+    },
+    {
+      "name": "Comprehensive Courses",
+      "uuid": "2dc59364-e43f-493e-b218-599a4f949cf6",
+      "content": "These extended sessions incorporate a variety of learning materials, including texts, diagrams, videos, and interactive questions, to thoroughly cover subjects. Interactive questions within these courses serve to assess knowledge, reinforce learning, and enhance retention, making learning more dynamic.",
+      "stepItems": []
+    },
+    {
+      "name": "Timelines",
+      "uuid": "e0df2c4c-db14-4d85-8ba7-3a777f0e940c",
+      "content": "Academy websites also feature timelines, keeping users updated on the latest product developments, releases, and industry trends. This ensures that the learning content is relevant and current. The content is presented in various formats, catering to different learning styles and making the educational experience more engaging.",
+      "stepItems": []
+    },
+    {
+      "name": "Customization and Accessibility",
+      "uuid": "7ed2962c-9434-4533-b44b-387f52a28dfd",
+      "content": "Academy websites offer customization and personalization options, allowing users to tailor their learning paths based on their interests, needs, and skill levels. This enhances the overall learning experience.",
+      "stepItems": []
+    }
+  ],
+  "spaceId": "test-academy-eth",
+  "videoUrl": null,
+  "byteStyle": "CardAndCircleProgress"
+}
