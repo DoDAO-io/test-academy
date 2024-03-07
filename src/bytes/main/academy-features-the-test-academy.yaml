@@ -1,5 +1,5 @@
 id: academy-features-the-test-academy
-name: Academy Features
+name: Features of Academy Websites
 content: Overview of the features of Academy Websites
 created: '2024-03-07T20:18:42.293Z'
 admins: []
@@ -13,6 +13,7 @@ steps:
       and engaging, catering to the diverse needs of learners. Features like
       nano-courses, which are short and focused for quick comprehension, and
       TidBits, even shorter snippets ideal for grasping key points rapidly.
+    imageUrl: null
     stepItems: []
   - name: Comprehensive Courses
     uuid: 2dc59364-e43f-493e-b218-599a4f949cf6
@@ -22,6 +23,7 @@ steps:
       thoroughly cover subjects. Interactive questions within these courses
       serve to assess knowledge, reinforce learning, and enhance retention,
       making learning more dynamic.
+    imageUrl: null
     stepItems: []
   - name: Timelines
     uuid: e0df2c4c-db14-4d85-8ba7-3a777f0e940c
@@ -31,13 +33,15 @@ steps:
       that the learning content is relevant and current. The content is
       presented in various formats, catering to different learning styles and
       making the educational experience more engaging.
+    imageUrl: null
     stepItems: []
-  - name: Customization and Accessibility
+  - name: Customization
     uuid: 7ed2962c-9434-4533-b44b-387f52a28dfd
     content: >-
       Academy websites offer customization and personalization options, allowing
       users to tailor their learning paths based on their interests, needs, and
       skill levels. This enhances the overall learning experience.
+    imageUrl: null
     stepItems: []
 spaceId: test-academy-eth
 videoUrl: null
