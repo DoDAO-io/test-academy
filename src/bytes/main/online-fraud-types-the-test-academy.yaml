@@ -52,3 +52,4 @@ steps:
     stepItems: []
 spaceId: test-academy-eth
 videoUrl: null
+byteStyle: CardAndCircleProgress

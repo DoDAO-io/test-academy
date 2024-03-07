@@ -39,5 +39,6 @@
     }
   ],
   "spaceId": "test-academy-eth",
-  "videoUrl": null
+  "videoUrl": null,
+  "byteStyle": "CardAndCircleProgress"
 }
