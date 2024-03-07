@@ -1,0 +1,38 @@
+{
+  "id": "other-benefits-of-tidbits-the-test-academy",
+  "name": "Other benefits of Tidbits?",
+  "content": "Exploring the additional benefits of Tidbits",
+  "created": "2024-03-07T19:07:43.241Z",
+  "admins": [],
+  "tags": [],
+  "priority": 0,
+  "steps": [
+    {
+      "name": "Retention Enhancement",
+      "uuid": "e50d6bc4-eb33-4111-9603-4e3ab6e40a88",
+      "content": "Tidbits, besides their compact size, provide numerous other benefits. Each tidbit focuses on a single concept or learning objective, making it easier to absorb and remember the information. This targeted learning approach gradually builds a solid understanding.",
+      "stepItems": []
+    },
+    {
+      "name": "Continuous Learning",
+      "uuid": "25e559ad-c761-4eb6-a24f-5fa36725efe8",
+      "content": "Tidbits promote the habit of continuous learning due to their brief nature. They help people keep learning every day, which is important for growing in work and life. This habit formation is vital for personal and professional growth in a fast-paced world that requires constant adaptation and skill acquisition.",
+      "stepItems": []
+    },
+    {
+      "name": "Accessibility",
+      "uuid": "189f5543-56f3-4295-8177-65c8ef603461",
+      "content": "Tidbits are adaptable to various digital platforms, making them accessible anytime and anywhere. Whether on a short break, commuting, or waiting in line, one can engage with a tidbit, utilizing time effectively.",
+      "stepItems": []
+    },
+    {
+      "name": "Diverse Learning Needs",
+      "uuid": "a23949ad-0dfa-4d4b-af62-8614f4900cdf",
+      "content": "From text and infographics to short videos and interactive quizzes, tidbits can engage different types of learners. This versatility ensures that whether one learns best visually, audibly, or through doing, there's a tidbit tailored to their preference.",
+      "stepItems": []
+    }
+  ],
+  "spaceId": "test-academy-eth",
+  "videoUrl": null,
+  "byteStyle": "CardAndCircleProgress"
+}
