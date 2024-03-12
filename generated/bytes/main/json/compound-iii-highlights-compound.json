@@ -1,76 +1,84 @@
 {
-  "content": "All the new features that are added in Compound III",
   "id": "compound-iii-highlights-compound",
   "name": "Compound III Highlights",
+  "content": "All the new features that are added in Compound III",
+  "created": "2023-03-09T16:17:33.954Z",
+  "admins": [],
+  "tags": [],
+  "priority": 0,
   "steps": [
     {
+      "name": "Introduction 111",
+      "uuid": "e42229b8-d50f-461a-9c10-b6fd510754e2",
       "content": "Each Compound III deployment features a single interest-earning base asset, with all other assets serving as collateral. This simplifies the protocol, reduces risk, and potentially improves capital efficiency        ",
-      "name": "Introduction",
-      "stepItems": [],
-      "uuid": "e42229b8-d50f-461a-9c10-b6fd510754e2"
+      "imageUrl": "https://d31h13bdjwgzxs.cloudfront.net/academy/test-academy-eth/Tidbits/compound-iii-highlights-compound/1710270902428_photo-1563473213013-de2a0133c100%3Fixlib%3Drb-4.0.3%26q%3D85%26fm%3Djpg%26crop%3Dentropy%26cs%3Dsrgb",
+      "stepItems": []
     },
     {
-      "content": "Collateral size limits, or supply caps, can be set for each collateral asset",
       "name": "Introduction Evaluation",
-      "stepItems": [],
-      "uuid": "e54c2607-6cf3-4e0f-8d36-1ae8a4d93718"
+      "uuid": "e54c2607-6cf3-4e0f-8d36-1ae8a4d93718",
+      "content": "Collateral size limits, or supply caps, can be set for each collateral asset",
+      "imageUrl": null,
+      "stepItems": []
     },
     {
-      "content": "The risk management and liquidation engine has been redesigned to increase the safety of the protocol while maintaining liquidator incentives",
       "name": "Step 3",
-      "stepItems": [],
-      "uuid": "8cd8f731-25c5-4eef-a379-3770fb9fe42a"
+      "uuid": "8cd8f731-25c5-4eef-a379-3770fb9fe42a",
+      "content": "The risk management and liquidation engine has been redesigned to increase the safety of the protocol while maintaining liquidator incentives",
+      "imageUrl": null,
+      "stepItems": []
     },
     {
-      "content": "Supply and borrow interest rate models can be decoupled, giving governance full control over economic policy.\n",
       "name": "Step 4",
-      "stepItems": [],
-      "uuid": "d6c7f903-19a1-49dc-8429-d1c6460b08a4"
+      "uuid": "d6c7f903-19a1-49dc-8429-d1c6460b08a4",
+      "content": "Supply and borrow interest rate models can be decoupled, giving governance full control over economic policy.\n",
+      "imageUrl": null,
+      "stepItems": []
     },
     {
-      "content": "An abstract incentive metric is natively built into the core contract to reward user activity from the protocol's inception. A rewards system is also added on top to provide flexible incentives that can be extended by governance",
       "name": "Step 5",
-      "stepItems": [],
-      "uuid": "2b726cb9-6c08-4131-bda9-eb32039c4c4d"
+      "uuid": "2b726cb9-6c08-4131-bda9-eb32039c4c4d",
+      "content": "An abstract incentive metric is natively built into the core contract to reward user activity from the protocol's inception. A rewards system is also added on top to provide flexible incentives that can be extended by governance",
+      "imageUrl": null,
+      "stepItems": []
     },
     {
-      "content": "",
       "name": "Step 6",
+      "uuid": "34c5fe26-38dd-487b-b0d2-e6349c05bace",
+      "content": "",
+      "imageUrl": null,
       "stepItems": [
         {
           "type": "SingleChoice",
           "uuid": "ca0c3d28-91fe-4db9-a8e5-28c726acf5c1",
-          "answerKeys": [
-            "6a748ed4"
-          ],
           "choices": [
             {
-              "content": "Reduced risk, and potentially improved capital efficiency",
-              "key": "6a748ed4"
+              "key": "6a748ed4",
+              "content": "Reduced risk, and potentially improved capital efficiency"
             },
             {
-              "content": "Allows for unlimited borrowing",
-              "key": "3932060f"
+              "key": "3932060f",
+              "content": "Allows for unlimited borrowing"
             },
             {
-              "content": "Eliminates the need for collateral",
-              "key": "3ff8bf0a"
+              "key": "3ff8bf0a",
+              "content": "Eliminates the need for collateral"
             },
             {
-              "content": "Minimal risk of liquidation",
-              "key": "1dacee4e"
+              "key": "1dacee4e",
+              "content": "Minimal risk of liquidation"
             }
           ],
           "content": "What is the major benefit of each Compound III deployment featuring a single interest-earning base asset?",
+          "answerKeys": [
+            "6a748ed4"
+          ],
           "explanation": "Each Compound III deployment features a single interest-earning base asset, with all other assets serving as collateral. This simplifies the protocol, reduces risk, and potentially improves capital efficiency"
         }
-      ],
-      "uuid": "34c5fe26-38dd-487b-b0d2-e6349c05bace"
+      ]
     }
   ],
-  "publishStatus": "Live",
-  "admins": [],
-  "tags": [],
-  "priority": 0,
-  "created": "2023-03-09T16:17:33.954Z"
+  "spaceId": "test-academy-eth",
+  "videoUrl": null,
+  "byteStyle": "CardAndCircleProgress"
 }
