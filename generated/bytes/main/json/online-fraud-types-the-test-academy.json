@@ -45,5 +45,7 @@
   ],
   "spaceId": "test-academy-eth",
   "videoUrl": null,
-  "byteStyle": "CardAndCircleProgress"
+  "videoAspectRatio": null,
+  "byteStyle": "CardAndCircleProgress",
+  "completionScreen": null
 }

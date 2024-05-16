@@ -58,4 +58,6 @@ steps:
     stepItems: []
 spaceId: test-academy-eth
 videoUrl: null
+videoAspectRatio: null
 byteStyle: CardAndCircleProgress
+completionScreen: null
