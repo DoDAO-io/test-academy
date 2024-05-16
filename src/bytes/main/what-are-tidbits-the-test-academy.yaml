@@ -12,6 +12,7 @@ steps:
       Tidbits are essentially mini-lessons designed to facilitate quick and easy
       learning. They provide just the right amount of information on a topic,
       allowing for understanding without the need for extensive studying.
+    imageUrl: null
     stepItems: []
   - name: Tidbits Objective
     uuid: 86fd2610-c2a8-413f-b841-7e378884d5fa
@@ -20,6 +21,7 @@ steps:
       manageable chunks. This approach makes it possible to learn something new
       even when time is limited, thus making learning more flexible and
       accessible.
+    imageUrl: null
     stepItems: []
   - name: Tidbits Application
     uuid: 9461c90e-151b-4fdc-969d-0c135995fc91
@@ -28,7 +30,10 @@ steps:
       complex subject, or simply satisfying your curiosity, tidbits provide a
       straightforward and efficient learning method. They enable you to
       gradually increase your knowledge, one step at a time.
+    imageUrl: null
     stepItems: []
 spaceId: test-academy-eth
 videoUrl: null
+videoAspectRatio: null
 byteStyle: CardAndCircleProgress
+completionScreen: null
