@@ -30,20 +30,29 @@ steps:
             content: Only Dog
           - key: only_cat
             content: Only Cat
-          - key: ee206bdd
-            content: sfefw
-          - key: b74058cb
-            content: grtgrg
-          - key: 7307d7f6
-            content: rer
-          - key: 1ff86bd9
-            content: frere
         content: What is the best pet?
         answerKeys:
           - dog_or_cat
           - only_dog
           - only_cat
         explanation: This is the explanation
+  - name: Step 3
+    uuid: 77ef8000-dc84-4aef-a0ca-1748aea09dca
+    content: ''
+    stepItems:
+      - type: SingleChoice
+        uuid: 3ae7f5d3-5df8-4fdd-921d-3190e7e47fb4
+        choices:
+          - key: 552c2a00
+            content: cls
+          - key: 1cef9fd8
+            content: dlk
+          - key: fba8ba7d
+            content: aas
+        content: what is good
+        answerKeys:
+          - 1cef9fd8
+        explanation: egegegegerhgr
 spaceId: test-academy-eth
 videoUrl: null
 videoAspectRatio: null
