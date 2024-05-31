@@ -1,10 +1,7 @@
-uniqueId: 9a2b7b89-25fc-43de-8f3e-fef87aca89b2
 id: test-byte-the-test-academy
 name: Test Byte
 content: This is a test byte.
 created: '2023-06-08T02:31:20.876Z'
-visibility: Public
-publishStatus: Live
 admins: []
 tags: []
 priority: 0
@@ -15,10 +12,12 @@ steps:
 
       Introduction Comments  123123123
               
+    imageUrl: null
     stepItems: []
   - name: Introduction Evaluation
     uuid: 608eb0f7-2396-449f-9bb4-8d3656faf1de
     content: ''
+    imageUrl: null
     stepItems:
       - type: MultipleChoice
         uuid: b92da70f-b16a-4389-a9c7-407200b66349
@@ -31,6 +30,14 @@ steps:
             content: Only Dog
           - key: only_cat
             content: Only Cat
+          - key: ee206bdd
+            content: sfefw
+          - key: b74058cb
+            content: grtgrg
+          - key: 7307d7f6
+            content: rer
+          - key: 1ff86bd9
+            content: frere
         content: What is the best pet?
         answerKeys:
           - dog_or_cat
@@ -38,3 +45,7 @@ steps:
           - only_cat
         explanation: This is the explanation
 spaceId: test-academy-eth
+videoUrl: null
+videoAspectRatio: null
+byteStyle: CardAndCircleProgress
+completionScreen: null
