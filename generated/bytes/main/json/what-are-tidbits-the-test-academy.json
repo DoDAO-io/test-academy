@@ -36,7 +36,13 @@
   "completionScreen": {
     "content": "gegegegeg",
     "name": "ebvrrbrbr",
-    "items": [],
+    "items": [
+      {
+        "label": "dfefw",
+        "link": "https://mui.com/material-ui/react-card/",
+        "uuid": "d5225ed9-938d-45d2-b3b3-d926a290318c"
+      }
+    ],
     "uuid": "ca4f7a88-50b1-446b-9452-17570e507519",
     "imageUrl": ""
   }
