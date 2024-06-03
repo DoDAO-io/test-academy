@@ -37,8 +37,17 @@ steps:
           - only_dog
           - only_cat
         explanation: This is the explanation
+  - name: Step 3
+    uuid: de57b599-d97e-49e1-92c7-13251e113189
+    content: ''
+    stepItems: []
 spaceId: test-academy-eth
 videoUrl: null
 videoAspectRatio: null
 byteStyle: CardAndCircleProgress
-completionScreen: null
+completionScreen:
+  content: gergerger
+  name: fefe
+  items: []
+  uuid: 63b6fd5e-c9f7-40d3-a251-5d37ed6e5d6a
+  imageUrl: ''
