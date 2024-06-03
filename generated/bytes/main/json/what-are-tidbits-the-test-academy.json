@@ -33,5 +33,11 @@
   "videoUrl": null,
   "videoAspectRatio": "landscape",
   "byteStyle": "CardAndCircleProgress",
-  "completionScreen": null
+  "completionScreen": {
+    "content": "gegegegeg",
+    "name": "ebvrrbrbr",
+    "items": [],
+    "uuid": "ca4f7a88-50b1-446b-9452-17570e507519",
+    "imageUrl": ""
+  }
 }
