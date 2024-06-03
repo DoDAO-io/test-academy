@@ -17,7 +17,7 @@
     {
       "name": "Introduction Evaluation",
       "uuid": "608eb0f7-2396-449f-9bb4-8d3656faf1de",
-      "content": "",
+      "content": "Some text which should not be there\nSome text which should not be there\nSome text which should not be there\nSome text which should not be there\nSome text which should not be there\nSome text which should not be there\nSome text which should not be thereSome text which should not be there\nSome text which should not be there\nSome text which should not be there\nSome text which should not be thereSome text which should not be there",
       "imageUrl": null,
       "stepItems": [
         {
@@ -55,6 +55,7 @@
       "name": "Step 3",
       "uuid": "77ef8000-dc84-4aef-a0ca-1748aea09dca",
       "content": "",
+      "imageUrl": null,
       "stepItems": [
         {
           "type": "SingleChoice",
