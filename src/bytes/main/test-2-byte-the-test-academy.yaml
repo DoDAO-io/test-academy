@@ -1,0 +1,41 @@
+id: test-2-byte-the-test-academy
+name: Test 2 Byte
+content: New Byte
+created: '2024-06-03T12:25:58.174Z'
+admins: []
+tags: []
+priority: 0
+steps:
+  - name: Introduction
+    uuid: 0e97efa2-9042-47d7-9bc7-d911c69e570e
+    content: |-
+
+      Introduction Comments 
+              
+    stepItems: []
+  - name: Introduction Evaluation
+    uuid: fba34c5a-aca1-4595-9cf3-20da4cbd3838
+    content: ''
+    stepItems:
+      - type: MultipleChoice
+        uuid: 73cdad3d-a421-467d-a936-059c2808d482
+        choices:
+          - key: dog_and_cat
+            content: Dog And Cat
+          - key: dog_or_cat
+            content: Dog Or Cat
+          - key: only_dog
+            content: Only Dog
+          - key: only_cat
+            content: Only Cat
+        content: What is the best pet?
+        answerKeys:
+          - dog_or_cat
+          - only_dog
+          - only_cat
+        explanation: This is the explanation
+spaceId: test-academy-eth
+videoUrl: null
+videoAspectRatio: null
+byteStyle: CardAndCircleProgress
+completionScreen: null
