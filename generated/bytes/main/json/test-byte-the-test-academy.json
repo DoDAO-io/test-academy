@@ -87,5 +87,11 @@
   "videoUrl": null,
   "videoAspectRatio": null,
   "byteStyle": "CardAndCircleProgress",
-  "completionScreen": null
+  "completionScreen": {
+    "content": "Some text",
+    "name": "Why need for this",
+    "items": [],
+    "uuid": "88844120-1e6f-4a4f-b61e-829b34e63635",
+    "imageUrl": ""
+  }
 }
