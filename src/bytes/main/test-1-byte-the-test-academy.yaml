@@ -15,6 +15,11 @@ steps:
               
     imageUrl: null
     stepItems: []
+  - name: Step 3
+    uuid: de57b599-d97e-49e1-92c7-13251e113189
+    content: ''
+    imageUrl: null
+    stepItems: []
   - name: Introduction Evaluation
     uuid: fba34c5a-aca1-4595-9cf3-20da4cbd3838
     content: ''
@@ -37,11 +42,6 @@ steps:
           - only_dog
           - only_cat
         explanation: This is the explanation
-  - name: Step 3
-    uuid: de57b599-d97e-49e1-92c7-13251e113189
-    content: ''
-    imageUrl: null
-    stepItems: []
 spaceId: test-academy-eth
 videoUrl: null
 videoAspectRatio: null
